@@ -604,3 +604,19 @@ Ihr KI-Assistent'''
                 self.logger.info(f"📝 Sprache ergänzt: {new_values['lang']}")
 
         #
+
+# ... Ende der odoo_manager.py ...
+
+    def _clean_biography(self, biography_text: str) -> str:
+        # ... existing method ...
+        return clean_text
+
+    def convert_language_to_odoo(self, language: str) -> str:  # ← HIER EINFÜGEN
+        """Konvertiert Sprache zu Odoo-Sprachcode"""
+        language_map = {
+            'deutsch': 'de_DE', 'german': 'de_DE', 'english': 'en_US',
+            'englisch': 'en_US', 'français': 'fr_FR', 'french': 'fr_FR',
+            'italiano': 'it_IT', 'italian': 'it_IT', 'español': 'es_ES',
+            'spanish': 'es_ES', 'русский': 'ru_RU', 'russian': 'ru_RU'
+        }
+        return language_map.get(language.lower(), 'de_DE')

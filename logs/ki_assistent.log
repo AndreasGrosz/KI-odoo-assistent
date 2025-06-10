@@ -9532,3 +9532,206 @@ Jim Hagemann Snabe...
 2025-06-10 19:47:51,900 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
 2025-06-10 19:47:52,008 - config_manager - INFO - 📭 Keine neuen E-Mails
 2025-06-10 19:48:12,317 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)
+2025-06-10 21:04:11,315 - config_manager - INFO - ============================================================
+2025-06-10 21:04:11,315 - config_manager - INFO - 🚀 KI-Kontaktassistent Startup
+2025-06-10 21:04:11,315 - config_manager - INFO - 📅 2025-06-10 21:04:11
+2025-06-10 21:04:11,315 - config_manager - INFO - ============================================================
+2025-06-10 21:04:11,315 - config_manager - INFO - 🔍 Odoo-Verbindungstest:
+2025-06-10 21:04:11,315 - config_manager - INFO -    URL: https://andreas-gross.odoo.com
+2025-06-10 21:04:11,315 - config_manager - INFO -    Database: andreas-gross
+2025-06-10 21:04:11,315 - config_manager - INFO -    Username: ki-odoo-assistent@swiss-ecommerce.ch
+2025-06-10 21:04:11,572 - config_manager - INFO - ✅ Odoo-Server erreichbar: {'server_version': '18.0+e', 'server_version_info': [18, 0, 0, 'final', 0, 'e'], 'server_serie': '18.0', 'protocol_version': 1}
+2025-06-10 21:04:11,572 - config_manager - INFO - 🔐 Versuche Authentifizierung...
+2025-06-10 21:04:11,849 - config_manager - INFO - ✅ APIs erfolgreich verbunden
+2025-06-10 21:04:11,849 - config_manager - INFO - 🔐 Odoo User ID: 11
+2025-06-10 21:04:11,849 - config_manager - INFO - ✅ ConfigManager initialisiert
+2025-06-10 21:04:12,296 - config_manager - INFO - 📋 251 Kategorien aus Odoo geladen
+2025-06-10 21:04:12,297 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-10 21:04:12,300 - config_manager - INFO - 🤖 KI-Kontaktassistent gestartet
+2025-06-10 21:04:12,300 - config_manager - INFO - 📊 346 Kategorien verfügbar
+2025-06-10 21:04:12,300 - config_manager - INFO - 🚀 KI-Kontaktassistent läuft...
+2025-06-10 21:04:12,301 - config_manager - INFO - ⏱️ Check-Intervall: 50 Sekunden
+2025-06-10 21:04:12,301 - config_manager - INFO - 🔄 Iteration 1 - 21:04:12
+2025-06-10 21:04:12,301 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:04:12,423 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:05:02,434 - config_manager - INFO - 🔄 Iteration 2 - 21:05:02
+2025-06-10 21:05:02,434 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:05:02,532 - config_manager - INFO - 📬 1 neue E-Mail(s) gefunden
+2025-06-10 21:05:02,532 - config_manager - INFO - 📧 Verarbeite E-Mail 1/1
+2025-06-10 21:05:02,553 - config_manager - INFO - 🔍 E-Mail-Body für Extraktion (erste 500 Zeichen): #Rechtsanwalt
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff: 	Re: Betreff: Re: LUWE – GV, Einschätzungen und Erfahrungen
+Datum: 	Sun, 8 Jun 2025 09:14:19 +0200
+Von: 	Claudia Zumtaugwald <claudia.zumtaugwald@nachhaltig-vernetzt.ch>
+An: 	andreas@5gfrei.ch <andreas@5gfrei.ch>
+Kopie (CC): 	Telse Gross <Telse.Gross@IngGross.de>
+
+
+
+Lieber Andreas
+
+Ich danke dir für das Feedback, das mich auch erleichtert hat. Vital 
+kam  an die GV des DV und dank ihm ist Seldmair nicht Präsident...
+2025-06-10 21:05:02,557 - config_manager - INFO - 🎯 Primäre E-Mail gefunden: claudia.zumtaugwald@nachhaltig-vernetzt.ch
+2025-06-10 21:05:02,558 - config_manager - INFO - 📧 Verarbeite: claudia.zumtaugwald@nachhaltig-vernetzt.ch (von: andreas@5gfrei.ch) 
+2025-06-10 21:05:02,558 - config_manager - INFO - 🔧 Smart-Strategy Input: 4724 Zeichen
+2025-06-10 21:05:02,558 - config_manager - INFO - 🔧 Smart-Strategy angewendet:
+2025-06-10 21:05:02,558 - config_manager - INFO -    📄 Head: 2000 Zeichen
+2025-06-10 21:05:02,558 - config_manager - INFO -    ⏭️ Übersprungen: 1724 Zeichen
+2025-06-10 21:05:02,558 - config_manager - INFO -    📦 Footer: 1000 Zeichen
+2025-06-10 21:05:02,558 - config_manager - INFO -    📊 Total: 3059 Zeichen (Original: 4724)
+2025-06-10 21:05:06,461 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 21:05:06,466 - config_manager - INFO - 🤖 GPT Antwort (Smart-Strategy): {
+    "first_name": "Claudia",
+    "last_name": "Zumtaugwald",
+    "full_name": "Claudia Zumtaugwald",
+    "emails": ["claudia.zumtaugwald@nachhaltig-vernetzt.ch"],
+    "phones": ["041 418 60 20"],
+    "address": null,
+    "website": "www.nachhaltig-vernetzt.ch",
+    "company": "LUWE Luzern für weniger Elektrosmog",
+    "position": "Präsidentin",
+    "is_company": false,
+    "language": "deutsch",
+    "categories": ["#Rechtsanwalt"],
+    "biography": "Rechtsanwalt",
+    "confidence": "high"
+}
+2025-06-10 21:05:06,466 - config_manager - INFO - ✅ JSON erfolgreich geparst - verwende GPT-Daten!
+2025-06-10 21:05:06,467 - config_manager - INFO - ✅ Kontaktdaten extrahiert (Confidence: high)
+2025-06-10 21:05:06,467 - config_manager - INFO - 🎯 Name: Claudia Zumtaugwald
+2025-06-10 21:05:06,467 - config_manager - INFO - 📧 E-Mails: claudia.zumtaugwald@nachhaltig-vernetzt.ch
+2025-06-10 21:05:06,467 - config_manager - INFO - 📞 Telefon: 041 418 60 20
+2025-06-10 21:05:06,467 - config_manager - INFO - 🏠 Adresse: 
+2025-06-10 21:05:06,467 - config_manager - INFO - 🌍 Sprache: deutsch
+2025-06-10 21:05:06,467 - config_manager - INFO - 🏷️ Kategorien: rechtsanwalt
+2025-06-10 21:05:06,467 - config_manager - INFO - 🎲 Confidence: high
+2025-06-10 21:05:06,745 - config_manager - INFO - 🆕 Kein existierender Kontakt für: claudia.zumtaugwald@nachhaltig-vernetzt.ch
+2025-06-10 21:05:06,745 - config_manager - INFO - 👤 Person: 'Claudia Zumtaugwald' arbeitet bei: 'LUWE Luzern für weniger Elektrosmog'
+2025-06-10 21:05:06,745 - config_manager - ERROR - ❌ Fehler beim Speichern des Kontakts: 'OdooManager' object has no attribute 'convert_language_to_odoo'
+2025-06-10 21:05:06,746 - config_manager - ERROR - ❌ E-Mail-Verarbeitung fehlgeschlagen
+2025-06-10 21:05:06,746 - config_manager - INFO - 📊 Ergebnis: ✅ 0 erfolgreich, ❌ 1 Fehler
+2025-06-10 21:05:56,760 - config_manager - INFO - 🔄 Iteration 3 - 21:05:56
+2025-06-10 21:05:56,760 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:05:56,860 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:06:46,870 - config_manager - INFO - 🔄 Iteration 4 - 21:06:46
+2025-06-10 21:06:46,870 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:06:46,984 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:07:36,992 - config_manager - INFO - 🔄 Iteration 5 - 21:07:36
+2025-06-10 21:07:36,992 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:07:37,083 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:08:21,916 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)
+2025-06-10 21:10:15,519 - config_manager - INFO - ============================================================
+2025-06-10 21:10:15,519 - config_manager - INFO - 🚀 KI-Kontaktassistent Startup
+2025-06-10 21:10:15,520 - config_manager - INFO - 📅 2025-06-10 21:10:15
+2025-06-10 21:10:15,520 - config_manager - INFO - ============================================================
+2025-06-10 21:10:15,520 - config_manager - INFO - 🔍 Odoo-Verbindungstest:
+2025-06-10 21:10:15,520 - config_manager - INFO -    URL: https://andreas-gross.odoo.com
+2025-06-10 21:10:15,520 - config_manager - INFO -    Database: andreas-gross
+2025-06-10 21:10:15,520 - config_manager - INFO -    Username: ki-odoo-assistent@swiss-ecommerce.ch
+2025-06-10 21:10:15,642 - config_manager - INFO - ✅ Odoo-Server erreichbar: {'server_version': '18.0+e', 'server_version_info': [18, 0, 0, 'final', 0, 'e'], 'server_serie': '18.0', 'protocol_version': 1}
+2025-06-10 21:10:15,642 - config_manager - INFO - 🔐 Versuche Authentifizierung...
+2025-06-10 21:10:15,996 - config_manager - INFO - ✅ APIs erfolgreich verbunden
+2025-06-10 21:10:15,996 - config_manager - INFO - 🔐 Odoo User ID: 11
+2025-06-10 21:10:15,996 - config_manager - INFO - ✅ ConfigManager initialisiert
+2025-06-10 21:10:16,409 - config_manager - INFO - 📋 251 Kategorien aus Odoo geladen
+2025-06-10 21:10:16,409 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-10 21:10:16,413 - config_manager - INFO - 🤖 KI-Kontaktassistent gestartet
+2025-06-10 21:10:16,413 - config_manager - INFO - 📊 346 Kategorien verfügbar
+2025-06-10 21:10:16,413 - config_manager - INFO - 🚀 KI-Kontaktassistent läuft...
+2025-06-10 21:10:16,413 - config_manager - INFO - ⏱️ Check-Intervall: 50 Sekunden
+2025-06-10 21:10:16,413 - config_manager - INFO - 🔄 Iteration 1 - 21:10:16
+2025-06-10 21:10:16,413 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:10:17,543 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:11:07,553 - config_manager - INFO - 🔄 Iteration 2 - 21:11:07
+2025-06-10 21:11:07,553 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:11:07,643 - config_manager - INFO - 📬 1 neue E-Mail(s) gefunden
+2025-06-10 21:11:07,643 - config_manager - INFO - 📧 Verarbeite E-Mail 1/1
+2025-06-10 21:11:07,662 - config_manager - INFO - 🔍 E-Mail-Body für Extraktion (erste 500 Zeichen): Die engagierte Rechtsanwältin für 5G-Widerstand.
+
+#Rechtsanwalt,#5Gfrei,
+
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff: 	Re: Betreff: Re: LUWE – GV, Einschätzungen und Erfahrungen
+Datum: 	Sun, 8 Jun 2025 09:14:19 +0200
+Von: 	Claudia Zumtaugwald <claudia.zumtaugwald@nachhaltig-vernetzt.ch>
+An: 	andreas@5gfrei.ch <andreas@5gfrei.ch>
+Kopie (CC): 	Telse Gross <Telse.Gross@IngGross.de>
+
+
+
+Lieber Andreas
+
+Ich danke dir für das Feedback, das mich auch erleichtert hat. Vital 
+...
+2025-06-10 21:11:07,665 - config_manager - INFO - 🎯 Primäre E-Mail gefunden: claudia.zumtaugwald@nachhaltig-vernetzt.ch
+2025-06-10 21:11:07,666 - config_manager - INFO - 📧 Verarbeite: claudia.zumtaugwald@nachhaltig-vernetzt.ch (von: andreas@5gfrei.ch) 
+2025-06-10 21:11:07,666 - config_manager - INFO - 🔧 Smart-Strategy Input: 4787 Zeichen
+2025-06-10 21:11:07,666 - config_manager - INFO - 🔧 Smart-Strategy angewendet:
+2025-06-10 21:11:07,666 - config_manager - INFO -    📄 Head: 2000 Zeichen
+2025-06-10 21:11:07,666 - config_manager - INFO -    ⏭️ Übersprungen: 1787 Zeichen
+2025-06-10 21:11:07,666 - config_manager - INFO -    📦 Footer: 1000 Zeichen
+2025-06-10 21:11:07,666 - config_manager - INFO -    📊 Total: 3059 Zeichen (Original: 4787)
+2025-06-10 21:11:12,867 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 21:11:12,872 - config_manager - INFO - 🤖 GPT Antwort (Smart-Strategy): {
+    "first_name": "Claudia",
+    "last_name": "Zumtaugwald",
+    "full_name": "Claudia Zumtaugwald",
+    "emails": ["claudia.zumtaugwald@nachhaltig-vernetzt.ch"],
+    "phones": ["041 418 60 20"],
+    "address": {
+        "street": null,
+        "street2": null,
+        "city": null,
+        "zip": null,
+        "state": null,
+        "country": null
+    },
+    "website": "www.nachhaltig-vernetzt.ch",
+    "company": "LUWE Luzern für weniger Elektrosmog",
+    "position": "Präsidentin",
+    "is_company": true,
+    "language": "deutsch",
+    "categories": ["Rechtsanwalt", "5Gfrei"],
+    "biography": "Die engagierte Rechtsanwältin für 5G-Widerstand.",
+    "confidence": "high"
+}
+2025-06-10 21:11:12,873 - config_manager - INFO - ✅ JSON erfolgreich geparst - verwende GPT-Daten!
+2025-06-10 21:11:12,874 - config_manager - INFO - ✅ Kontaktdaten extrahiert (Confidence: high)
+2025-06-10 21:11:12,874 - config_manager - INFO - 🎯 Name: Claudia Zumtaugwald
+2025-06-10 21:11:12,874 - config_manager - INFO - 📧 E-Mails: claudia.zumtaugwald@nachhaltig-vernetzt.ch
+2025-06-10 21:11:12,875 - config_manager - INFO - 📞 Telefon: 041 418 60 20
+2025-06-10 21:11:12,875 - config_manager - INFO - 🏠 Adresse: 
+2025-06-10 21:11:12,875 - config_manager - INFO - 🌍 Sprache: deutsch
+2025-06-10 21:11:12,875 - config_manager - INFO - 🏷️ Kategorien: rechtsanwalt, 5gfrei
+2025-06-10 21:11:12,875 - config_manager - INFO - 🎲 Confidence: high
+2025-06-10 21:11:13,233 - config_manager - INFO - 🆕 Kein existierender Kontakt für: claudia.zumtaugwald@nachhaltig-vernetzt.ch
+2025-06-10 21:11:13,233 - config_manager - INFO - 🏢 Firma: Verwende company-Feld als Hauptname: 'LUWE Luzern für weniger Elektrosmog'
+2025-06-10 21:11:13,233 - config_manager - INFO - 🎯 NAMEN-ZUORDNUNG für claudia.zumtaugwald@nachhaltig-vernetzt.ch:
+2025-06-10 21:11:13,233 - config_manager - INFO -    is_company: True
+2025-06-10 21:11:13,233 - config_manager - INFO -    company (aus KI): 'LUWE Luzern für weniger Elektrosmog'
+2025-06-10 21:11:13,233 - config_manager - INFO -    full_name (aus KI): 'Claudia Zumtaugwald'
+2025-06-10 21:11:13,233 - config_manager - INFO -    → name (für Odoo): 'LUWE Luzern für weniger Elektrosmog'
+2025-06-10 21:11:13,233 - config_manager - INFO - 📋 Odoo-Felder für claudia.zumtaugwald@nachhaltig-vernetzt.ch:
+2025-06-10 21:11:13,234 - config_manager - INFO -    name: LUWE Luzern für weniger Elektrosmog
+2025-06-10 21:11:13,234 - config_manager - INFO -    email: claudia.zumtaugwald@nachhaltig-vernetzt.ch
+2025-06-10 21:11:13,234 - config_manager - INFO -    lang: de_DE
+2025-06-10 21:11:13,234 - config_manager - INFO -    is_company: True
+2025-06-10 21:11:13,234 - config_manager - INFO -    phone: 041 418 60 20
+2025-06-10 21:11:13,234 - config_manager - INFO -    website: https://www.nachhaltig-vernetzt.ch
+2025-06-10 21:11:13,234 - config_manager - INFO -    function: Präsidentin
+2025-06-10 21:11:13,234 - config_manager - INFO -    category_id: [(6, 0, [1379, 1838, 1840])]
+2025-06-10 21:11:13,342 - config_manager - INFO - ✅ Neuer Kontakt erstellt: claudia.zumtaugwald@nachhaltig-vernetzt.ch (ID: 143555)
+2025-06-10 21:11:13,342 - config_manager - INFO - 📧 Sende Bestätigungs-E-Mail für: claudia.zumtaugwald@nachhaltig-vernetzt.ch
+2025-06-10 21:11:13,935 - config_manager - ERROR - ❌ Fehler beim Senden der Bestätigungs-E-Mail: name 'clean_text' is not defined
+2025-06-10 21:11:13,936 - config_manager - INFO - ℹ️ Setze Verarbeitung ohne E-Mail-Versand fort
+2025-06-10 21:11:14,005 - config_manager - INFO - ✅ E-Mail erfolgreich verarbeitet
+2025-06-10 21:11:14,006 - config_manager - INFO - 📊 Ergebnis: ✅ 1 erfolgreich, ❌ 0 Fehler
+2025-06-10 21:12:04,015 - config_manager - INFO - 🔄 Iteration 3 - 21:12:04
+2025-06-10 21:12:04,015 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:12:04,110 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:12:34,144 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)
