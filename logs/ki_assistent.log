@@ -9735,3 +9735,862 @@ Ich danke dir für das Feedback, das mich auch erleichtert hat. Vital
 2025-06-10 21:12:04,015 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
 2025-06-10 21:12:04,110 - config_manager - INFO - 📭 Keine neuen E-Mails
 2025-06-10 21:12:34,144 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)
+2025-06-10 21:15:22,174 - config_manager - INFO - ============================================================
+2025-06-10 21:15:22,174 - config_manager - INFO - 🚀 KI-Kontaktassistent Startup
+2025-06-10 21:15:22,174 - config_manager - INFO - 📅 2025-06-10 21:15:22
+2025-06-10 21:15:22,174 - config_manager - INFO - ============================================================
+2025-06-10 21:15:22,174 - config_manager - INFO - 🔍 Odoo-Verbindungstest:
+2025-06-10 21:15:22,174 - config_manager - INFO -    URL: https://andreas-gross.odoo.com
+2025-06-10 21:15:22,174 - config_manager - INFO -    Database: andreas-gross
+2025-06-10 21:15:22,174 - config_manager - INFO -    Username: ki-odoo-assistent@swiss-ecommerce.ch
+2025-06-10 21:15:22,319 - config_manager - INFO - ✅ Odoo-Server erreichbar: {'server_version': '18.0+e', 'server_version_info': [18, 0, 0, 'final', 0, 'e'], 'server_serie': '18.0', 'protocol_version': 1}
+2025-06-10 21:15:22,320 - config_manager - INFO - 🔐 Versuche Authentifizierung...
+2025-06-10 21:15:22,587 - config_manager - INFO - ✅ APIs erfolgreich verbunden
+2025-06-10 21:15:22,587 - config_manager - INFO - 🔐 Odoo User ID: 11
+2025-06-10 21:15:22,587 - config_manager - INFO - ✅ ConfigManager initialisiert
+2025-06-10 21:15:22,715 - config_manager - INFO - 📋 251 Kategorien aus Odoo geladen
+2025-06-10 21:15:22,715 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-10 21:15:22,720 - config_manager - INFO - 🤖 KI-Kontaktassistent gestartet
+2025-06-10 21:15:22,720 - config_manager - INFO - 📊 346 Kategorien verfügbar
+2025-06-10 21:15:22,720 - config_manager - INFO - 🚀 KI-Kontaktassistent läuft...
+2025-06-10 21:15:22,720 - config_manager - INFO - ⏱️ Check-Intervall: 50 Sekunden
+2025-06-10 21:15:22,720 - config_manager - INFO - 🔄 Iteration 1 - 21:15:22
+2025-06-10 21:15:22,720 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:15:22,831 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:16:12,839 - config_manager - INFO - 🔄 Iteration 2 - 21:16:12
+2025-06-10 21:16:12,839 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:16:12,939 - config_manager - INFO - 📬 1 neue E-Mail(s) gefunden
+2025-06-10 21:16:12,940 - config_manager - INFO - 📧 Verarbeite E-Mail 1/1
+2025-06-10 21:16:12,959 - config_manager - INFO - 🔍 E-Mail-Body für Extraktion (erste 500 Zeichen): Die engagierte Rechtsanwältin für 5G-Widerstand.
+
+#Rechtsanwalt,#5Gfrei,
+
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff: 	Re: Betreff: Re: LUWE – GV, Einschätzungen und Erfahrungen
+Datum: 	Sun, 8 Jun 2025 09:14:19 +0200
+Von: 	Claudia Zumtaugwald <claudia.zumtaugwald@nachhaltig-vernetzt.ch>
+An: 	andreas@5gfrei.ch <andreas@5gfrei.ch>
+Kopie (CC): 	Telse Gross <Telse.Gross@IngGross.de>
+
+
+
+Lieber Andreas
+
+Ich danke dir für das Feedback, das mich auch erleichtert hat. Vital 
+...
+2025-06-10 21:16:12,962 - config_manager - INFO - 🎯 Primäre E-Mail gefunden: claudia.zumtaugwald@nachhaltig-vernetzt.ch
+2025-06-10 21:16:12,962 - config_manager - INFO - 📧 Verarbeite: claudia.zumtaugwald@nachhaltig-vernetzt.ch (von: andreas@5gfrei.ch) 
+2025-06-10 21:16:12,962 - config_manager - INFO - 🔧 Smart-Strategy Input: 4787 Zeichen
+2025-06-10 21:16:12,962 - config_manager - INFO - 🔧 Smart-Strategy angewendet:
+2025-06-10 21:16:12,962 - config_manager - INFO -    📄 Head: 2000 Zeichen
+2025-06-10 21:16:12,962 - config_manager - INFO -    ⏭️ Übersprungen: 1787 Zeichen
+2025-06-10 21:16:12,962 - config_manager - INFO -    📦 Footer: 1000 Zeichen
+2025-06-10 21:16:12,962 - config_manager - INFO -    📊 Total: 3059 Zeichen (Original: 4787)
+2025-06-10 21:16:19,456 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 21:16:19,460 - config_manager - INFO - 🤖 GPT Antwort (Smart-Strategy): {
+    "first_name": "Claudia",
+    "last_name": "Zumtaugwald",
+    "full_name": "Claudia Zumtaugwald",
+    "emails": ["claudia.zumtaugwald@nachhaltig-vernetzt.ch"],
+    "phones": ["041 418 60 20"],
+    "address": {
+        "street": null,
+        "street2": null,
+        "city": null,
+        "zip": null,
+        "state": null,
+        "country": null
+    },
+    "website": "www.nachhaltig-vernetzt.ch",
+    "company": "LUWE Luzern für weniger Elektrosmog",
+    "position": "Präsidentin",
+    "is_company": true,
+    "language": "deutsch",
+    "categories": ["Rechtsanwalt", "5Gfrei"],
+    "biography": "Die engagierte Rechtsanwältin für 5G-Widerstand.",
+    "confidence": "high"
+}
+2025-06-10 21:16:19,460 - config_manager - INFO - ✅ JSON erfolgreich geparst - verwende GPT-Daten!
+2025-06-10 21:16:19,461 - config_manager - INFO - ✅ Kontaktdaten extrahiert (Confidence: high)
+2025-06-10 21:16:19,461 - config_manager - INFO - 🎯 Name: Claudia Zumtaugwald
+2025-06-10 21:16:19,461 - config_manager - INFO - 📧 E-Mails: claudia.zumtaugwald@nachhaltig-vernetzt.ch
+2025-06-10 21:16:19,461 - config_manager - INFO - 📞 Telefon: 041 418 60 20
+2025-06-10 21:16:19,461 - config_manager - INFO - 🏠 Adresse: 
+2025-06-10 21:16:19,461 - config_manager - INFO - 🌍 Sprache: deutsch
+2025-06-10 21:16:19,461 - config_manager - INFO - 🏷️ Kategorien: rechtsanwalt, 5gfrei
+2025-06-10 21:16:19,461 - config_manager - INFO - 🎲 Confidence: high
+2025-06-10 21:16:19,542 - config_manager - INFO - 🔍 Existierender Kontakt gefunden: claudia.zumtaugwald@nachhaltig-vernetzt.ch
+2025-06-10 21:16:19,542 - config_manager - INFO - 🏢 Firma: Verwende company-Feld als Hauptname: 'LUWE Luzern für weniger Elektrosmog'
+2025-06-10 21:16:19,542 - config_manager - INFO - 🎯 NAMEN-ZUORDNUNG für claudia.zumtaugwald@nachhaltig-vernetzt.ch:
+2025-06-10 21:16:19,542 - config_manager - INFO -    is_company: True
+2025-06-10 21:16:19,542 - config_manager - INFO -    company (aus KI): 'LUWE Luzern für weniger Elektrosmog'
+2025-06-10 21:16:19,543 - config_manager - INFO -    full_name (aus KI): 'Claudia Zumtaugwald'
+2025-06-10 21:16:19,543 - config_manager - INFO -    → name (für Odoo): 'LUWE Luzern für weniger Elektrosmog'
+2025-06-10 21:16:19,543 - config_manager - INFO - 📋 Odoo-Felder für claudia.zumtaugwald@nachhaltig-vernetzt.ch:
+2025-06-10 21:16:19,543 - config_manager - INFO -    name: LUWE Luzern für weniger Elektrosmog
+2025-06-10 21:16:19,543 - config_manager - INFO -    email: claudia.zumtaugwald@nachhaltig-vernetzt.ch
+2025-06-10 21:16:19,543 - config_manager - INFO -    lang: de_DE
+2025-06-10 21:16:19,543 - config_manager - INFO -    is_company: True
+2025-06-10 21:16:19,543 - config_manager - INFO -    phone: 041 418 60 20
+2025-06-10 21:16:19,543 - config_manager - INFO -    website: https://www.nachhaltig-vernetzt.ch
+2025-06-10 21:16:19,543 - config_manager - INFO -    function: Präsidentin
+2025-06-10 21:16:19,543 - config_manager - INFO -    category_id: [(6, 0, [1379, 1838, 1840])]
+2025-06-10 21:16:19,543 - config_manager - INFO - 🏢 Firmen-Name aktualisiert: 'LUWE Luzern für weniger Elektrosmog' → 'LUWE Luzern für weniger Elektrosmog'
+2025-06-10 21:16:19,544 - config_manager - INFO - 🏢 Kontakt als Firma markiert
+2025-06-10 21:16:19,544 - config_manager - INFO - 📝 function ergänzt: Präsidentin
+2025-06-10 21:16:19,544 - config_manager - INFO - 📝 Sprache ergänzt: de_DE
+2025-06-10 21:16:19,544 - config_manager - INFO - ℹ️ Kontakt bereits vollständig: claudia.zumtaugwald@nachhaltig-vernetzt.ch
+2025-06-10 21:16:19,588 - config_manager - INFO - ✅ E-Mail erfolgreich verarbeitet
+2025-06-10 21:16:19,588 - config_manager - INFO - 📊 Ergebnis: ✅ 1 erfolgreich, ❌ 0 Fehler
+2025-06-10 21:17:09,597 - config_manager - INFO - 🔄 Iteration 3 - 21:17:09
+2025-06-10 21:17:09,597 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:17:09,685 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:17:59,694 - config_manager - INFO - 🔄 Iteration 4 - 21:17:59
+2025-06-10 21:17:59,694 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:17:59,793 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:18:49,801 - config_manager - INFO - 🔄 Iteration 5 - 21:18:49
+2025-06-10 21:18:49,802 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:18:49,886 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:19:39,895 - config_manager - INFO - 🔄 Iteration 6 - 21:19:39
+2025-06-10 21:19:39,896 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:19:39,992 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:20:30,001 - config_manager - INFO - 🔄 Iteration 7 - 21:20:30
+2025-06-10 21:20:30,001 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:20:30,104 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:21:20,114 - config_manager - INFO - 🔄 Iteration 8 - 21:21:20
+2025-06-10 21:21:20,114 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:21:20,209 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:22:10,219 - config_manager - INFO - 🔄 Iteration 9 - 21:22:10
+2025-06-10 21:22:10,219 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:22:10,317 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:23:00,326 - config_manager - INFO - 🔄 Iteration 10 - 21:23:00
+2025-06-10 21:23:00,326 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:23:00,410 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:23:50,418 - config_manager - INFO - 🔄 Iteration 11 - 21:23:50
+2025-06-10 21:23:50,418 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:23:50,513 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:24:40,522 - config_manager - INFO - 🔄 Iteration 12 - 21:24:40
+2025-06-10 21:24:40,523 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:24:40,614 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:25:30,623 - config_manager - INFO - 🔄 Iteration 13 - 21:25:30
+2025-06-10 21:25:30,623 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:25:30,741 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:26:20,749 - config_manager - INFO - 🔄 Iteration 14 - 21:26:20
+2025-06-10 21:26:20,750 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:26:20,851 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:27:10,859 - config_manager - INFO - 🔄 Iteration 15 - 21:27:10
+2025-06-10 21:27:10,859 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:27:10,959 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:28:00,968 - config_manager - INFO - 🔄 Iteration 16 - 21:28:00
+2025-06-10 21:28:00,968 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:28:01,058 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:28:51,067 - config_manager - INFO - 🔄 Iteration 17 - 21:28:51
+2025-06-10 21:28:51,067 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:28:51,166 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:29:41,176 - config_manager - INFO - 🔄 Iteration 18 - 21:29:41
+2025-06-10 21:29:41,176 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:29:41,263 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:30:31,271 - config_manager - INFO - 🔄 Iteration 19 - 21:30:31
+2025-06-10 21:30:31,272 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:30:31,365 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:31:21,375 - config_manager - INFO - 🔄 Iteration 20 - 21:31:21
+2025-06-10 21:31:21,375 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:31:21,475 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:32:11,486 - config_manager - INFO - 🔄 Iteration 21 - 21:32:11
+2025-06-10 21:32:11,486 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:32:11,606 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:33:01,619 - config_manager - INFO - 🔄 Iteration 22 - 21:33:01
+2025-06-10 21:33:01,619 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:33:01,714 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:33:51,723 - config_manager - INFO - 🔄 Iteration 23 - 21:33:51
+2025-06-10 21:33:51,723 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:33:51,821 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:34:41,830 - config_manager - INFO - 🔄 Iteration 24 - 21:34:41
+2025-06-10 21:34:41,830 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:34:41,928 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:35:31,937 - config_manager - INFO - 🔄 Iteration 25 - 21:35:31
+2025-06-10 21:35:31,937 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:35:32,057 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:36:22,067 - config_manager - INFO - 🔄 Iteration 26 - 21:36:22
+2025-06-10 21:36:22,068 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:36:22,168 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:37:12,179 - config_manager - INFO - 🔄 Iteration 27 - 21:37:12
+2025-06-10 21:37:12,179 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:37:12,288 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:38:02,297 - config_manager - INFO - 🔄 Iteration 28 - 21:38:02
+2025-06-10 21:38:02,297 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:38:02,391 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:38:16,190 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)
+2025-06-10 21:38:20,320 - config_manager - INFO - ============================================================
+2025-06-10 21:38:20,320 - config_manager - INFO - 🚀 KI-Kontaktassistent Startup
+2025-06-10 21:38:20,320 - config_manager - INFO - 📅 2025-06-10 21:38:20
+2025-06-10 21:38:20,320 - config_manager - INFO - ============================================================
+2025-06-10 21:38:20,320 - config_manager - INFO - 🔍 Odoo-Verbindungstest:
+2025-06-10 21:38:20,320 - config_manager - INFO -    URL: https://andreas-gross.odoo.com
+2025-06-10 21:38:20,320 - config_manager - INFO -    Database: andreas-gross
+2025-06-10 21:38:20,320 - config_manager - INFO -    Username: ki-odoo-assistent@swiss-ecommerce.ch
+2025-06-10 21:38:20,448 - config_manager - INFO - ✅ Odoo-Server erreichbar: {'server_version': '18.0+e', 'server_version_info': [18, 0, 0, 'final', 0, 'e'], 'server_serie': '18.0', 'protocol_version': 1}
+2025-06-10 21:38:20,448 - config_manager - INFO - 🔐 Versuche Authentifizierung...
+2025-06-10 21:38:20,721 - config_manager - INFO - ✅ APIs erfolgreich verbunden
+2025-06-10 21:38:20,721 - config_manager - INFO - 🔐 Odoo User ID: 11
+2025-06-10 21:38:20,721 - config_manager - INFO - ✅ ConfigManager initialisiert
+2025-06-10 21:38:21,091 - config_manager - INFO - 📋 251 Kategorien aus Odoo geladen
+2025-06-10 21:38:21,091 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-10 21:38:21,094 - config_manager - INFO - 🤖 KI-Kontaktassistent gestartet
+2025-06-10 21:38:21,094 - config_manager - INFO - 📊 346 Kategorien verfügbar
+2025-06-10 21:38:21,094 - config_manager - INFO - 🚀 KI-Kontaktassistent läuft...
+2025-06-10 21:38:21,094 - config_manager - INFO - ⏱️ Check-Intervall: 50 Sekunden
+2025-06-10 21:38:21,094 - config_manager - INFO - 🔄 Iteration 1 - 21:38:21
+2025-06-10 21:38:21,095 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:38:21,200 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:39:11,209 - config_manager - INFO - 🔄 Iteration 2 - 21:39:11
+2025-06-10 21:39:11,209 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:39:11,304 - config_manager - INFO - 📬 2 neue E-Mail(s) gefunden
+2025-06-10 21:39:11,304 - config_manager - INFO - 📧 Verarbeite E-Mail 1/2
+2025-06-10 21:39:11,324 - config_manager - INFO - 🔍 E-Mail-Body für Extraktion (erste 500 Zeichen): Die engagierte Rechtsanwältin für 5G-Widerstand.
+
+#Rechtsanwalt,#5Gfrei,
+
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff: 	Re: Betreff: Re: LUWE – GV, Einschätzungen und Erfahrungen
+Datum: 	Sun, 8 Jun 2025 09:14:19 +0200
+Von: 	Claudia Zumtaugwald <claudia.zumtaugwald@nachhaltig-vernetzt.ch>
+An: 	andreas@5gfrei.ch <andreas@5gfrei.ch>
+Kopie (CC): 	Telse Gross <Telse.Gross@IngGross.de>
+
+
+
+Lieber Andreas
+
+Ich danke dir für das Feedback, das mich auch erleichtert hat. Vital 
+...
+2025-06-10 21:39:11,327 - config_manager - INFO - 🎯 Primäre E-Mail gefunden: claudia.zumtaugwald@nachhaltig-vernetzt.ch
+2025-06-10 21:39:11,327 - config_manager - INFO - 📧 Verarbeite: claudia.zumtaugwald@nachhaltig-vernetzt.ch (von: andreas@5gfrei.ch) 
+2025-06-10 21:39:11,327 - config_manager - INFO - 🔧 Smart-Strategy Input: 4787 Zeichen
+2025-06-10 21:39:11,327 - config_manager - INFO - 🔧 Smart-Strategy angewendet:
+2025-06-10 21:39:11,327 - config_manager - INFO -    📄 Head: 2000 Zeichen
+2025-06-10 21:39:11,327 - config_manager - INFO -    ⏭️ Übersprungen: 1787 Zeichen
+2025-06-10 21:39:11,327 - config_manager - INFO -    📦 Footer: 1000 Zeichen
+2025-06-10 21:39:11,327 - config_manager - INFO -    📊 Total: 3059 Zeichen (Original: 4787)
+2025-06-10 21:39:16,057 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 21:39:16,059 - config_manager - INFO - 🤖 GPT Antwort (Smart-Strategy): {
+    "first_name": "Claudia",
+    "last_name": "Zumtaugwald",
+    "full_name": "Claudia Zumtaugwald",
+    "emails": ["claudia.zumtaugwald@nachhaltig-vernetzt.ch"],
+    "phones": ["041 418 60 20"],
+    "address": {
+        "street": null,
+        "street2": null,
+        "city": null,
+        "zip": null,
+        "state": null,
+        "country": null
+    },
+    "website": "www.nachhaltig-vernetzt.ch",
+    "company": "LUWE Luzern für weniger Elektrosmog",
+    "position": "Präsidentin",
+    "is_company": true,
+    "language": "deutsch",
+    "categories": ["Rechtsanwalt", "5Gfrei"],
+    "biography": "Die engagierte Rechtsanwältin für 5G-Widerstand.",
+    "confidence": "high"
+}
+2025-06-10 21:39:16,059 - config_manager - INFO - ✅ JSON erfolgreich geparst - verwende GPT-Daten!
+2025-06-10 21:39:16,060 - config_manager - INFO - ✅ Kontaktdaten extrahiert (Confidence: high)
+2025-06-10 21:39:16,060 - config_manager - INFO - 🎯 Name: Claudia Zumtaugwald
+2025-06-10 21:39:16,060 - config_manager - INFO - 📧 E-Mails: claudia.zumtaugwald@nachhaltig-vernetzt.ch
+2025-06-10 21:39:16,060 - config_manager - INFO - 📞 Telefon: 041 418 60 20
+2025-06-10 21:39:16,060 - config_manager - INFO - 🏠 Adresse: 
+2025-06-10 21:39:16,060 - config_manager - INFO - 🌍 Sprache: deutsch
+2025-06-10 21:39:16,060 - config_manager - INFO - 🏷️ Kategorien: rechtsanwalt, 5gfrei
+2025-06-10 21:39:16,060 - config_manager - INFO - 🎲 Confidence: high
+2025-06-10 21:39:16,390 - config_manager - INFO - 🔍 Existierender Kontakt gefunden: claudia.zumtaugwald@nachhaltig-vernetzt.ch
+2025-06-10 21:39:16,390 - config_manager - INFO - 🏢 Firma: Verwende company-Feld als Hauptname: 'LUWE Luzern für weniger Elektrosmog'
+2025-06-10 21:39:16,390 - config_manager - INFO - 📝 KI-Biographie gefunden: 'Die engagierte Rechtsanwältin für 5G-Widerstand....'
+2025-06-10 21:39:16,390 - config_manager - INFO - 📋 Finale Biographie für claudia.zumtaugwald@nachhaltig-vernetzt.ch:
+2025-06-10 21:39:16,391 - config_manager - INFO -    Teile: 2 Abschnitte
+2025-06-10 21:39:16,391 - config_manager - INFO -    Original: 'Die engagierte Rechtsanwältin für 5G-Widerstand.'
+2025-06-10 21:39:16,391 - config_manager - INFO -    Final: 'Die engagierte Rechtsanwältin für 5G-Widerstand.
+
+[KI-Import 2025-06-10 21:39 - Confidence: high]...'
+2025-06-10 21:39:16,391 - config_manager - INFO - 🎯 NAMEN-ZUORDNUNG für claudia.zumtaugwald@nachhaltig-vernetzt.ch:
+2025-06-10 21:39:16,391 - config_manager - INFO -    is_company: True
+2025-06-10 21:39:16,391 - config_manager - INFO -    company (aus KI): 'LUWE Luzern für weniger Elektrosmog'
+2025-06-10 21:39:16,391 - config_manager - INFO -    full_name (aus KI): 'Claudia Zumtaugwald'
+2025-06-10 21:39:16,391 - config_manager - INFO -    → name (für Odoo): 'LUWE Luzern für weniger Elektrosmog'
+2025-06-10 21:39:16,391 - config_manager - INFO - 📋 Odoo-Felder für claudia.zumtaugwald@nachhaltig-vernetzt.ch:
+2025-06-10 21:39:16,391 - config_manager - INFO -    name: LUWE Luzern für weniger Elektrosmog
+2025-06-10 21:39:16,392 - config_manager - INFO -    email: claudia.zumtaugwald@nachhaltig-vernetzt.ch
+2025-06-10 21:39:16,392 - config_manager - INFO -    lang: de_DE
+2025-06-10 21:39:16,392 - config_manager - INFO -    is_company: True
+2025-06-10 21:39:16,392 - config_manager - INFO -    phone: 041 418 60 20
+2025-06-10 21:39:16,392 - config_manager - INFO -    website: https://www.nachhaltig-vernetzt.ch
+2025-06-10 21:39:16,392 - config_manager - INFO -    function: Präsidentin
+2025-06-10 21:39:16,392 - config_manager - INFO -    category_id: [(6, 0, [1379, 1838, 1840])]
+2025-06-10 21:39:16,392 - config_manager - INFO - 🏢 Firmen-Name aktualisiert: 'LUWE Luzern für weniger Elektrosmog' → 'LUWE Luzern für weniger Elektrosmog'
+2025-06-10 21:39:16,392 - config_manager - INFO - 🏢 Kontakt als Firma markiert
+2025-06-10 21:39:16,392 - config_manager - INFO - 📝 function ergänzt: Präsidentin
+2025-06-10 21:39:16,393 - config_manager - INFO - 📝 Sprache ergänzt: de_DE
+2025-06-10 21:39:16,393 - config_manager - INFO - 📝 Biographie bereits vorhanden - überspringe
+2025-06-10 21:39:16,393 - config_manager - INFO - 🔄 Update-Felder für claudia.zumtaugwald@nachhaltig-vernetzt.ch:
+2025-06-10 21:39:16,393 - config_manager - INFO -    name: LUWE Luzern für weniger Elektrosmog
+2025-06-10 21:39:16,393 - config_manager - INFO -    is_company: True
+2025-06-10 21:39:16,393 - config_manager - INFO -    function: Präsidentin
+2025-06-10 21:39:16,393 - config_manager - INFO -    lang: de_DE
+2025-06-10 21:39:16,447 - config_manager - INFO - ✅ Kontakt aktualisiert: claudia.zumtaugwald@nachhaltig-vernetzt.ch (ID: 143555)
+2025-06-10 21:39:16,447 - config_manager - INFO - 📧 Sende Bestätigungs-E-Mail für: claudia.zumtaugwald@nachhaltig-vernetzt.ch
+2025-06-10 21:39:17,017 - config_manager - INFO - ✅ Bestätigungs-E-Mail erfolgreich gesendet an: andreas@5gfrei.ch
+2025-06-10 21:39:17,065 - config_manager - INFO - ✅ E-Mail erfolgreich verarbeitet
+2025-06-10 21:39:17,065 - config_manager - INFO - 📧 Verarbeite E-Mail 2/2
+2025-06-10 21:39:17,077 - config_manager - INFO - 🔍 E-Mail-Body für Extraktion (erste 500 Zeichen): #Kunde
+
+Siemens Aktiengesellschaft
+Werner-von-Siemens-Straße 1
+80333 München
+Deutschland
+
+contact@siemens.com <mailto:mailto:contact@siemens.com>
+
+Tel. +49 (89) 3803 5491
+Fax +49 (69) 797 6664
+
+
+*Aufsichtsratsvorsitzender*
+Jim Hagemann Snabe...
+2025-06-10 21:39:17,077 - config_manager - INFO - 📝 Manueller Kontakt-Input erkannt (kein E-Mail-Kontext)
+2025-06-10 21:39:17,078 - config_manager - INFO - 🎯 E-Mail aus manuellem Input gefunden: contact@siemens.com
+2025-06-10 21:39:17,078 - config_manager - INFO - 📧 Verarbeite: contact@siemens.com (von: andreas@5gfrei.ch) 
+2025-06-10 21:39:17,078 - config_manager - INFO - 🔧 Smart-Strategy Input: 255 Zeichen
+2025-06-10 21:39:17,078 - config_manager - INFO - 📧 Kurze E-Mail (255 Zeichen) - vollständig verarbeitet
+2025-06-10 21:39:22,131 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 21:39:22,133 - config_manager - INFO - 🤖 GPT Antwort (Smart-Strategy): {
+    "first_name": "",
+    "last_name": "",
+    "full_name": "Siemens Aktiengesellschaft",
+    "emails": ["contact@siemens.com"],
+    "phones": ["+49 (89) 3803 5491"],
+    "address": {
+        "street": "Werner-von-Siemens-Straße 1",
+        "street2": null,
+        "city": "München",
+        "zip": "80333",
+        "state": null,
+        "country": "Deutschland"
+    },
+    "website": null,
+    "company": "Siemens Aktiengesellschaft",
+    "position": "Aufsichtsratsvorsitzender",
+    "is_company": true,
+    "language": "deutsch",
+    "categories": ["Kunde"],
+    "biography": "Siemens Aktiengesellschaft",
+    "confidence": "high"
+}
+2025-06-10 21:39:22,134 - config_manager - INFO - ✅ JSON erfolgreich geparst - verwende GPT-Daten!
+2025-06-10 21:39:22,134 - config_manager - INFO - ✅ Kontaktdaten extrahiert (Confidence: high)
+2025-06-10 21:39:22,134 - config_manager - INFO - 🎯 Name: Siemens Aktiengesellschaft
+2025-06-10 21:39:22,134 - config_manager - INFO - 📧 E-Mails: contact@siemens.com
+2025-06-10 21:39:22,134 - config_manager - INFO - 📞 Telefon: +49 (89) 3803 5491
+2025-06-10 21:39:22,134 - config_manager - INFO - 🏠 Adresse: Werner-von-Siemens-Straße 1 München 80333 Deutschland
+2025-06-10 21:39:22,134 - config_manager - INFO - 🌍 Sprache: deutsch
+2025-06-10 21:39:22,134 - config_manager - INFO - 🏷️ Kategorien: kunde
+2025-06-10 21:39:22,134 - config_manager - INFO - 🎲 Confidence: high
+2025-06-10 21:39:22,210 - config_manager - INFO - 🔍 Existierender Kontakt gefunden: contact@siemens.com
+2025-06-10 21:39:22,210 - config_manager - INFO - 🏢 Firma: Verwende company-Feld als Hauptname: 'Siemens Aktiengesellschaft'
+2025-06-10 21:39:22,210 - config_manager - INFO - 📝 KI-Biographie gefunden: 'Siemens Aktiengesellschaft...'
+2025-06-10 21:39:22,210 - config_manager - INFO - 📋 Finale Biographie für contact@siemens.com:
+2025-06-10 21:39:22,211 - config_manager - INFO -    Teile: 2 Abschnitte
+2025-06-10 21:39:22,211 - config_manager - INFO -    Original: 'Siemens Aktiengesellschaft'
+2025-06-10 21:39:22,211 - config_manager - INFO -    Final: 'Siemens Aktiengesellschaft
+
+[KI-Import 2025-06-10 21:39 - Confidence: high]...'
+2025-06-10 21:39:22,211 - config_manager - INFO - 🎯 NAMEN-ZUORDNUNG für contact@siemens.com:
+2025-06-10 21:39:22,211 - config_manager - INFO -    is_company: True
+2025-06-10 21:39:22,211 - config_manager - INFO -    company (aus KI): 'Siemens Aktiengesellschaft'
+2025-06-10 21:39:22,211 - config_manager - INFO -    full_name (aus KI): 'Siemens Aktiengesellschaft'
+2025-06-10 21:39:22,211 - config_manager - INFO -    → name (für Odoo): 'Siemens Aktiengesellschaft'
+2025-06-10 21:39:22,246 - config_manager - INFO - 🌍 Land erkannt: Deutschland → DE (ID: 57)
+2025-06-10 21:39:22,246 - config_manager - INFO - 📋 Odoo-Felder für contact@siemens.com:
+2025-06-10 21:39:22,246 - config_manager - INFO -    name: Siemens Aktiengesellschaft
+2025-06-10 21:39:22,246 - config_manager - INFO -    email: contact@siemens.com
+2025-06-10 21:39:22,246 - config_manager - INFO -    lang: de_DE
+2025-06-10 21:39:22,246 - config_manager - INFO -    is_company: True
+2025-06-10 21:39:22,246 - config_manager - INFO -    street: Werner-von-Siemens-Straße 1
+2025-06-10 21:39:22,247 - config_manager - INFO -    city: München
+2025-06-10 21:39:22,247 - config_manager - INFO -    zip: 80333
+2025-06-10 21:39:22,247 - config_manager - INFO -    country_id: 57
+2025-06-10 21:39:22,247 - config_manager - INFO -    phone: +49 (89) 3803 5491
+2025-06-10 21:39:22,247 - config_manager - INFO -    function: Aufsichtsratsvorsitzender
+2025-06-10 21:39:22,247 - config_manager - INFO -    category_id: [(6, 0, [1341, 1840])]
+2025-06-10 21:39:22,247 - config_manager - INFO - 🏢 Firmen-Name aktualisiert: 'Jim Hagemann Snabe' → 'Siemens Aktiengesellschaft'
+2025-06-10 21:39:22,247 - config_manager - INFO - 🏢 Kontakt als Firma markiert
+2025-06-10 21:39:22,247 - config_manager - INFO - 📝 city ergänzt: München
+2025-06-10 21:39:22,247 - config_manager - INFO - 📝 zip ergänzt: 80333
+2025-06-10 21:39:22,247 - config_manager - INFO - 📝 function ergänzt: Aufsichtsratsvorsitzender
+2025-06-10 21:39:22,247 - config_manager - INFO - 📝 Sprache ergänzt: de_DE
+2025-06-10 21:39:22,247 - config_manager - INFO - 📝 Land ergänzt: 57
+2025-06-10 21:39:22,247 - config_manager - INFO - 📝 Biographie bereits vorhanden - überspringe
+2025-06-10 21:39:22,247 - config_manager - INFO - 🔄 Update-Felder für contact@siemens.com:
+2025-06-10 21:39:22,247 - config_manager - INFO -    name: Siemens Aktiengesellschaft
+2025-06-10 21:39:22,247 - config_manager - INFO -    is_company: True
+2025-06-10 21:39:22,247 - config_manager - INFO -    city: München
+2025-06-10 21:39:22,247 - config_manager - INFO -    zip: 80333
+2025-06-10 21:39:22,247 - config_manager - INFO -    function: Aufsichtsratsvorsitzender
+2025-06-10 21:39:22,247 - config_manager - INFO -    lang: de_DE
+2025-06-10 21:39:22,247 - config_manager - INFO -    country_id: 57
+2025-06-10 21:39:22,310 - config_manager - INFO - ✅ Kontakt aktualisiert: contact@siemens.com (ID: 143550)
+2025-06-10 21:39:22,310 - config_manager - INFO - 📧 Sende Bestätigungs-E-Mail für: contact@siemens.com
+2025-06-10 21:39:22,647 - config_manager - INFO - ✅ Bestätigungs-E-Mail erfolgreich gesendet an: andreas@5gfrei.ch
+2025-06-10 21:39:22,668 - config_manager - INFO - ✅ E-Mail erfolgreich verarbeitet
+2025-06-10 21:39:22,668 - config_manager - INFO - 📊 Ergebnis: ✅ 2 erfolgreich, ❌ 0 Fehler
+2025-06-10 21:40:12,680 - config_manager - INFO - 🔄 Iteration 3 - 21:40:12
+2025-06-10 21:40:12,680 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:40:12,780 - config_manager - INFO - 📬 1 neue E-Mail(s) gefunden
+2025-06-10 21:40:12,780 - config_manager - INFO - 📧 Verarbeite E-Mail 1/1
+2025-06-10 21:40:12,821 - config_manager - INFO - 🔍 E-Mail-Body für Extraktion (erste 500 Zeichen): #Meinungsführer
+
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff: 	Pressemitteilung zum Hoewer-Skandal
+Datum: 	Tue, 10 Jun 2025 09:41:15 +0000
+Von: 	Jungeuropa Verlag <vertrieb@jungeuropa.de>
+Antwort an: 	Jungeuropa Verlag <vertrieb@jungeuropa.de>
+An: 	mail@andreas-gross.ch
+
+
+
+Pressemitteilung zum Hoewer-Skandal Wegen „EuropaPowerbrutal“: John 
+Hoewer darf kein Volljurist werden. Was Sie über diesen absurden 
+Beschluss wissen müssen, lesen Sie hier.
+͏ ‌     ͏ ‌     ͏ ‌     ...
+2025-06-10 21:40:12,823 - config_manager - INFO - 🎯 Primäre E-Mail gefunden: vertrieb@jungeuropa.de
+2025-06-10 21:40:12,824 - config_manager - INFO - 📧 Verarbeite: vertrieb@jungeuropa.de (von: andreas@5gfrei.ch) 
+2025-06-10 21:40:12,824 - config_manager - INFO - 🔧 Smart-Strategy Input: 7152 Zeichen
+2025-06-10 21:40:12,824 - config_manager - INFO - 🔧 Smart-Strategy angewendet:
+2025-06-10 21:40:12,824 - config_manager - INFO -    📄 Head: 1999 Zeichen
+2025-06-10 21:40:12,824 - config_manager - INFO -    ⏭️ Übersprungen: 4152 Zeichen
+2025-06-10 21:40:12,824 - config_manager - INFO -    📦 Footer: 1000 Zeichen
+2025-06-10 21:40:12,824 - config_manager - INFO -    📊 Total: 3058 Zeichen (Original: 7152)
+2025-06-10 21:40:16,206 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-10 21:40:16,208 - config_manager - INFO - 🤖 GPT Antwort (Smart-Strategy): {
+    "first_name": "",
+    "last_name": "",
+    "full_name": "Jungeuropa Verlag",
+    "emails": ["vertrieb@jungeuropa.de"],
+    "phones": [],
+    "address": {
+        "street": "Enderstr. 94",
+        "street2": null,
+        "city": "Dresden",
+        "zip": "01277",
+        "state": null,
+        "country": "Germany"
+    },
+    "website": null,
+    "company": "Jungeuropa Verlag",
+    "position": null,
+    "is_company": true,
+    "language": "deutsch",
+    "categories": ["Meinungsführer"],
+    "biography": "",
+    "confidence": "high"
+}
+2025-06-10 21:40:16,208 - config_manager - INFO - ✅ JSON erfolgreich geparst - verwende GPT-Daten!
+2025-06-10 21:40:16,208 - config_manager - INFO - ✅ Kontaktdaten extrahiert (Confidence: high)
+2025-06-10 21:40:16,208 - config_manager - INFO - 🎯 Name: Jungeuropa Verlag
+2025-06-10 21:40:16,208 - config_manager - INFO - 📧 E-Mails: vertrieb@jungeuropa.de
+2025-06-10 21:40:16,208 - config_manager - INFO - 📞 Telefon: Keine
+2025-06-10 21:40:16,208 - config_manager - INFO - 🏠 Adresse: Enderstr. 94 Dresden 01277 Germany
+2025-06-10 21:40:16,208 - config_manager - INFO - 🌍 Sprache: deutsch
+2025-06-10 21:40:16,208 - config_manager - INFO - 🏷️ Kategorien: meinungsführer
+2025-06-10 21:40:16,208 - config_manager - INFO - 🎲 Confidence: high
+2025-06-10 21:40:16,284 - config_manager - INFO - 🔍 Existierender Kontakt gefunden: vertrieb@jungeuropa.de
+2025-06-10 21:40:16,284 - config_manager - INFO - 🏢 Firma: Verwende company-Feld als Hauptname: 'Jungeuropa Verlag'
+2025-06-10 21:40:16,284 - config_manager - INFO - 📋 Finale Biographie für vertrieb@jungeuropa.de:
+2025-06-10 21:40:16,284 - config_manager - INFO -    Teile: 1 Abschnitte
+2025-06-10 21:40:16,284 - config_manager - INFO -    Original: ''
+2025-06-10 21:40:16,284 - config_manager - INFO -    Final: '[KI-Import 2025-06-10 21:40 - Confidence: high]...'
+2025-06-10 21:40:16,284 - config_manager - INFO - 🎯 NAMEN-ZUORDNUNG für vertrieb@jungeuropa.de:
+2025-06-10 21:40:16,284 - config_manager - INFO -    is_company: True
+2025-06-10 21:40:16,284 - config_manager - INFO -    company (aus KI): 'Jungeuropa Verlag'
+2025-06-10 21:40:16,284 - config_manager - INFO -    full_name (aus KI): 'Jungeuropa Verlag'
+2025-06-10 21:40:16,284 - config_manager - INFO -    → name (für Odoo): 'Jungeuropa Verlag'
+2025-06-10 21:40:16,320 - config_manager - INFO - 🌍 Land erkannt: Germany → DE (ID: 57)
+2025-06-10 21:40:16,320 - config_manager - INFO - 📋 Odoo-Felder für vertrieb@jungeuropa.de:
+2025-06-10 21:40:16,320 - config_manager - INFO -    name: Jungeuropa Verlag
+2025-06-10 21:40:16,320 - config_manager - INFO -    email: vertrieb@jungeuropa.de
+2025-06-10 21:40:16,320 - config_manager - INFO -    lang: de_DE
+2025-06-10 21:40:16,320 - config_manager - INFO -    is_company: True
+2025-06-10 21:40:16,320 - config_manager - INFO -    street: Enderstr. 94
+2025-06-10 21:40:16,320 - config_manager - INFO -    city: Dresden
+2025-06-10 21:40:16,321 - config_manager - INFO -    zip: 01277
+2025-06-10 21:40:16,321 - config_manager - INFO -    country_id: 57
+2025-06-10 21:40:16,321 - config_manager - INFO -    category_id: [(6, 0, [1846, 1840])]
+2025-06-10 21:40:16,321 - config_manager - INFO - 🏢 Firmen-Name aktualisiert: 'Philip Stein' → 'Jungeuropa Verlag'
+2025-06-10 21:40:16,321 - config_manager - INFO - 🏢 Kontakt als Firma markiert
+2025-06-10 21:40:16,321 - config_manager - INFO - 📝 city ergänzt: Dresden
+2025-06-10 21:40:16,321 - config_manager - INFO - 📝 zip ergänzt: 01277
+2025-06-10 21:40:16,321 - config_manager - INFO - 📝 Sprache ergänzt: de_DE
+2025-06-10 21:40:16,321 - config_manager - INFO - 📝 Land ergänzt: 57
+2025-06-10 21:40:16,321 - config_manager - INFO - 📝 Biographie erweitert mit neuen Informationen
+2025-06-10 21:40:16,321 - config_manager - INFO - 🔄 Update-Felder für vertrieb@jungeuropa.de:
+2025-06-10 21:40:16,321 - config_manager - INFO -    name: Jungeuropa Verlag
+2025-06-10 21:40:16,321 - config_manager - INFO -    is_company: True
+2025-06-10 21:40:16,321 - config_manager - INFO -    city: Dresden
+2025-06-10 21:40:16,321 - config_manager - INFO -    zip: 01277
+2025-06-10 21:40:16,321 - config_manager - INFO -    lang: de_DE
+2025-06-10 21:40:16,321 - config_manager - INFO -    country_id: 57
+2025-06-10 21:40:16,365 - config_manager - INFO - ✅ Kontakt aktualisiert: vertrieb@jungeuropa.de (ID: 143547)
+2025-06-10 21:40:16,365 - config_manager - INFO - 📧 Sende Bestätigungs-E-Mail für: vertrieb@jungeuropa.de
+2025-06-10 21:40:16,683 - config_manager - INFO - ✅ Bestätigungs-E-Mail erfolgreich gesendet an: andreas@5gfrei.ch
+2025-06-10 21:40:16,740 - config_manager - INFO - ✅ E-Mail erfolgreich verarbeitet
+2025-06-10 21:40:16,740 - config_manager - INFO - 📊 Ergebnis: ✅ 1 erfolgreich, ❌ 0 Fehler
+2025-06-10 21:41:06,750 - config_manager - INFO - 🔄 Iteration 4 - 21:41:06
+2025-06-10 21:41:06,751 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:41:06,869 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:41:56,877 - config_manager - INFO - 🔄 Iteration 5 - 21:41:56
+2025-06-10 21:41:56,878 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:41:56,957 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:42:46,974 - config_manager - INFO - 🔄 Iteration 6 - 21:42:46
+2025-06-10 21:42:46,974 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:42:47,090 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:43:37,099 - config_manager - INFO - 🔄 Iteration 7 - 21:43:37
+2025-06-10 21:43:37,099 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:43:37,191 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:44:27,201 - config_manager - INFO - 🔄 Iteration 8 - 21:44:27
+2025-06-10 21:44:27,201 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:44:27,300 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:45:17,309 - config_manager - INFO - 🔄 Iteration 9 - 21:45:17
+2025-06-10 21:45:17,309 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:45:17,404 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:46:07,413 - config_manager - INFO - 🔄 Iteration 10 - 21:46:07
+2025-06-10 21:46:07,413 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:46:07,511 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:46:57,521 - config_manager - INFO - 🔄 Iteration 11 - 21:46:57
+2025-06-10 21:46:57,521 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:46:57,604 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:47:47,613 - config_manager - INFO - 🔄 Iteration 12 - 21:47:47
+2025-06-10 21:47:47,613 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:47:47,715 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:48:37,726 - config_manager - INFO - 🔄 Iteration 13 - 21:48:37
+2025-06-10 21:48:37,726 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:48:37,818 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:49:27,828 - config_manager - INFO - 🔄 Iteration 14 - 21:49:27
+2025-06-10 21:49:27,828 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:49:27,918 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:50:17,926 - config_manager - INFO - 🔄 Iteration 15 - 21:50:17
+2025-06-10 21:50:17,927 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:50:18,010 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:51:08,019 - config_manager - INFO - 🔄 Iteration 16 - 21:51:08
+2025-06-10 21:51:08,020 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:51:08,121 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:51:58,130 - config_manager - INFO - 🔄 Iteration 17 - 21:51:58
+2025-06-10 21:51:58,130 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:51:58,212 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:52:48,221 - config_manager - INFO - 🔄 Iteration 18 - 21:52:48
+2025-06-10 21:52:48,222 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:52:48,331 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:53:38,342 - config_manager - INFO - 🔄 Iteration 19 - 21:53:38
+2025-06-10 21:53:38,342 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:53:38,429 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:54:28,437 - config_manager - INFO - 🔄 Iteration 20 - 21:54:28
+2025-06-10 21:54:28,438 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:54:28,538 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:55:18,546 - config_manager - INFO - 🔄 Iteration 21 - 21:55:18
+2025-06-10 21:55:18,547 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:55:18,641 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:56:08,650 - config_manager - INFO - 🔄 Iteration 22 - 21:56:08
+2025-06-10 21:56:08,650 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:56:08,757 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:56:58,766 - config_manager - INFO - 🔄 Iteration 23 - 21:56:58
+2025-06-10 21:56:58,766 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:56:58,859 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:57:48,868 - config_manager - INFO - 🔄 Iteration 24 - 21:57:48
+2025-06-10 21:57:48,869 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:57:48,969 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:58:38,980 - config_manager - INFO - 🔄 Iteration 25 - 21:58:38
+2025-06-10 21:58:38,980 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:58:39,080 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 21:59:29,090 - config_manager - INFO - 🔄 Iteration 26 - 21:59:29
+2025-06-10 21:59:29,090 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 21:59:29,193 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:00:19,202 - config_manager - INFO - 🔄 Iteration 27 - 22:00:19
+2025-06-10 22:00:19,203 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:00:19,301 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:01:09,311 - config_manager - INFO - 🔄 Iteration 28 - 22:01:09
+2025-06-10 22:01:09,311 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:01:09,413 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:01:59,425 - config_manager - INFO - 🔄 Iteration 29 - 22:01:59
+2025-06-10 22:01:59,425 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:01:59,515 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:02:49,524 - config_manager - INFO - 🔄 Iteration 30 - 22:02:49
+2025-06-10 22:02:49,524 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:02:49,615 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:03:39,623 - config_manager - INFO - 🔄 Iteration 31 - 22:03:39
+2025-06-10 22:03:39,624 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:03:39,713 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:04:29,721 - config_manager - INFO - 🔄 Iteration 32 - 22:04:29
+2025-06-10 22:04:29,722 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:04:29,828 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:05:19,837 - config_manager - INFO - 🔄 Iteration 33 - 22:05:19
+2025-06-10 22:05:19,837 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:05:19,931 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:06:09,941 - config_manager - INFO - 🔄 Iteration 34 - 22:06:09
+2025-06-10 22:06:09,941 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:06:10,042 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:07:00,052 - config_manager - INFO - 🔄 Iteration 35 - 22:07:00
+2025-06-10 22:07:00,052 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:07:00,154 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:07:50,162 - config_manager - INFO - 🔄 Iteration 36 - 22:07:50
+2025-06-10 22:07:50,162 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:07:50,252 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:08:40,262 - config_manager - INFO - 🔄 Iteration 37 - 22:08:40
+2025-06-10 22:08:40,262 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:08:40,350 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:09:30,361 - config_manager - INFO - 🔄 Iteration 38 - 22:09:30
+2025-06-10 22:09:30,361 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:09:30,470 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:10:20,479 - config_manager - INFO - 🔄 Iteration 39 - 22:10:20
+2025-06-10 22:10:20,479 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:10:20,571 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:11:10,583 - config_manager - INFO - 🔄 Iteration 40 - 22:11:10
+2025-06-10 22:11:10,583 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:11:10,707 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:12:00,715 - config_manager - INFO - 🔄 Iteration 41 - 22:12:00
+2025-06-10 22:12:00,716 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:12:00,834 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:12:50,847 - config_manager - INFO - 🔄 Iteration 42 - 22:12:50
+2025-06-10 22:12:50,848 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:12:50,957 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:13:40,970 - config_manager - INFO - 🔄 Iteration 43 - 22:13:40
+2025-06-10 22:13:40,971 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:13:41,089 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:14:31,099 - config_manager - INFO - 🔄 Iteration 44 - 22:14:31
+2025-06-10 22:14:31,099 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:14:31,207 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:15:21,216 - config_manager - INFO - 🔄 Iteration 45 - 22:15:21
+2025-06-10 22:15:21,216 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:15:21,335 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:16:11,343 - config_manager - INFO - 🔄 Iteration 46 - 22:16:11
+2025-06-10 22:16:11,344 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:16:11,451 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:17:01,459 - config_manager - INFO - 🔄 Iteration 47 - 22:17:01
+2025-06-10 22:17:01,460 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:17:01,552 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:17:51,561 - config_manager - INFO - 🔄 Iteration 48 - 22:17:51
+2025-06-10 22:17:51,562 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:17:51,655 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:18:41,664 - config_manager - INFO - 🔄 Iteration 49 - 22:18:41
+2025-06-10 22:18:41,664 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:18:41,766 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:19:31,777 - config_manager - INFO - 🔄 Iteration 50 - 22:19:31
+2025-06-10 22:19:31,777 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:19:31,890 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:19:31,898 - config_manager - INFO - 🔄 Lade Kategorien neu...
+2025-06-10 22:19:32,050 - config_manager - INFO - 📋 251 Kategorien aus Odoo geladen
+2025-06-10 22:19:32,050 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-10 22:20:22,051 - config_manager - INFO - 🔄 Iteration 51 - 22:20:22
+2025-06-10 22:20:22,051 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:20:22,158 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:21:12,169 - config_manager - INFO - 🔄 Iteration 52 - 22:21:12
+2025-06-10 22:21:12,169 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:21:12,282 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:22:02,291 - config_manager - INFO - 🔄 Iteration 53 - 22:22:02
+2025-06-10 22:22:02,292 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:22:02,380 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:22:52,390 - config_manager - INFO - 🔄 Iteration 54 - 22:22:52
+2025-06-10 22:22:52,390 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:22:52,488 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:23:42,498 - config_manager - INFO - 🔄 Iteration 55 - 22:23:42
+2025-06-10 22:23:42,498 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:23:42,595 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:24:32,608 - config_manager - INFO - 🔄 Iteration 56 - 22:24:32
+2025-06-10 22:24:32,609 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:24:32,719 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:25:22,729 - config_manager - INFO - 🔄 Iteration 57 - 22:25:22
+2025-06-10 22:25:22,729 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:25:22,828 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:26:12,836 - config_manager - INFO - 🔄 Iteration 58 - 22:26:12
+2025-06-10 22:26:12,836 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:26:12,944 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:27:02,952 - config_manager - INFO - 🔄 Iteration 59 - 22:27:02
+2025-06-10 22:27:02,953 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:27:03,053 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:27:53,063 - config_manager - INFO - 🔄 Iteration 60 - 22:27:53
+2025-06-10 22:27:53,063 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:27:53,154 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:28:43,164 - config_manager - INFO - 🔄 Iteration 61 - 22:28:43
+2025-06-10 22:28:43,164 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:28:43,263 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:29:33,271 - config_manager - INFO - 🔄 Iteration 62 - 22:29:33
+2025-06-10 22:29:33,272 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:29:33,378 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:30:23,389 - config_manager - INFO - 🔄 Iteration 63 - 22:30:23
+2025-06-10 22:30:23,389 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:30:23,477 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:31:13,486 - config_manager - INFO - 🔄 Iteration 64 - 22:31:13
+2025-06-10 22:31:13,487 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:31:13,595 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:32:03,604 - config_manager - INFO - 🔄 Iteration 65 - 22:32:03
+2025-06-10 22:32:03,605 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:32:03,703 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:32:53,713 - config_manager - INFO - 🔄 Iteration 66 - 22:32:53
+2025-06-10 22:32:53,713 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:32:53,811 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:33:43,820 - config_manager - INFO - 🔄 Iteration 67 - 22:33:43
+2025-06-10 22:33:43,820 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:33:43,918 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:34:33,927 - config_manager - INFO - 🔄 Iteration 68 - 22:34:33
+2025-06-10 22:34:33,927 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:34:34,036 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:35:24,044 - config_manager - INFO - 🔄 Iteration 69 - 22:35:24
+2025-06-10 22:35:24,045 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:35:24,136 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:36:14,145 - config_manager - INFO - 🔄 Iteration 70 - 22:36:14
+2025-06-10 22:36:14,145 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:36:14,243 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:37:04,252 - config_manager - INFO - 🔄 Iteration 71 - 22:37:04
+2025-06-10 22:37:04,252 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:37:04,343 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:37:54,353 - config_manager - INFO - 🔄 Iteration 72 - 22:37:54
+2025-06-10 22:37:54,353 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:37:54,444 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:38:44,453 - config_manager - INFO - 🔄 Iteration 73 - 22:38:44
+2025-06-10 22:38:44,453 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:38:44,555 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:39:34,564 - config_manager - INFO - 🔄 Iteration 74 - 22:39:34
+2025-06-10 22:39:34,564 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:39:34,672 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:40:24,681 - config_manager - INFO - 🔄 Iteration 75 - 22:40:24
+2025-06-10 22:40:24,682 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:40:24,792 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:41:14,802 - config_manager - INFO - 🔄 Iteration 76 - 22:41:14
+2025-06-10 22:41:14,803 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:41:14,889 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:42:04,899 - config_manager - INFO - 🔄 Iteration 77 - 22:42:04
+2025-06-10 22:42:04,899 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:42:04,986 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:42:54,994 - config_manager - INFO - 🔄 Iteration 78 - 22:42:54
+2025-06-10 22:42:54,994 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:42:55,080 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:43:45,088 - config_manager - INFO - 🔄 Iteration 79 - 22:43:45
+2025-06-10 22:43:45,089 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:43:45,175 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:44:35,188 - config_manager - INFO - 🔄 Iteration 80 - 22:44:35
+2025-06-10 22:44:35,188 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:44:35,291 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:45:25,302 - config_manager - INFO - 🔄 Iteration 81 - 22:45:25
+2025-06-10 22:45:25,302 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:45:25,410 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:46:15,420 - config_manager - INFO - 🔄 Iteration 82 - 22:46:15
+2025-06-10 22:46:15,421 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:46:15,508 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:47:05,516 - config_manager - INFO - 🔄 Iteration 83 - 22:47:05
+2025-06-10 22:47:05,516 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:47:05,606 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:47:55,615 - config_manager - INFO - 🔄 Iteration 84 - 22:47:55
+2025-06-10 22:47:55,615 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:47:55,708 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:48:45,718 - config_manager - INFO - 🔄 Iteration 85 - 22:48:45
+2025-06-10 22:48:45,718 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:48:45,804 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:49:35,813 - config_manager - INFO - 🔄 Iteration 86 - 22:49:35
+2025-06-10 22:49:35,813 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:49:35,912 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:50:25,922 - config_manager - INFO - 🔄 Iteration 87 - 22:50:25
+2025-06-10 22:50:25,922 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:50:26,025 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:51:16,034 - config_manager - INFO - 🔄 Iteration 88 - 22:51:16
+2025-06-10 22:51:16,034 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:51:16,131 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:52:06,141 - config_manager - INFO - 🔄 Iteration 89 - 22:52:06
+2025-06-10 22:52:06,141 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:52:06,233 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:52:56,243 - config_manager - INFO - 🔄 Iteration 90 - 22:52:56
+2025-06-10 22:52:56,243 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:52:56,340 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:53:46,351 - config_manager - INFO - 🔄 Iteration 91 - 22:53:46
+2025-06-10 22:53:46,352 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:53:46,441 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:54:36,449 - config_manager - INFO - 🔄 Iteration 92 - 22:54:36
+2025-06-10 22:54:36,450 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:54:36,556 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:55:26,566 - config_manager - INFO - 🔄 Iteration 93 - 22:55:26
+2025-06-10 22:55:26,566 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:55:26,675 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:56:16,683 - config_manager - INFO - 🔄 Iteration 94 - 22:56:16
+2025-06-10 22:56:16,683 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:56:16,767 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:57:06,775 - config_manager - INFO - 🔄 Iteration 95 - 22:57:06
+2025-06-10 22:57:06,776 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:57:06,867 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:57:56,875 - config_manager - INFO - 🔄 Iteration 96 - 22:57:56
+2025-06-10 22:57:56,875 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:57:56,961 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:58:46,969 - config_manager - INFO - 🔄 Iteration 97 - 22:58:46
+2025-06-10 22:58:46,969 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:58:47,055 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 22:59:37,064 - config_manager - INFO - 🔄 Iteration 98 - 22:59:37
+2025-06-10 22:59:37,064 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 22:59:37,147 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 23:00:27,156 - config_manager - INFO - 🔄 Iteration 99 - 23:00:27
+2025-06-10 23:00:27,156 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 23:00:27,277 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 23:01:17,288 - config_manager - INFO - 🔄 Iteration 100 - 23:01:17
+2025-06-10 23:01:17,288 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 23:01:17,381 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 23:01:17,388 - config_manager - INFO - 🔄 Lade Kategorien neu...
+2025-06-10 23:01:17,528 - config_manager - INFO - 📋 251 Kategorien aus Odoo geladen
+2025-06-10 23:01:17,528 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-10 23:02:07,528 - config_manager - INFO - 🔄 Iteration 101 - 23:02:07
+2025-06-10 23:02:07,528 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 23:02:07,615 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 23:02:57,623 - config_manager - INFO - 🔄 Iteration 102 - 23:02:57
+2025-06-10 23:02:57,623 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 23:02:57,710 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 23:03:47,719 - config_manager - INFO - 🔄 Iteration 103 - 23:03:47
+2025-06-10 23:03:47,720 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 23:03:47,807 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 23:04:37,816 - config_manager - INFO - 🔄 Iteration 104 - 23:04:37
+2025-06-10 23:04:37,816 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 23:04:37,913 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 23:05:27,922 - config_manager - INFO - 🔄 Iteration 105 - 23:05:27
+2025-06-10 23:05:27,922 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 23:05:28,030 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 23:06:18,038 - config_manager - INFO - 🔄 Iteration 106 - 23:06:18
+2025-06-10 23:06:18,038 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 23:06:18,124 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 23:07:08,132 - config_manager - INFO - 🔄 Iteration 107 - 23:07:08
+2025-06-10 23:07:08,133 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 23:07:08,222 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 23:07:58,232 - config_manager - INFO - 🔄 Iteration 108 - 23:07:58
+2025-06-10 23:07:58,232 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 23:07:58,319 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 23:08:48,327 - config_manager - INFO - 🔄 Iteration 109 - 23:08:48
+2025-06-10 23:08:48,328 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 23:08:48,413 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 23:09:38,422 - config_manager - INFO - 🔄 Iteration 110 - 23:09:38
+2025-06-10 23:09:38,422 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 23:09:38,509 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 23:10:28,518 - config_manager - INFO - 🔄 Iteration 111 - 23:10:28
+2025-06-10 23:10:28,518 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 23:10:28,618 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 23:11:18,626 - config_manager - INFO - 🔄 Iteration 112 - 23:11:18
+2025-06-10 23:11:18,626 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 23:11:18,723 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 23:12:08,732 - config_manager - INFO - 🔄 Iteration 113 - 23:12:08
+2025-06-10 23:12:08,732 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 23:12:08,822 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 23:12:58,831 - config_manager - INFO - 🔄 Iteration 114 - 23:12:58
+2025-06-10 23:12:58,831 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 23:12:58,918 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 23:13:48,927 - config_manager - INFO - 🔄 Iteration 115 - 23:13:48
+2025-06-10 23:13:48,927 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-10 23:13:49,013 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-10 23:14:19,664 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)

@@ -2,7 +2,7 @@
 """
 Odoo-Integration für Kontaktverwaltung
 Handles Odoo-Operationen, Kategorien und Kontakt-CRUD mit YAML-Templates
-FIXED VERSION: Korrekte Firmen-Namen-Zuordnung
+FIXED VERSION: Korrekte Firmen-Namen-Zuordnung + Timeline-Notizen
 """
 
 import logging
@@ -134,8 +134,53 @@ class OdooManager:
             self.logger.warning(f"⚠️ Kontaktsuche übersprungen wegen Odoo-Fehler: {e}")
             return None
 
+    def create_timeline_note(self, partner_id: int, biography: str, contact_data: Dict):
+        """Erstellt Timeline-Notiz mit Timestamp für KI-extrahierte Biographie"""
+        try:
+            if not biography or not biography.strip():
+                self.logger.info("📝 Keine Biographie - überspringe Timeline-Notiz")
+                return True
+
+            confidence = contact_data.get('confidence', 'medium')
+            contact_name = contact_data.get('full_name', 'Kontakt')
+
+            # Timeline-Notiz mit formatiertem HTML erstellen
+            note_body = f"""
+<div style="margin: 10px 0; padding: 12px; border: 1px solid #e9ecef; border-radius: 6px; background-color: #f8f9fa;">
+    <h4 style="margin: 0 0 8px 0; color: #495057;">📝 KI-extrahierte Biographie</h4>
+    <div style="margin: 8px 0; padding: 10px; background-color: white; border-left: 4px solid #007bff; font-size: 14px; line-height: 1.5;">
+        {biography}
+    </div>
+    <div style="margin-top: 10px; font-size: 12px; color: #6c757d;">
+        🤖 Automatisch extrahiert | Confidence: <strong>{confidence}</strong> | {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+    </div>
+</div>
+            """
+
+            # Timeline-Notiz via message_post erstellen
+            self.odoo_models.execute_kw(
+                self.config['odoo']['database'],
+                self.odoo_uid,
+                self.config['odoo']['password'],
+                'res.partner', 'message_post',
+                [partner_id],
+                {
+                    'body': note_body,
+                    'message_type': 'comment',
+                    'subtype_xmlid': 'mail.mt_note',
+                    'subject': f'📝 KI-Biographie: {contact_name}'
+                }
+            )
+
+            self.logger.info(f"✅ Timeline-Notiz erstellt für Partner {partner_id}: '{biography[:50]}...'")
+            return True
+
+        except Exception as e:
+            self.logger.error(f"❌ Fehler bei Timeline-Notiz-Erstellung: {e}")
+            return False
+
     def create_or_update_contact(self, primary_email: str, contact_data: Dict, forwarder_email: str) -> bool:
-        """Erstellt neuen Kontakt oder aktualisiert existierenden"""
+        """Erstellt neuen Kontakt oder aktualisiert existierenden (mit Timeline-Notizen)"""
         try:
             existing_contact = self.find_existing_contact(primary_email)
 
@@ -151,7 +196,7 @@ class OdooManager:
                     self.send_category_error_email(primary_email, invalid_categories, contact_data, forwarder_email)
 
             # Kontaktdaten zusammenführen
-            contact_values = self.build_contact_values(contact_data, primary_email, valid_category_ids, existing_contact)
+            contact_values, biography_for_timeline = self.build_contact_values(contact_data, primary_email, valid_category_ids, existing_contact)
 
             if existing_contact:
                 # Kontakt aktualisieren
@@ -182,6 +227,10 @@ class OdooManager:
                 )
                 self.logger.info(f"✅ Neuer Kontakt erstellt: {primary_email} (ID: {contact_id})")
                 action = 'created'
+
+            # NEUE: Timeline-Notiz für Biographie erstellen (falls vorhanden)
+            if biography_for_timeline and biography_for_timeline.strip():
+                self.create_timeline_note(contact_id, biography_for_timeline, contact_data)
 
             # Optional: Bestätigungs-E-Mail senden
             if (self.config.get('assistant', {}).get('send_confirmation_email', False) and
@@ -335,8 +384,8 @@ der Kontakt {contact_email} wurde erfolgreich {action}.
 🌍 Sprache: {contact_language}
 🏷️ Kategorien: {contact_categories}
 
-📝 BIOGRAPHIE/NOTIZEN:
-{contact_biography}
+📝 TIMELINE-NOTIZEN:
+Die KI-extrahierte Biographie wurde als Timeline-Notiz hinterlegt und ist im Odoo-Chatter sichtbar.
 
 ❓ FEHLENDE DATEN:
 {missing_data}
@@ -385,8 +434,6 @@ Ihr KI-Assistent'''
                 missing_data.append("💼 Position/Funktion")
             if not category_names:
                 missing_data.append("🏷️ Kategorien")
-            if not current_contact.get('comment'):
-                missing_data.append("📝 Biographie/Beschreibung")
 
             missing_text = '\n'.join(missing_data) if missing_data else "✅ Alle wichtigen Daten erfasst!"
 
@@ -402,7 +449,6 @@ Ihr KI-Assistent'''
                 'contact_position': current_contact.get('function') or '❌ Keine Position',
                 'contact_language': current_contact.get('lang') or '❌ Keine Sprache',
                 'contact_categories': ', '.join(category_names) if category_names else '❌ Keine Kategorien',
-                'contact_biography': self._clean_biography(current_contact.get('comment', '❌ Keine Biographie')),
                 'missing_data': missing_text,
                 'odoo_link': f"{self.config['odoo']['url']}/web#id={contact_id}&model=res.partner&view_type=form"
             }
@@ -420,8 +466,8 @@ Ihr KI-Assistent'''
             self.logger.error(f"❌ Fehler beim Senden der Bestätigungs-E-Mail: {e}")
             self.logger.info("ℹ️ Setze Verarbeitung ohne E-Mail-Versand fort")
 
-    def build_contact_values(self, contact_data: Dict, primary_email: str, category_ids: List[int], existing_contact: Optional[Dict]) -> Dict:
-        """Baut Kontakt-Datenstruktur für Odoo (FIXED VERSION für korrekte Firmen-Namen-Zuordnung)"""
+    def build_contact_values(self, contact_data: Dict, primary_email: str, category_ids: List[int], existing_contact: Optional[Dict]) -> Tuple[Dict, str]:
+        """Baut Kontakt-Datenstruktur für Odoo (FIXED VERSION für Timeline-Notizen)"""
 
         # FIXED: Korrekte Firmen-Namen-Zuordnung
         is_company = contact_data.get('is_company', False)
@@ -457,15 +503,29 @@ Ihr KI-Assistent'''
             if company_name:
                 self.logger.info(f"👤 Person: '{display_name}' arbeitet bei: '{company_name}'")
 
-        # Biographie mit Timestamp
-        biography = contact_data.get('biography', '').strip()
+        # NEUE BIOGRAPHIE-STRATEGIE: Kompakter Kommentar + separate Timeline-Notiz
+        original_biography = contact_data.get('biography', '').strip()  # Für Timeline-Notiz
         confidence = contact_data.get('confidence', 'medium')
         timestamp = datetime.now().strftime('%Y-%m-%d %H:%M')
-        enhanced_biography = f"{biography}\n\n[KI-Import {timestamp} - Confidence: {confidence}]".strip()
 
-        # Bei Personen: Firma in Biographie erwähnen
+        # Baue kompakten Kommentar (OHNE die lange Biographie)
+        comment_parts = []
+
+        # Bei Personen: Firma erwähnen
         if not is_company and company_name:
-            enhanced_biography = f"Firma: {company_name}\n\n{enhanced_biography}"
+            comment_parts.append(f"Firma: {company_name}")
+            self.logger.info(f"🏢 Firma zum Kommentar hinzugefügt: {company_name}")
+
+        # Kompakter KI-Import-Hinweis
+        comment_parts.append(f"[KI-Import {timestamp} - Confidence: {confidence}]")
+
+        # Zusammenfügen - OHNE Biographie im Kommentar
+        enhanced_comment = "\n".join(comment_parts)
+
+        # DEBUG: Logs
+        self.logger.info(f"📋 Finale Kommentar-Struktur für {primary_email}:")
+        self.logger.info(f"   Kommentar: '{enhanced_comment}'")
+        self.logger.info(f"   Timeline-Biographie: '{original_biography[:50]}...' ({len(original_biography)} Zeichen)")
 
         # Sprache konvertieren
         language_code = self.convert_language_to_odoo(contact_data.get('language', 'deutsch'))
@@ -476,7 +536,7 @@ Ihr KI-Assistent'''
             'email': primary_email,
             'lang': language_code,
             'is_company': is_company,
-            'comment': enhanced_biography
+            'comment': enhanced_comment  # ← Jetzt kompakt OHNE Biographie
         }
 
         # DEBUG: Logge die kritischen Werte
@@ -514,11 +574,11 @@ Ihr KI-Assistent'''
             contact_values['phone'] = phones[0]
             self.logger.debug(f"📞 Telefon gesetzt: {phones[0]}")
 
-            # Falls mehrere Telefonnummern: in Biographie erwähnen
+            # Falls mehrere Telefonnummern: in Kommentar erwähnen
             if len(phones) > 1:
                 additional_phones = ", ".join(phones[1:])
-                enhanced_biography += f"\n\nWeitere Telefonnummern: {additional_phones}"
-                contact_values['comment'] = enhanced_biography
+                enhanced_comment += f"\nWeitere Telefonnummern: {additional_phones}"
+                contact_values['comment'] = enhanced_comment
 
         # Website
         if contact_data.get('website'):
@@ -538,13 +598,14 @@ Ihr KI-Assistent'''
         # Debug: Alle gesetzten Felder loggen
         self.logger.info(f"📋 Odoo-Felder für {primary_email}:")
         for field, value in contact_values.items():
-            if field != 'comment':  # Biographie ist zu lang für Log
+            if field != 'comment':  # Kommentar ist zu lang für Log
                 self.logger.info(f"   {field}: {value}")
 
-        return contact_values
+        # RÜCKGABE: contact_values + original_biography für Timeline-Notiz
+        return contact_values, original_biography
 
     def get_update_values(self, existing_contact: Dict, new_values: Dict) -> Dict:
-        """Ermittelt Update-Werte (FIXED für Firmen-Namen-Updates)"""
+        """Ermittelt Update-Werte (FIXED für Firmen-Namen-Updates + Biographie-Erhaltung)"""
         update_values = {}
 
         # FIXED: Firmen-Namen-Updates intelligenter handhaben
@@ -603,15 +664,114 @@ Ihr KI-Assistent'''
                 update_values['lang'] = new_values['lang']
                 self.logger.info(f"📝 Sprache ergänzt: {new_values['lang']}")
 
-        #
+        # FIXED: Country separat behandeln
+        if 'country_id' in new_values and new_values['country_id']:
+            existing_country = existing_contact.get('country_id')
+            if not existing_country:  # Nur setzen wenn leer
+                update_values['country_id'] = new_values['country_id']
+                self.logger.info(f"📝 Land ergänzt: {new_values['country_id']}")
 
-# ... Ende der odoo_manager.py ...
+        # FIXED: Kommentar intelligent erweitern (aber NICHT Biographie - das macht Timeline-Notiz)
+        if 'comment' in new_values:
+            existing_comment = existing_contact.get('comment', '').strip()
+            new_comment = new_values['comment'].strip()
+
+            # Sicherheitscheck: Konvertiere zu String falls nötig
+            if not isinstance(existing_comment, str):
+                existing_comment = str(existing_comment) if existing_comment else ''
+            if not isinstance(new_comment, str):
+                new_comment = str(new_comment) if new_comment else ''
+
+            # INTELLIGENTE KOMMENTAR-BEHANDLUNG (Timeline-Notizen machen die Biographie)
+            if existing_comment:
+                # Prüfe ob neuer Kommentar bereits in bestehendem enthalten ist
+                if new_comment.strip() not in existing_comment:
+                    # Neuen Kommentar hinzufügen
+                    combined_comment = f"{existing_comment}\n--- Ergänzung ---\n{new_comment}"
+                    update_values['comment'] = combined_comment
+                    self.logger.info("📝 Kommentar erweitert mit neuen Informationen")
+                else:
+                    self.logger.info("📝 Kommentar bereits vorhanden - überspringe")
+            else:
+                # Kein bestehender Kommentar - neuen setzen
+                update_values['comment'] = new_comment
+                self.logger.info("📝 Neuer Kommentar hinzugefügt")
+
+        # Kategorien zusammenführen
+        if 'category_id' in new_values:
+            existing_cat_ids = set(cat[0] if isinstance(cat, (list, tuple)) else cat
+                                for cat in existing_contact.get('category_id', []))
+            new_cat_ids = set(new_values['category_id'][0][2])
+
+            combined_cat_ids = list(existing_cat_ids.union(new_cat_ids))
+            if combined_cat_ids != list(existing_cat_ids):
+                update_values['category_id'] = [(6, 0, combined_cat_ids)]
+                self.logger.info(f"🏷️ Kategorien erweitert: {new_cat_ids - existing_cat_ids}")
+
+        # Debug: Zeige was geupdatet wird
+        if update_values:
+            self.logger.info(f"🔄 Update-Felder für {existing_contact.get('email', 'N/A')}:")
+            for field, value in update_values.items():
+                if field != 'comment':  # Kommentar ist zu lang
+                    self.logger.info(f"   {field}: {value}")
+        else:
+            self.logger.info("ℹ️ Keine Updates nötig - Kontakt bereits vollständig")
+
+        return update_values
+
+    def get_country_code(self, country_name: str) -> Optional[int]:
+        """Konvertiert Ländernamen zu Odoo-Country-IDs"""
+        try:
+            country_iso_map = {
+                'russia': 'RU', 'deutschland': 'DE', 'germany': 'DE',
+                'schweiz': 'CH', 'switzerland': 'CH', 'österreich': 'AT',
+                'austria': 'AT', 'usa': 'US', 'united states': 'US'
+            }
+
+            country_lower = country_name.lower().strip()
+            iso_code = country_iso_map.get(country_lower)
+
+            if iso_code:
+                try:
+                    country_ids = self.odoo_models.execute_kw(
+                        self.config['odoo']['database'],
+                        self.odoo_uid,
+                        self.config['odoo']['password'],
+                        'res.country', 'search',
+                        [[['code', '=', iso_code]]]
+                    )
+
+                    if country_ids:
+                        country_id = country_ids[0]
+                        self.logger.info(f"🌍 Land erkannt: {country_name} → {iso_code} (ID: {country_id})")
+                        return country_id
+
+                except Exception as e:
+                    self.logger.warning(f"⚠️ Odoo-Land-Suche fehlgeschlagen: {e}")
+                    return None
+
+            return None
+
+        except Exception as e:
+            self.logger.error(f"❌ Fehler bei Land-Mapping: {e}")
+            return None
 
     def _clean_biography(self, biography_text: str) -> str:
-        # ... existing method ...
+        """Bereinigt Biographie von HTML-Tags und kürzt sie"""
+        if not biography_text:
+            return '❌ Keine Biographie'
+
+        # HTML-Tags entfernen
+        import re
+        clean_text = re.sub(r'<[^>]+>', '', str(biography_text))
+
+        # Länge begrenzen
+        if len(clean_text) > 500:
+            clean_text = clean_text[:500] + '...'
+
         return clean_text
 
-    def convert_language_to_odoo(self, language: str) -> str:  # ← HIER EINFÜGEN
+    def convert_language_to_odoo(self, language: str) -> str:
         """Konvertiert Sprache zu Odoo-Sprachcode"""
         language_map = {
             'deutsch': 'de_DE', 'german': 'de_DE', 'english': 'en_US',
@@ -619,4 +779,5 @@ Ihr KI-Assistent'''
             'italiano': 'it_IT', 'italian': 'it_IT', 'español': 'es_ES',
             'spanish': 'es_ES', 'русский': 'ru_RU', 'russian': 'ru_RU'
         }
+
         return language_map.get(language.lower(), 'de_DE')
