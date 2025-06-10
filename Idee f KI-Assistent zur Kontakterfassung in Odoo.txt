@@ -1,0 +1,16 @@
+ich habe eine neue Programmierprojektidee und zwar ein KI-Assistent zur Erfassung und Pflege meiner Kontaktdaten über mein Odoo-Konto. Der Workflow zur Erfassung sollte wie folgt sein:
+In den meisten Fällen bekomme ich neue Kontakte über eine E-Mail, die mich erreicht.
+Ich nehme diese E-Mail und leite diese weiter an ein neues E-Mail-Konto, das heißt KI-Adressadmin@ingross.de. Und in die ersten Zeilen schreibe ich einen Biografieeintrag, der beim Kontakt zu erfassen ist. Das könnte zum Beispiel sein "Kundenanfrage, Standort Datenblatt für den Standort Zürich, Hauptstraße 24. Rechtsanwalt des Einsprechers Markus Schmitz."
+
+Die KI soll daraufhin Folgendes machen.
+Sie guckt in die Kopfdaten der weitergeleiteten E-Mail nach der Absenderadresse und nimmt das als Hauptschlüssel für die weitere
+Verarbeitung: die E-Mail des Kontaktes und schaut als erstes in meinem Odoo-Konto, ob diese E-Mail schon irgendwo erfasst worden ist. Wenn ja, dann wird das ein Update dieses Kontaktes.
+
+Wenn nicht, dann wird der Kontakt neu angelegt. Jetzt sucht die KI weiterhin im Text, ob es Kontaktdaten des Absenders gibt. Vorname, Nachname, Adresse, Telefon, Website, ... vielleicht weitere E-Mails und so weiter und trägt diese bei der Neuanlage des Kontaktes ein.
+
+Falls der Kontakt schon existiert wird überprüft ob diese Kontaktdaten alle schon vorhanden sind und gegebenenfalls werden sie vervollständigt. Weil es kann natürlich sein, dass jemand erst nur eine Anfrage macht und wir erhalten nur die E-Mail und vielleicht seinen Vornamen. Und im späteren Verlauf erfahren wir die gesamten Kontaktdaten. Wenn er eine Bestellung abgibt, dann soll natürlich dieser alte Kontakt, der nur aus Vornamen und E-Mail bestand vervollständigt werden.
+
+Darüber hinaus schreiben wir Schlüsselworte wie #Kunde oder #English
+für englischsprachige oder #Scientology, wenn das ein Scientology-Kontakt ist. Und diese Hash-Kategorien sind die Kategorien in odoo, unter denen die Kontakte kategorisiert werden. Die sollen also auch eingetragen werden.
+Soweit erstmal.
+Hast du noch Fragen dazu?

@@ -1,0 +1,309 @@
+# KI-Kontaktassistent Prompt-Vorlagen
+# Erweiterte Version mit verbesserter Firmen-Erkennung
+
+# Standard E-Mail-Extraktion (ERWEITERT für Firmen)
+email_extraction:
+  system: "Du bist ein Experte für Kontaktdaten-Extraktion. Antworte immer nur mit validem JSON. Achte BESONDERS auf Firmen-Erkennung und Footer-Bereiche mit strukturierten Adressen."
+
+  user_template: |
+    Du bist ein Experte für die Extraktion von Kontaktdaten aus E-Mails. Analysiere sorgfältig und extrahiere NUR verfügbare Informationen.
+
+    ABSENDER-EMAIL: {sender_email}
+    BIOGRAPHIE (vom Benutzer hinzugefügt): {biography}
+
+    E-MAIL-INHALT:
+    {email_text}
+
+    KRITISCHE EXTRAKTIONSREGELN (PRIORITÄT 1 - FIRMEN):
+
+    1. FIRMEN-ERKENNUNG (HÖCHSTE PRIORITÄT):
+       - Erkenne Firmen-Indikatoren: GmbH, AG, Ltd, Inc, Corp, LLC, Verein, Verlag, Stiftung, KG, OHG, eG, SE
+       - WENN Firma erkannt → setze "is_company": true
+       - Bei Firmen: "company" UND "full_name" bekommen BEIDE den Firmennamen
+       - Bei Firmen: "first_name" und "last_name" bleiben leer!
+
+    2. FIRMEN-NAME-ZUORDNUNG:
+       - Beispiel: "Jungeuropa Verlag GmbH"
+         → "full_name": "Jungeuropa Verlag GmbH"
+         → "company": "Jungeuropa Verlag GmbH"
+         → "is_company": true
+         → "first_name": ""
+         → "last_name": ""
+
+    3. PERSONEN BEI FIRMEN:
+       - Beispiel: "Philip Stein von Jungeuropa Verlag"
+         → "full_name": "Philip Stein"
+         → "first_name": "Philip"
+         → "last_name": "Stein"
+         → "company": "Jungeuropa Verlag"
+         → "is_company": false
+
+    WEITERE EXTRAKTIONSREGELN:
+
+    4. FOOTER-PRIORITÄT: Achte besonders auf den FOOTER-Bereich am Ende der E-Mail!
+    5. STRUKTURIERTE ADRESSEN: Erkenne Formate wie "Firma · Straße Nr · Stadt PLZ · Land"
+    6. NAMEN: Suche nach vollständigen Namen in der Signatur (Regards, Best regards, etc.)
+    7. Telefonnummern: Alle Formate (+49, 0049, national, international)
+    8. Adressen: Vollständige Postanschriften bevorzugt, auch aus Footer-Bereichen
+    9. Sprache: Erkenne aus dem E-Mail-Text (deutsch/english/russisch)
+    10. Kategorien: Erkenne ALLE Hashtags (#Kunde, #English, #Scientology, #Lieferant, etc.)
+    11. E-MAILS: NUR die Absender-E-Mail verwenden: {sender_email} - KEINE anderen E-Mails erfinden!
+
+    WICHTIGE HINWEISE:
+    - Nutze die BIOGRAPHIE des Benutzers als zusätzliche Information
+    - Hashtags (#) sind IMMER Kategorien - extrahiere sie alle!
+    - BIOGRAPHIE: Verwende NUR den Text VOR den Hashtags, NICHT die Hashtags selbst!
+    - Bei Namen: Suche nach Signaturen wie "Regards, [Vollständiger Name]"
+    - Sprache: Analysiere den Haupttext der E-Mail
+    - E-MAILS: Verwende NUR die bekannte Absender-E-Mail, erfinde KEINE zusätzlichen!
+    - FOOTER-PRIORITÄT: Kontaktdaten aus Footer haben höhere Priorität als Text-Erwähnungen
+    - Leere Felder mit null füllen
+
+    WICHTIG - VERWECHSLUNGSGEFAHR:
+    Andreas/Telse Groß (Althusweg 12, CH 6315 Morgarten, +41-41-512-00-22, 5gfrei.ch) sind NICHT der Kontakt!
+    Das sind die EMPFÄNGER der E-Mail. Extrahiere NUR Daten des ursprünglichen ABSENDERS: {sender_email}
+    Ignoriere alle Firmendaten von Andreas Groß, 5gfrei.ch, inggross.de, standortdatenblatt.ch!
+
+    ABSENDER-FOKUS:
+    - NUR Daten extrahieren die zum Absender {sender_email} gehören
+    - NICHT die Daten der weitergeleiteten E-Mail-Empfänger verwenden
+    - Bei Unsicherheit: Feld leer lassen statt falsche Daten zu verwenden
+
+    FIRMEN-BEISPIELE:
+
+    Beispiel 1 - Firma:
+    Input: "Jungeuropa Verlag GmbH, Enderstr. 94, 01277 Dresden"
+    Output: {{
+        "first_name": "",
+        "last_name": "",
+        "full_name": "Jungeuropa Verlag GmbH",
+        "company": "Jungeuropa Verlag GmbH",
+        "is_company": true,
+        "address": {{"street": "Enderstr. 94", "city": "Dresden", "zip": "01277"}}
+    }}
+
+    Beispiel 2 - Person bei Firma:
+    Input: "Philip Stein, Jungeuropa Verlag"
+    Output: {{
+        "first_name": "Philip",
+        "last_name": "Stein",
+        "full_name": "Philip Stein",
+        "company": "Jungeuropa Verlag",
+        "is_company": false
+    }}
+
+    ANTWORTFORMAT (nur JSON, keine Kommentare):
+    {{
+        "first_name": "",
+        "last_name": "",
+        "full_name": "Jungeuropa Verlag GmbH",
+        "emails": ["{sender_email}"],
+        "phones": [],
+        "address": {{
+            "street": "Enderstr. 94",
+            "street2": null,
+            "city": "Dresden",
+            "zip": "01277",              // ← WICHTIG: "zip" nicht "postal_code"
+            "state": null,
+            "country": "Germany"
+        }},
+        "website": null,
+        "company": "Jungeuropa Verlag GmbH",
+        "position": null,
+        "is_company": true,
+        "language": "deutsch",
+        "categories": ["verlag"],
+        "biography": "...",
+        "confidence": "high"
+    }}
+
+# Manueller Kontakt-Input (ERWEITERT für Firmen)
+manual_extraction:
+  system: "Du bist ein Experte für strukturierte Kontaktdaten-Extraktion aus manuellen Eingaben. Antworte immer nur mit validem JSON. Erkenne Firmen-Pattern und Business-Karten-ähnliche Formate."
+
+  user_template: |
+    Du bist ein Experte für die Extraktion von Kontaktdaten aus strukturierten manuellen Eingaben wie Visitenkarten, Firmendaten oder Business-Kontakten.
+
+    EINGABE-FORMAT: Strukturierter manueller Kontakt-Input (KEINE weitergeleitete E-Mail)
+    GENERIERTE EMAIL: {sender_email}
+
+    TEXT-INHALT:
+    {email_text}
+
+    FIRMEN-ERKENNUNG (HÖCHSTE PRIORITÄT):
+    1. Erkenne: AG, GmbH, Aktiengesellschaft, Inc, Corp, Ltd, Verlag, Verein → is_company: true
+    2. Bei Firmen: Firmenname wird "full_name" UND "company"
+    3. Bei Firmen: first_name/last_name bleiben leer
+
+    SPEZIELLE EXTRAKTIONSREGELN für STRUKTURIERTE EINGABEN:
+    4. BIOGRAPHIE: Alles VOR den Hashtags (#) ist die Biographie - aber OHNE Kontaktdaten!
+    5. KATEGORIEN: Alle Hashtags (#kategorie) sind Kategorien
+    6. FIRMEN-PATTERN: Erkenne "**Bezeichnung** Firmenname" oder "Firmenname AG/GmbH/Aktiengesellschaft"
+    7. ADRESS-PATTERN: "Straßenname Nummer PLZ Stadt Land" in einer Zeile
+    8. TELEFON-PATTERN: "Tel. +49 (...)" oder "Telefon:" oder "+49" Nummern
+    9. FAX-PATTERN: "Fax +49 (...)" - als separate Info behandeln
+    10. E-MAIL-PRIORITÄT: Im Text gefundene E-Mail hat Vorrang vor generierter E-Mail
+    11. POSITIONS-ERKENNUNG: "**Titel**", "Vorstand", "CEO", "Manager", "Vorsitzender"
+    12. LAND-NORMALISIERUNG: "Deutschland" → "Germany", etc.
+
+    FIRMEN-BEISPIEL für MANUELLEN INPUT:
+    Input: "#Kunde **Konzernzentrale** Siemens Aktiengesellschaft Werner-von-Siemens-Straße 1 80333 München Deutschland contact@siemens.com Tel. +49 (89) 3803 5491"
+
+    Erwartete Extraktion:
+    {{
+        "first_name": "",
+        "last_name": "",
+        "full_name": "Siemens Aktiengesellschaft",
+        "emails": ["contact@siemens.com"],
+        "phones": ["+49 (89) 3803 5491"],
+        "address": {{"street": "Werner-von-Siemens-Straße 1", "city": "München", "zip": "80333", "country": "Deutschland"}},
+        "company": "Siemens Aktiengesellschaft",
+        "is_company": true,
+        "categories": ["kunde"],
+        "biography": "",
+        "confidence": "high"
+    }}
+
+    WICHTIGE HINWEISE für MANUELLE EINGABEN:
+    - BIOGRAPHIE = Beschreibender Text VOR den Hashtags (OHNE Kontaktdaten!)
+    - Kontaktdaten (Telefon, Adresse, E-Mail) gehören NICHT in die Biographie
+    - Bei Firmen: full_name UND company bekommen beide den Firmennamen → RICHTIG!
+    - Bei Personen: Wenn "**Position** Name" → position + full_name extrahieren
+    - Hashtags (#) sind IMMER Kategorien
+    - Generierte E-Mail nur verwenden wenn keine echte E-Mail gefunden
+    - Deutschland/Germany/Schweiz/Switzerland normalisieren
+
+    ANTWORTFORMAT (nur JSON, keine Kommentare):
+    {{
+        "first_name": "",
+        "last_name": "",
+        "full_name": "Siemens Aktiengesellschaft",
+        "emails": ["contact@siemens.com"],
+        "phones": ["+49 (89) 3803 5491"],
+        "address": {{
+            "street": "Werner-von-Siemens-Straße 1",
+            "street2": null,
+            "city": "München",
+            "zip": "80333",
+            "state": null,
+            "country": "Deutschland"
+        }},
+        "website": null,
+        "company": "Siemens Aktiengesellschaft",
+        "position": null,
+        "is_company": true,
+        "language": "deutsch",
+        "categories": ["kunde"],
+        "biography": "",
+        "confidence": "high"
+    }}
+
+# Kategorie-Rückfrage E-Mail Template (unverändert)
+category_inquiry:
+  subject_template: "KI-Rückfrage: Unbekannte Kategorien für {contact_email}"
+
+  body_template: |
+    Hallo,
+
+    bei der Verarbeitung der E-Mail von {contact_email} konnte ich folgende Kategorien nicht zuordnen:
+
+    ❌ Unbekannte Kategorien: {invalid_categories}
+
+    💡 Meine Vorschläge:
+    {similar_suggestions}
+
+    🔍 Extrahierte Kontaktdaten:
+    Name: {contact_name}
+    Firma: {contact_company}
+    Telefon: {contact_phones}
+    E-Mail: {contact_email}
+
+    📋 VERFÜGBARE KATEGORIEN (Hilfe):
+    {preferred_categories}
+
+    AKTION:
+    • Antworten Sie mit den korrekten Kategorien, oder
+    • Erstellen Sie neue Kategorien in Odoo, oder
+    • Ignorieren Sie diese Nachricht (Kontakt wird mit "Neuer-KI-Eintrag" angelegt)
+
+    Format für Antwort:
+    Biographie hier...
+    #kategorie1 #kategorie2 #kategorie3
+
+    Viele Grüße,
+    Ihr KI-Assistent
+
+# Bestätigungs-E-Mail Templates (unverändert)
+confirmation_created:
+  subject_template: "✅ Kontakt erstellt: {contact_email}"
+  body_template: |
+    Hallo,
+
+    der Kontakt {contact_email} wurde erfolgreich erstellt.
+
+    🎯 KONTAKTDATEN:
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    👤 Name: {contact_name}
+    🏢 Typ: {contact_type}
+    📧 E-Mail: {contact_email}
+    📞 Telefon: {contact_phones}
+    🏠 Adresse: {contact_address}
+    🌐 Website: {contact_website}
+    💼 Position: {contact_position}
+    🏷️ Kategorien: {contact_categories}
+
+    📝 BIOGRAPHIE:
+    {contact_biography}
+
+    🔗 Odoo-Link: {odoo_link}
+
+    Viele Grüße,
+    Ihr KI-Assistent
+
+confirmation_updated:
+  subject_template: "✅ Kontakt aktualisiert: {contact_email}"
+  body_template: |
+    Hallo,
+
+    der Kontakt {contact_email} wurde erfolgreich aktualisiert.
+
+    🎯 KONTAKTDATEN:
+    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    👤 Name: {contact_name}
+    🏢 Typ: {contact_type}
+    📧 E-Mail: {contact_email}
+    📞 Telefon: {contact_phones}
+    🏠 Adresse: {contact_address}
+    🌐 Website: {contact_website}
+    💼 Position: {contact_position}
+    🏷️ Kategorien: {contact_categories}
+
+    📝 BIOGRAPHIE:
+    {contact_biography}
+
+    🔗 Odoo-Link: {odoo_link}
+
+    Viele Grüße,
+    Ihr KI-Assistent
+
+# Erweiterte Konfiguration
+extraction_config:
+  max_email_length: 3000  # Smart-Strategy übernimmt die Optimierung
+  max_biography_length: 1500
+  enable_footer_enhancement: true
+  prioritize_footer_data: true
+
+  # Manual Input Optimierungen
+  manual_input_optimization:
+    enabled: true
+    recognize_business_cards: true      # Visitenkarten-Pattern
+    recognize_company_formats: true     # "**Titel** Firma" Pattern
+    extract_contact_details: true      # Tel/Fax/E-Mail Pattern
+    normalize_countries: true          # Deutschland → Germany
+    clean_biography_from_contacts: true # Kontaktdaten aus Biographie entfernen
+
+  # Firmen-Erkennung (NEU)
+  company_recognition:
+    enabled: true
+    company_indicators: ["GmbH", "AG", "Ltd", "Inc", "Corp", "LLC", "Verein", "Verlag", "Stiftung", "KG", "OHG", "eG", "SE"]
+    ensure_correct_name_assignment: true  # Firmenname → name-Feld in Odoo

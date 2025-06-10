@@ -1,0 +1,27 @@
+# KI-Kontaktassistent Abhängigkeiten
+# Installation: pip install -r requirements.txt
+
+# OpenAI API
+openai>=1.0.0
+
+# YAML Konfiguration
+PyYAML>=6.0
+
+# Email Verarbeitung (Standard-Bibliotheken)
+# imaplib - bereits in Python enthalten
+# smtplib - bereits in Python enthalten
+# email - bereits in Python enthalten
+
+# XML-RPC für Odoo (Standard-Bibliothek)
+# xmlrpc.client - bereits in Python enthalten
+
+# Logging und System (Standard-Bibliotheken)
+# logging - bereits in Python enthalten
+# ssl - bereits in Python enthalten
+# time - bereits in Python enthalten
+# os - bereits in Python enthalten
+# sys - bereits in Python enthalten
+# datetime - bereits in Python enthalten
+# json - bereits in Python enthalten
+# re - bereits in Python enthalten
+# typing - bereits in Python enthalten
