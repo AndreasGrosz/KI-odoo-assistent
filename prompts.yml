@@ -217,7 +217,6 @@ category_inquiry:
     Firma: {contact_company}
     Telefon: {contact_phones}
     E-Mail: {contact_email}
-    Odoo-Link: {odoo_link}
 
     📋 VERFÜGBARE KATEGORIEN (Hilfe):
     {preferred_categories}
