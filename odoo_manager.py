@@ -145,17 +145,8 @@ class OdooManager:
             contact_name = contact_data.get('full_name', 'Kontakt')
 
             # Timeline-Notiz mit formatiertem HTML erstellen
-            note_body = f"""
-<div style="margin: 10px 0; padding: 12px; border: 1px solid #e9ecef; border-radius: 6px; background-color: #f8f9fa;">
-    <h4 style="margin: 0 0 8px 0; color: #495057;">📝 KI-extrahierte Biographie</h4>
-    <div style="margin: 8px 0; padding: 10px; background-color: white; border-left: 4px solid #007bff; font-size: 14px; line-height: 1.5;">
-        {biography}
-    </div>
-    <div style="margin-top: 10px; font-size: 12px; color: #6c757d;">
-        🤖 Automatisch extrahiert | Confidence: <strong>{confidence}</strong> | {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
-    </div>
-</div>
-            """
+            # REINER TEXT (garantiert funktioniert):
+            note_body = f""" "{biography}" """
 
             # Timeline-Notiz via message_post erstellen
             self.odoo_models.execute_kw(
