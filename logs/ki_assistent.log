@@ -14824,3 +14824,132 @@ or find us in Sofia at - Krasno selo, Dechko Yordanov str. 3
 2025-06-11 14:16:04,843 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
 2025-06-11 14:16:04,946 - config_manager - INFO - 📭 Keine neuen E-Mails
 2025-06-11 14:18:28,690 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)
+2025-06-11 14:28:44,502 - config_manager - INFO - ============================================================
+2025-06-11 14:28:44,502 - config_manager - INFO - 🚀 KI-Kontaktassistent Startup
+2025-06-11 14:28:44,502 - config_manager - INFO - 📅 2025-06-11 14:28:44
+2025-06-11 14:28:44,502 - config_manager - INFO - ============================================================
+2025-06-11 14:28:44,502 - config_manager - INFO - 🔍 Odoo-Verbindungstest:
+2025-06-11 14:28:44,502 - config_manager - INFO -    URL: https://andreas-gross.odoo.com
+2025-06-11 14:28:44,502 - config_manager - INFO -    Database: andreas-gross
+2025-06-11 14:28:44,502 - config_manager - INFO -    Username: ki-odoo-assistent@swiss-ecommerce.ch
+2025-06-11 14:28:44,645 - config_manager - INFO - ✅ Odoo-Server erreichbar: {'server_version': '18.0+e', 'server_version_info': [18, 0, 0, 'final', 0, 'e'], 'server_serie': '18.0', 'protocol_version': 1}
+2025-06-11 14:28:44,646 - config_manager - INFO - 🔐 Versuche Authentifizierung...
+2025-06-11 14:28:45,013 - config_manager - INFO - ✅ APIs erfolgreich verbunden
+2025-06-11 14:28:45,013 - config_manager - INFO - 🔐 Odoo User ID: 11
+2025-06-11 14:28:45,013 - config_manager - INFO - ✅ ConfigManager initialisiert
+2025-06-11 14:28:45,460 - config_manager - INFO - 📋 252 Kategorien aus Odoo geladen
+2025-06-11 14:28:45,460 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-11 14:28:45,463 - config_manager - INFO - 🤖 KI-Kontaktassistent gestartet
+2025-06-11 14:28:45,464 - config_manager - INFO - 📊 347 Kategorien verfügbar
+2025-06-11 14:28:45,464 - config_manager - INFO - 🚀 KI-Kontaktassistent läuft...
+2025-06-11 14:28:45,464 - config_manager - INFO - ⏱️ Check-Intervall: 300 Sekunden
+2025-06-11 14:28:45,464 - config_manager - INFO - 🔄 Iteration 1 - 14:28:45
+2025-06-11 14:28:45,464 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 14:28:45,564 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 14:33:45,573 - config_manager - INFO - 🔄 Iteration 2 - 14:33:45
+2025-06-11 14:33:45,575 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 14:33:45,674 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 14:38:45,683 - config_manager - INFO - 🔄 Iteration 3 - 14:38:45
+2025-06-11 14:38:45,685 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 14:38:45,770 - config_manager - INFO - 📬 1 neue E-Mail(s) gefunden
+2025-06-11 14:38:45,770 - config_manager - INFO - 📧 Verarbeite E-Mail 1/1
+2025-06-11 14:38:45,844 - config_manager - INFO - 🔍 E-Mail-Body für Extraktion (erste 500 Zeichen): #kunde,#5gfrei.#Selbständig,#Buchäufer
+
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff: 	AW: Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+Datum: 	Wed, 28 May 2025 22:35:43 +0200
+Von: 	iwan.iten@bluewin.ch
+An: 	andreas@5gfrei.ch
+
+
+
+Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+
+Lieber Andreas
+
+Danke Dir für die INFO betr. Antenne im Schützen.
+
+Gibt es dazu handfeste Beweise? – Läuft die Antenne als 5G «adaptiv» mit 
+Anwendung des Korrekturfaktors?
+
+Wir wer...
+2025-06-11 14:38:45,845 - config_manager - INFO - 🎯 Primäre E-Mail gefunden: redaktion@gesundheitstipp.ch
+2025-06-11 14:38:45,846 - config_manager - INFO - 📧 Verarbeite: redaktion@gesundheitstipp.ch (von: andreas@5gfrei.ch) 
+2025-06-11 14:38:45,846 - config_manager - INFO - 🔧 Smart-Strategy Input: 6858 Zeichen
+2025-06-11 14:38:45,846 - config_manager - INFO - 🔧 Smart-Strategy angewendet:
+2025-06-11 14:38:45,846 - config_manager - INFO -    📄 Head: 1996 Zeichen
+2025-06-11 14:38:45,846 - config_manager - INFO -    ⏭️ Übersprungen: 3858 Zeichen
+2025-06-11 14:38:45,846 - config_manager - INFO -    📦 Footer: 999 Zeichen
+2025-06-11 14:38:45,846 - config_manager - INFO -    📊 Total: 3054 Zeichen (Original: 6858)
+2025-06-11 14:38:51,128 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 14:38:51,133 - config_manager - INFO - 🤖 GPT Antwort (Smart-Strategy): {
+    "first_name": "",
+    "last_name": "",
+    "full_name": "Verein Schutz vor Strahlung",
+    "emails": ["redaktion@gesundheitstipp.ch"],
+    "phones": [],
+    "address": {
+        "street": "8044 Zürich",
+        "street2": null,
+        "city": "Zürich",
+        "zip": "8044",
+        "state": null,
+        "country": "Schweiz"
+    },
+    "website": "Schutz-vor-Strahlung.ch",
+    "company": "Verein Schutz vor Strahlung",
+    "position": null,
+    "is_company": true,
+    "language": "deutsch",
+    "categories": ["kunde", "5gfrei", "Selbständig", "Buchäufer"],
+    "biography": "",
+    "confidence": "high"
+}
+2025-06-11 14:38:51,133 - config_manager - INFO - ✅ JSON erfolgreich geparst - verwende GPT-Daten!
+2025-06-11 14:38:51,134 - config_manager - INFO - ✅ Kontaktdaten extrahiert (Confidence: high)
+2025-06-11 14:38:51,134 - config_manager - INFO - 🎯 Name: Verein Schutz vor Strahlung
+2025-06-11 14:38:51,134 - config_manager - INFO - 📧 E-Mails: redaktion@gesundheitstipp.ch
+2025-06-11 14:38:51,134 - config_manager - INFO - 📞 Telefon: Keine
+2025-06-11 14:38:51,134 - config_manager - INFO - 🏠 Adresse: 8044 Zürich Zürich 8044 Schweiz
+2025-06-11 14:38:51,134 - config_manager - INFO - 🌍 Sprache: deutsch
+2025-06-11 14:38:51,135 - config_manager - INFO - 🏷️ Kategorien: kunde, 5gfrei, selbständig, buchäufer
+2025-06-11 14:38:51,135 - config_manager - INFO - 🎲 Confidence: high
+2025-06-11 14:38:51,587 - config_manager - INFO - 🆕 Kein existierender Kontakt für: redaktion@gesundheitstipp.ch
+2025-06-11 14:38:51,587 - config_manager - WARNING - ⚠️ Unbekannte Kategorien: ['selbständig', 'buchäufer']
+2025-06-11 14:38:51,587 - config_manager - INFO - 📧 Sende Kategorie-Rückfrage für: redaktion@gesundheitstipp.ch
+2025-06-11 14:38:51,836 - config_manager - INFO - ✅ Kategorie-Rückfrage erfolgreich gesendet an: andreas@5gfrei.ch
+2025-06-11 14:38:51,837 - config_manager - INFO - 🏢 Firma: Verwende company-Feld als Hauptname: 'Verein Schutz vor Strahlung'
+2025-06-11 14:38:51,837 - config_manager - INFO - 📋 Finale Kommentar-Struktur für redaktion@gesundheitstipp.ch:
+2025-06-11 14:38:51,837 - config_manager - INFO -    Kommentar: '[KI-Import 2025-06-11 14:38 - Confidence: high]'
+2025-06-11 14:38:51,837 - config_manager - INFO -    Timeline-Biographie: '...' (0 Zeichen)
+2025-06-11 14:38:51,837 - config_manager - INFO - 🎯 NAMEN-ZUORDNUNG für redaktion@gesundheitstipp.ch:
+2025-06-11 14:38:51,837 - config_manager - INFO -    is_company: True
+2025-06-11 14:38:51,837 - config_manager - INFO -    company (aus KI): 'Verein Schutz vor Strahlung'
+2025-06-11 14:38:51,837 - config_manager - INFO -    full_name (aus KI): 'Verein Schutz vor Strahlung'
+2025-06-11 14:38:51,838 - config_manager - INFO -    → name (für Odoo): 'Verein Schutz vor Strahlung'
+2025-06-11 14:38:51,882 - config_manager - INFO - 🌍 Land erkannt: Schweiz → CH (ID: 43)
+2025-06-11 14:38:51,882 - config_manager - INFO - 📋 Odoo-Felder für redaktion@gesundheitstipp.ch:
+2025-06-11 14:38:51,882 - config_manager - INFO -    name: Verein Schutz vor Strahlung
+2025-06-11 14:38:51,882 - config_manager - INFO -    email: redaktion@gesundheitstipp.ch
+2025-06-11 14:38:51,882 - config_manager - INFO -    lang: de_DE
+2025-06-11 14:38:51,883 - config_manager - INFO -    is_company: True
+2025-06-11 14:38:51,883 - config_manager - INFO -    street: 8044 Zürich
+2025-06-11 14:38:51,883 - config_manager - INFO -    city: Zürich
+2025-06-11 14:38:51,883 - config_manager - INFO -    zip: 8044
+2025-06-11 14:38:51,883 - config_manager - INFO -    country_id: 43
+2025-06-11 14:38:51,883 - config_manager - INFO -    website: https://Schutz-vor-Strahlung.ch
+2025-06-11 14:38:51,883 - config_manager - INFO -    category_id: [(6, 0, [1341, 1843, 1840])]
+2025-06-11 14:38:52,295 - config_manager - INFO - ✅ Neuer Kontakt erstellt: redaktion@gesundheitstipp.ch (ID: 143556)
+2025-06-11 14:38:52,295 - config_manager - INFO - 📧 Sende Bestätigungs-E-Mail für: redaktion@gesundheitstipp.ch
+2025-06-11 14:38:52,601 - config_manager - INFO - ✅ Bestätigungs-E-Mail erfolgreich gesendet an: andreas@5gfrei.ch
+2025-06-11 14:38:52,657 - config_manager - INFO - ✅ E-Mail erfolgreich verarbeitet
+2025-06-11 14:38:52,657 - config_manager - INFO - 📊 Ergebnis: ✅ 1 erfolgreich, ❌ 0 Fehler
+2025-06-11 14:43:52,667 - config_manager - INFO - 🔄 Iteration 4 - 14:43:52
+2025-06-11 14:43:52,669 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 14:43:52,768 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 14:48:52,775 - config_manager - INFO - 🔄 Iteration 5 - 14:48:52
+2025-06-11 14:48:52,776 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 14:48:52,883 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 14:51:33,063 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)

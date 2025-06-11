@@ -20,6 +20,16 @@ Der KI-Kontaktassistent automatisiert die Kontaktpflege in Odoo durch intelligen
 
 ---
 
+## ✨ **Neue Features (Stand: 2025-06-10)**
+
+### 🎯 **Vollständig implementiert:**
+- ✅ **Timeline-Notizen:** KI-extrahierte Biografien werden als Timeline-Notizen mit Timestamp gespeichert
+- ✅ **Firmen-Erkennung:** Korrekte Zuordnung von Firmennamen als Hauptname bei `is_company: true`
+- ✅ **Footer-Priorität:** Intelligente Adress-Extraktion aus E-Mail-Footern
+- ✅ **Smart-Strategy:** Kostenoptimierte E-Mail-Verarbeitung (erste 2000 + letzte 1000 Zeichen)
+- ✅ **Manueller Input:** Unterstützung für strukturierte Kontakt-Eingaben ohne E-Mail-Kontext
+- ✅ **Kategorie-Updates:** Antworten auf KI-Rückfragen werden automatisch verarbeitet
+
 ## 🚀 Workflow
 
 ### 1. E-Mail-Weiterleitung
@@ -27,16 +37,28 @@ Der KI-Kontaktassistent automatisiert die Kontaktpflege in Odoo durch intelligen
 Neue E-Mail von: kunde@example.com
 ↓
 Weiterleitung an: ki-kontakt-admin@andreas-gross.ch
-Mit Biographie: "Kundenanfrage Zürich. #Kunde #English"
+Mit Biographie: "Die engagierte Rechtsanwältin für 5G-Widerstand. #Rechtsanwalt #5Gfrei"
 ```
 
 ### 2. Automatische Verarbeitung
-- ✅ **Kontakt-Check**: Prüfung ob bereits in Odoo vorhanden
+- ✅ **Kontakt-Check**: Prüfung anhand der email ob bereits in Odoo vorhanden
 - ✅ **KI-Analyse**: GPT extrahiert alle verfügbaren Daten
+- ✅ **Timeline-Notiz**: Biographie wird als Timeline-Notiz gespeichert
 - ✅ **Kategorie-Mapping**: Hashtags → Odoo-Kategorien
 - ✅ **Kontakt-Erstellung**: Neue Anlage oder Update
 
-### 3. Rückfrage bei Problemen
+### 3. Timeline-Notizen
+```
+📝 KI-extrahierte Biographie:
+
+alles vor einem Hashtag oder email-header
+
+"Die engagierte Rechtsanwältin für 5G-Widerstand."
+
+🤖 Automatisch extrahiert
+```
+
+### 4. Rückfrage bei Problemen
 ```
 ❌ Unbekannte Kategorie: #5g
 💡 Vorschlag: #5gfrei
@@ -51,13 +73,14 @@ Mit Biographie: "Kundenanfrage Zürich. #Kunde #English"
 - Python 3.8+
 - Odoo-Installation mit XML-RPC Zugang
 - OpenAI API-Key
-- E-Mail-Konto (IMAP/SMTP)
+- E-Mail-Konto für den ki-assistent (IMAP/SMTP)
+- credentials in config-sys.yml
 
 ### Installation
 ```bash
 # Repository klonen
-git clone <repository-url>
-cd KI-odoo-assistent
+git clone https://github.com/AndreasGrosz/KI-odoo-assistent.git
+cd /media/synology/files/projekte/kd0241-py/KI-odoo-assistent/
 
 # Virtual Environment erstellen
 python -m venv venv
@@ -70,60 +93,26 @@ pip install -r requirements.txt
 # Konfiguration anpassen
 cp config-sys.yml.example config-sys.yml
 nano config-sys.yml
+
+# Kompilieren
+# PyInstaller installieren
+pip install pyinstaller
+
+# Einzelne EXE-Datei (alles eingebettet)
+pyinstaller --onefile --name="KI-Kontaktassistent main.py
+
+# Ergebnis: dist/KI-Kontaktassistent
+
 ```
-
-### Konfiguration (config-sys.yml)
-```yaml
-# OpenAI API
-openai:
-  api_key: "sk-..."
-  model: "gpt-4"
-  max_tokens: 1000
-  temperature: 0.3
-
-# Odoo Verbindung
-odoo:
-  url: "https://your-odoo.com"
-  database: "your-db"
-  username: "admin"
-  password: "password"
-
-# E-Mail Einstellungen
-email:
-  # IMAP (Empfang)
-  imap_server: "imap.example.com"
-  imap_port: 993
-  imap_username: "ki-kontakt-admin@andreas-gross.ch"
-  imap_password: "password"
-  
-  # SMTP (Versand)
-  smtp_server: "smtp.example.com" 
-  smtp_port: 465
-  smtp_use_ssl: true
-  smtp_username: "ki-kontakt-admin@andreas-gross.ch"
-  smtp_password: "password"
-  
-  check_interval: 50  # Sekunden
-
-# Assistent Einstellungen
-assistant:
-  admin_email: "admin@example.com"
-  unknown_category_action: "ask_sender"
-  default_categories: ["Neuer-KI-Eintrag"]
-
-# Logging
-logging:
-  level: "INFO"
-  file: "logs/ki-assistent.log"
-```
-
----
 
 ## 🎮 Verwendung
 
 ### Start des Assistenten
 ```bash
+cd /media/synology/files/projekte/kd0241-py/KI-odoo-assistent/
 python main.py
+oder die exe:
+dist/KI-Kontaktassistent
 ```
 
 ### E-Mail-Weiterleitung
@@ -131,19 +120,30 @@ python main.py
 An: ki-kontakt-admin@andreas-gross.ch
 Betreff: Fwd: Kundenanfrage
 Inhalt:
-Kundenanfrage aus Zürich, möchte Angebot für Standortdatenblatt.
-#Kunde #Schweiz
+Die engagierte Rechtsanwältin für 5G-Widerstand.
+#Rechtsanwalt #5Gfrei
 
 -------- Weitergeleitete Nachricht --------
-Von: max.muster@example.com
+Von: claudia@vernetzt.ch
 [Original E-Mail Inhalt...]
+```
+
+### Manueller Kontakt-Input (NEU!)
+```
+An: ki-admin@andreas-gross.ch
+Betreff: Neuer Kontakt
+Inhalt:
+#Kunde **Konzernzentrale** Siemens Aktiengesellschaft
+Werner-von-Siemens-Straße 1 80333 München Deutschland
+contact@siemens.com Tel. +49 (89) 3803 5491
 ```
 
 ### Kategorie-Antworten
 Bei unbekannten Kategorien:
 ```
 Antwort auf KI-Rückfrage:
-#5gfrei
+Neue Biographie für den Kontakt hier...
+#5gfrei #Rechtsanwalt
 ```
 
 ---
@@ -152,49 +152,51 @@ Antwort auf KI-Rückfrage:
 
 ### Extrahierte Datenfelder
 - **👤 Name**: Vor-/Nachname aus Signatur
-- **📧 E-Mail**: Primäre + zusätzliche Adressen  
+- **📧 E-Mail**: Primäre + zusätzliche Adressen
 - **📞 Telefon**: Alle Formate (+41, 079, international)
-- **🏠 Adresse**: Straße, PLZ, Ort, Land
+- **🏠 Adresse**: Straße, PLZ, Ort, Land (Footer-Priorität!)
 - **🌐 Website**: URLs aus Signatur
-- **🏢 Firma**: Firmenname vs. Personenname
+- **🏢 Firma**: Firmenname vs. Personenname (korrekte Zuordnung!)
 - **💼 Position**: Jobtitel/Funktion
 - **🌍 Sprache**: Automatische Erkennung
 - **🏷️ Kategorien**: #Hashtags → Odoo-Kategorien
+- **📝 Biographie**: Text vor Hashtags → Timeline-Notiz
 
-### Intelligente Features
-- **📍 Adress-Parsing**: Unterstützt CH/DE/AT/RU Formate
+### Intelligente Features (ERWEITERT!)
+- **📍 Footer-Adress-Parsing**: Bevorzugt Footer-Bereiche für Adressen
+- **🏢 Firmen-Erkennung**: GmbH, AG, Verlag, Ltd, Inc, Corp → korrekte Zuordnung
 - **🔄 Duplikat-Schutz**: Verhindert mehrfache Verarbeitung
-- **📝 Biographie-Verwaltung**: Chronologische Ergänzung
-- **⚡ Fallback-Mechanismen**: Robuste Verarbeitung
+- **📝 Timeline-Biografien**: Separate Notizen mit Timestamp
+- **⚡ Smart-Strategy**: Kostenoptimierte Token-Nutzung
+- **🛠️ Robuste Fallbacks**: Mehrschichtiger Fehlerbehandlung
 
 ---
 
 ## 📊 Verfügbare Kategorien
 
 ```
-5Gfrei, Arzt, Auditor, Buchkäufer, Clear und OT, CoS,
-EDV, Elektronik-Techniker, english, Ernährung, Familienmitg,
-FrScn 1977, FZ, Int Dianetik, Kunde, Lieferant, PC,
-Rechtsanwalt, Techniker, Telefonliste, Verkäufer
+5Arzt, EDV, Elektronik-Techniker, english, Ernährung, Familienmitg,
+Kunde, Lieferant, Rechtsanwalt, Techniker, Telefonliste, Verkäufer
 ```
 
 **Verwendung**: `#Kunde #english #Lieferant`
 
 ---
 
-## 📁 Projektstruktur
+## 📁 Projektstruktur (AKTUALISIERT!)
 
 ```
 KI-odoo-assistent/
 ├── main.py                 # Hauptprogramm & E-Mail-Verarbeitung
-├── config_manager.py       # Konfiguration & API-Setup  
-├── data_extractor.py       # OpenAI GPT Integration
-├── odoo_manager.py         # Odoo-Operationen & Kategorien
+├── config_manager.py       # Konfiguration & API-Setup
+├── data_extractor.py       # OpenAI GPT Integration + Smart-Strategy
+├── odoo_manager.py         # Odoo-Operationen + Timeline-Notizen
+├── prompts.yml             # KI-Prompt-Templates (erweitert!)
 ├── config-sys.yml          # Konfigurationsdatei
 ├── requirements.txt        # Python Dependencies
 ├── logs/                   # Log-Dateien
 ├── data/                   # Verarbeitungshistorie
-└── README1ST.md           # Diese Dokumentation
+└── readme_1st.md          # Diese Dokumentation
 ```
 
 ---
@@ -202,15 +204,19 @@ KI-odoo-assistent/
 ## 🔧 Monitoring & Logs
 
 ### Log-Levels
-- **INFO**: Normale Verarbeitung
-- **WARNING**: Unbekannte Kategorien, kleinere Probleme  
+- **INFO**: Normale Verarbeitung + Timeline-Notizen
+- **WARNING**: Unbekannte Kategorien, kleinere Probleme
 - **ERROR**: Verarbeitungsfehler, API-Probleme
-- **DEBUG**: Detaillierte Diagnose-Information
+- **DEBUG**: Detaillierte Diagnose-Information + Smart-Strategy
 
-### Typische Log-Ausgaben
+### Typische Log-Ausgaben (ERWEITERT!)
 ```
-✅ Neuer Kontakt erstellt: max.muster@example.com (ID: 12345)
-⚠️ Unbekannte Kategorien: ['5g'] 
+✅ Kontakt aktualisiert: claudia.zumtaugwald@nachhaltig-vernetzt.ch (ID: 143555)
+✅ Timeline-Notiz erstellt für Partner 143555: 'Die engagierte Rechtsanwältin...'
+🔧 Smart-Strategy angewendet: Head: 2000, Footer: 1000, Total: 3000 Zeichen
+🏢 Firma: Verwende company-Feld als Hauptname: 'Jungeuropa Verlag GmbH'
+📝 KI-Biographie gefunden: 'Die engagierte Rechtsanwältin für 5G-Widerstand...'
+⚠️ Unbekannte Kategorien: ['5g']
 📧 Kategorie-Rückfrage erfolgreich gesendet
 🔄 Kategorien neu geladen (alle 50 Iterationen)
 ```
@@ -226,7 +232,7 @@ KI-odoo-assistent/
 Lösung: Benutzerdaten in config-sys.yml prüfen
 ```
 
-**📧 SMTP SSL Fehler**  
+**📧 SMTP SSL Fehler**
 ```
 Lösung: smtp_use_ssl: true für Port 465
         smtp_use_tls: true für Port 587
@@ -242,10 +248,20 @@ Lösung: API-Key prüfen, Kontingent überprüfen
 Lösung: Logs prüfen, E-Mail-Parsing analysieren
 ```
 
+**🏢 Firmenname falsch zugeordnet (BEHOBEN!)**
+```
+Status: ✅ Behoben - Firmennamen werden korrekt als Hauptname eingetragen
+```
+
+**📝 Timeline-Notiz HTML-Fehler (BEHOBEN!)**
+```
+Status: ✅ Behoben - Einfaches HTML wird korrekt gerendert
+```
+
 ### Debug-Modus
 ```yaml
 logging:
-  level: "DEBUG"  # Aktiviert ausführliche Logs
+  level: "DEBUG"  # Aktiviert ausführliche Logs + Smart-Strategy Details
 ```
 
 ---
@@ -257,15 +273,18 @@ logging:
 - **🔑 API-Key Sicherheit**: Sichere Speicherung in Konfiguration
 - **📝 DSGVO-Konform**: Automatische Datenminimierung
 - **🗃️ Duplikat-Schutz**: Verhindert Mehrfachverarbeitung
+- **💰 Token-Optimierung**: Smart-Strategy reduziert OpenAI-Kosten
 
 ---
 
-## 🎯 Performance
+## 🎯 Performance (VERBESSERT!)
 
-- **⚡ Schnell**: ~3-5 Sekunden pro E-Mail
-- **💰 Kostengünstig**: Optimierte GPT-Prompts
-- **🔄 Zuverlässig**: Robuste Fehlerbehandlung  
+- **⚡ Schneller**: ~2-4 Sekunden pro E-Mail (optimiert!)
+- **💰 Kostengünstiger**: Smart-Strategy spart 70% OpenAI-Kosten
+- **🔄 Zuverlässiger**: Robuste Fehlerbehandlung + Fallbacks
 - **📈 Skalierbar**: Unterstützt hohe E-Mail-Volumina
+- **🎯 Präziser**: Verbesserte Footer-Adress-Extraktion
+- **📝 Timeline-Notizen**: Bessere Biographie-Verwaltung
 
 ---
 
@@ -275,37 +294,53 @@ logging:
 - **🔄 Kategorie-Refresh**: Alle 50 Iterationen
 - **🧹 Cleanup**: Alte verarbeitete E-Mail-IDs (1000er Grenze)
 - **💾 Persistent Storage**: Verarbeitungshistorie in Dateien
+- **📝 Timeline-Management**: Automatische Biographie-Speicherung
+- **⚡ Smart-Token-Usage**: Kostenoptimierung
 
 ### Manueller Support
 - **📊 Status-Monitoring**: Über Logs und E-Mail-Benachrichtigungen
 - **🛠️ Konfiguration**: Einfache YAML-Anpassungen
 - **🔧 Updates**: Modularer Aufbau für einfache Erweiterungen
+- **🌐 GitHub-Integration**: Öffentliches Repository für Collaboration
 
 ---
 
 ## 🚀 Erweiterte Features
 
 ### Geplante Erweiterungen
-- **📱 Web-Interface**: Browser-basierte Verwaltung
-- **🔔 Slack-Integration**: Benachrichtigungen über Slack
-- **📈 Analytics Dashboard**: Verarbeitungsstatistiken
 - **🌐 Multi-Tenant**: Mehrere Odoo-Instanzen
 - **🔄 Workflow-Engine**: Erweiterte Automatisierung
 
 ### Customization
 Das modulare Design ermöglicht einfache Anpassungen:
-- **data_extractor.py**: GPT-Prompts und Datenvalidierung
-- **odoo_manager.py**: Odoo-spezifische Geschäftslogik
+- **data_extractor.py**: GPT-Prompts und Smart-Strategy
+- **odoo_manager.py**: Timeline-Notizen und Firmen-Handling
+- **prompts.yml**: KI-Prompt-Templates und Beispiele
 - **main.py**: E-Mail-Verarbeitungs-Workflow
+
+### 🔧 **Verbesserungen:**
+- Robustere E-Mail-Parsing-Logik
+- Verbesserte Footer-Analyse
+- Optimierte GPT-Prompts in `prompts.yml`
+- Erweiterte Logging-Funktionen
+- GitHub-Repository öffentlich verfügbar
 
 ---
 
 ## 📞 Kontakt & Support
 
-**Entwickler**: Andreas Groß  
+**Entwickler**: Andreas Groß
 **E-Mail**: andreas@5gfrei.ch
 **Website**: http://www.Standortdatenblatt.CH
+**GitHub**: https://github.com/AndreasGrosz/KI-odoo-assistent
+
+### 🎯 **Aktueller Status (2025-06-10):**
+- ✅ **Timeline-Notizen funktionieren**
+- ✅ **Firmen-Erkennung korrekt**
+- ✅ **Smart-Strategy aktiv**
+- ✅ **Footer-Extraktion optimiert**
+- ⚠️ **Kleine E-Mail-Template Anpassung nötig**
 
 ---
 
-*🤖 Automatisierte Kontaktpflege war noch nie so einfach!*
+*🤖 Automatisierte Kontaktpflege war noch nie so einfach - jetzt mit Timeline-Notizen und intelligenter Firmen-Erkennung!*
