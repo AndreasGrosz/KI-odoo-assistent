@@ -1,0 +1,94 @@
+# KI-Kontaktassistent Konfiguration
+# WICHTIG: Diese Datei NIEMALS in Git/öffentliche Repos hochladen!
+# ANLEITUNG: Kopieren zu config-sys.yml und echte Daten eintragen
+
+# OpenAI API Konfiguration
+openai:
+  api_key: "sk-proj-YOUR_OPENAI_API_KEY_HERE"  # <-- Hier Ihren OpenAI API-Key eintragen
+  model: "gpt-4o-mini"  # Oder gpt-4o für bessere Qualität
+  max_tokens: 1500
+  temperature: 0.1  # Niedrig für konsistente Datenextraktion
+
+smart_strategy:
+  enabled: true
+  head_chars: 2000              # Erste 2000 Zeichen
+  footer_chars: 1000            # Letzte 1000 Zeichen
+  max_total_chars: 3000         # Gesamt-Maximum
+
+# Odoo API Konfiguration
+odoo:
+  url: "https://your-company.odoo.com"
+  database: "your_database_name"
+  username: "your-odoo-username@example.com"  # <-- Ihr Odoo Login
+  password: "YOUR_ODOO_PASSWORD"              # <-- Ihr Odoo Passwort
+
+# Email-Konfiguration für KI-Adressadmin Postfach
+email:
+  # IMAP Einstellungen (zum Abholen der weitergeleiteten Emails)
+  imap_server: "imap.your-provider.com"    # <-- Ihr IMAP Server
+  imap_port: 993
+  imap_use_ssl: true
+  imap_username: "ki-assistant@your-domain.com"
+  imap_password: "YOUR_EMAIL_PASSWORD"      # <-- Ihr E-Mail Passwort
+
+  # SMTP Einstellungen (für Rückfragen)
+  smtp_server: "smtp.your-provider.com"    # <-- Ihr SMTP Server
+  smtp_port: 465
+  smtp_use_tls: false   # Nicht TLS bei Port 465
+  smtp_use_ssl: true    # SSL für Port 465
+  smtp_username: "ki-assistant@your-domain.com"
+  smtp_password: "YOUR_EMAIL_PASSWORD"      # <-- Ihr E-Mail Passwort
+
+  # Email-Verarbeitung
+  check_interval: 300  # Sekunden zwischen Email-Checks (5 Minuten)
+  processed_folder: "Processed"  # Ordner für bearbeitete Emails
+  error_folder: "Errors"  # Ordner für fehlerhafte Emails
+
+# KI-Assistent Einstellungen
+assistant:
+  auto_mode: true  # true = automatisch verarbeiten, false = Bestätigung vor Speichern
+  max_email_length: 3000
+  max_biography_length: 1000
+  unknown_category_action: "ask_sender"  # "ask_sender", "email_admin", "skip"
+  admin_email: "admin@your-domain.com"   # <-- Ihre Admin-E-Mail
+  send_confirmation_email: true
+
+  # Kommunikation mit Weiterleitern
+  send_processing_summary: false  # Keine Bestätigung wenn alles OK läuft
+  request_missing_data: false    # Keine Nachfragen bei fehlenden Daten
+  ask_for_categories: true       # Nur Rückfragen bei unbekannten Kategorien
+
+  # Automatische Kategorien
+  default_categories:
+    - "Neuer-KI-Eintrag"  # Wird automatisch allen KI-Einträgen zugewiesen
+
+  # Spracherkennungs-Mapping
+  language_detection:
+    english_keywords: ["regards", "best", "dear", "sincerely", "thank you"]
+    german_keywords: ["grüsse", "sehr geehrte", "Grüezi"]
+
+  preferred_categories:
+    - "Kunde"
+    - "Lieferant"
+    - "Techniker"
+    - "Arzt"
+    - "EDV"
+    - "english"
+
+# Logging Konfiguration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "logs/ki_assistent.log"
+  max_file_size: "10MB"
+  backup_count: 5
+
+# Datenbank für lokale Verarbeitung (optional)
+local_db:
+  enabled: false
+  path: "data/processing.db"
+
+# Backup Einstellungen
+backup:
+  enabled: true
+  path: "backups/"
+  keep_days: 30
