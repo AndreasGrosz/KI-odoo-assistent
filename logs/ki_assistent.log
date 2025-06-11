@@ -14953,3 +14953,512 @@ Wir wer...
 2025-06-11 14:48:52,776 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
 2025-06-11 14:48:52,883 - config_manager - INFO - 📭 Keine neuen E-Mails
 2025-06-11 14:51:33,063 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)
+2025-06-11 15:04:51,762 - config_manager - INFO - ============================================================
+2025-06-11 15:04:51,763 - config_manager - INFO - 🚀 KI-Kontaktassistent Startup
+2025-06-11 15:04:51,763 - config_manager - INFO - 📅 2025-06-11 15:04:51
+2025-06-11 15:04:51,763 - config_manager - INFO - ============================================================
+2025-06-11 15:04:51,763 - config_manager - INFO - 🔍 Odoo-Verbindungstest:
+2025-06-11 15:04:51,763 - config_manager - INFO -    URL: https://andreas-gross.odoo.com
+2025-06-11 15:04:51,763 - config_manager - INFO -    Database: andreas-gross
+2025-06-11 15:04:51,763 - config_manager - INFO -    Username: ki-odoo-assistent@swiss-ecommerce.ch
+2025-06-11 15:04:51,896 - config_manager - INFO - ✅ Odoo-Server erreichbar: {'server_version': '18.0+e', 'server_version_info': [18, 0, 0, 'final', 0, 'e'], 'server_serie': '18.0', 'protocol_version': 1}
+2025-06-11 15:04:51,896 - config_manager - INFO - 🔐 Versuche Authentifizierung...
+2025-06-11 15:04:52,165 - config_manager - INFO - ✅ APIs erfolgreich verbunden
+2025-06-11 15:04:52,166 - config_manager - INFO - 🔐 Odoo User ID: 11
+2025-06-11 15:04:52,166 - config_manager - INFO - ✅ ConfigManager initialisiert
+2025-06-11 15:04:52,503 - config_manager - INFO - 📋 252 Kategorien aus Odoo geladen
+2025-06-11 15:04:52,503 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-11 15:04:52,506 - config_manager - INFO - 🤖 KI-Kontaktassistent gestartet
+2025-06-11 15:04:52,506 - config_manager - INFO - 📊 347 Kategorien verfügbar
+2025-06-11 15:04:52,506 - config_manager - INFO - 🚀 KI-Kontaktassistent läuft...
+2025-06-11 15:04:52,506 - config_manager - INFO - ⏱️ Check-Intervall: 300 Sekunden
+2025-06-11 15:04:52,506 - config_manager - INFO - 🔄 Iteration 1 - 15:04:52
+2025-06-11 15:04:52,506 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 15:04:52,614 - config_manager - INFO - 📬 1 neue E-Mail(s) gefunden
+2025-06-11 15:04:52,614 - config_manager - INFO - 📧 Verarbeite E-Mail 1/1
+2025-06-11 15:04:52,634 - config_manager - INFO - 🔍 E-Mail-Body für Extraktion (erste 500 Zeichen): #kunde,#5gfrei.#Selbständige,#Buchkäufer
+
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff: 	AW: Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+Datum: 	Wed, 28 May 2025 22:35:43 +0200
+Von: 	iwan.iten@bluewin.ch
+An: 	andreas@5gfrei.ch
+
+
+
+Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+
+Lieber Andreas
+
+Danke Dir für die INFO betr. Antenne im Schützen.
+
+Gibt es dazu handfeste Beweise? – Läuft die Antenne als 5G «adaptiv» mit 
+Anwendung des Korrekturfaktors?
+
+Wir w...
+2025-06-11 15:04:52,636 - config_manager - INFO - 🎯 Primäre E-Mail gefunden: iwan.iten@bluewin.ch
+2025-06-11 15:04:52,636 - config_manager - INFO - 📧 Verarbeite: iwan.iten@bluewin.ch (von: andreas@5gfrei.ch) 
+2025-06-11 15:04:52,636 - config_manager - INFO - 🔧 Smart-Strategy Input: 1308 Zeichen
+2025-06-11 15:04:52,636 - config_manager - INFO - 📧 Kurze E-Mail (1308 Zeichen) - vollständig verarbeitet
+2025-06-11 15:04:55,922 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 15:04:55,927 - config_manager - INFO - 🤖 GPT Antwort (Smart-Strategy): {
+    "first_name": "Iwan",
+    "last_name": "Iten",
+    "full_name": "Iwan Iten",
+    "emails": ["iwan.iten@bluewin.ch"],
+    "phones": ["041 750 85 24"],
+    "address": {
+        "street": "Alte Landstrasse 144",
+        "street2": null,
+        "city": "Unterägeri",
+        "zip": "6314",
+        "state": null,
+        "country": "Switzerland"
+    },
+    "website": null,
+    "company": null,
+    "position": null,
+    "is_company": false,
+    "language": "deutsch",
+    "categories": ["kunde", "5gfrei", "Selbständige", "Buchkäufer"],
+    "biography": "",
+    "confidence": "high"
+}
+2025-06-11 15:04:55,927 - config_manager - INFO - ✅ JSON erfolgreich geparst - verwende GPT-Daten!
+2025-06-11 15:04:55,927 - config_manager - INFO - ✅ Kontaktdaten extrahiert (Confidence: high)
+2025-06-11 15:04:55,927 - config_manager - INFO - 🎯 Name: Iwan Iten
+2025-06-11 15:04:55,927 - config_manager - INFO - 📧 E-Mails: iwan.iten@bluewin.ch
+2025-06-11 15:04:55,927 - config_manager - INFO - 📞 Telefon: 041 750 85 24
+2025-06-11 15:04:55,927 - config_manager - INFO - 🏠 Adresse: Alte Landstrasse 144 Unterägeri 6314 Switzerland
+2025-06-11 15:04:55,927 - config_manager - INFO - 🌍 Sprache: deutsch
+2025-06-11 15:04:55,927 - config_manager - INFO - 🏷️ Kategorien: kunde, 5gfrei, selbständige, buchkäufer
+2025-06-11 15:04:55,927 - config_manager - INFO - 🎲 Confidence: high
+2025-06-11 15:04:56,238 - config_manager - INFO - 🔍 Existierender Kontakt gefunden: iwan.iten@bluewin.ch
+2025-06-11 15:04:56,238 - config_manager - INFO - 📋 Finale Kommentar-Struktur für iwan.iten@bluewin.ch:
+2025-06-11 15:04:56,238 - config_manager - INFO -    Kommentar: '[KI-Import 2025-06-11 15:04 - Confidence: high]'
+2025-06-11 15:04:56,239 - config_manager - INFO -    Timeline-Biographie: '...' (0 Zeichen)
+2025-06-11 15:04:56,239 - config_manager - INFO - 🎯 NAMEN-ZUORDNUNG für iwan.iten@bluewin.ch:
+2025-06-11 15:04:56,239 - config_manager - INFO -    is_company: False
+2025-06-11 15:04:56,239 - config_manager - INFO -    company (aus KI): ''
+2025-06-11 15:04:56,239 - config_manager - INFO -    full_name (aus KI): 'Iwan Iten'
+2025-06-11 15:04:56,239 - config_manager - INFO -    → name (für Odoo): 'Iwan Iten'
+2025-06-11 15:04:56,272 - config_manager - INFO - 🌍 Land erkannt: Switzerland → CH (ID: 43)
+2025-06-11 15:04:56,273 - config_manager - INFO - 📋 Odoo-Felder für iwan.iten@bluewin.ch:
+2025-06-11 15:04:56,273 - config_manager - INFO -    name: Iwan Iten
+2025-06-11 15:04:56,273 - config_manager - INFO -    email: iwan.iten@bluewin.ch
+2025-06-11 15:04:56,273 - config_manager - INFO -    lang: de_DE
+2025-06-11 15:04:56,273 - config_manager - INFO -    is_company: False
+2025-06-11 15:04:56,273 - config_manager - INFO -    street: Alte Landstrasse 144
+2025-06-11 15:04:56,273 - config_manager - INFO -    city: Unterägeri
+2025-06-11 15:04:56,273 - config_manager - INFO -    zip: 6314
+2025-06-11 15:04:56,273 - config_manager - INFO -    country_id: 43
+2025-06-11 15:04:56,273 - config_manager - INFO -    phone: 041 750 85 24
+2025-06-11 15:04:56,273 - config_manager - INFO -    category_id: [(6, 0, [1341, 1843, 1461, 1398, 1840])]
+2025-06-11 15:04:56,273 - config_manager - INFO - 📝 phone ergänzt: 041 750 85 24
+2025-06-11 15:04:56,273 - config_manager - INFO - 📝 street ergänzt: Alte Landstrasse 144
+2025-06-11 15:04:56,273 - config_manager - INFO - 📝 city ergänzt: Unterägeri
+2025-06-11 15:04:56,273 - config_manager - INFO - 📝 zip ergänzt: 6314
+2025-06-11 15:04:56,273 - config_manager - INFO - 📝 Sprache ergänzt: de_DE
+2025-06-11 15:04:56,273 - config_manager - INFO - 📝 Land ergänzt: 43
+2025-06-11 15:04:56,273 - config_manager - ERROR - ❌ Fehler beim Speichern des Kontakts: 'bool' object has no attribute 'strip'
+2025-06-11 15:04:56,273 - config_manager - ERROR - ❌ E-Mail-Verarbeitung fehlgeschlagen
+2025-06-11 15:04:56,273 - config_manager - INFO - 📊 Ergebnis: ✅ 0 erfolgreich, ❌ 1 Fehler
+2025-06-11 15:09:56,281 - config_manager - INFO - 🔄 Iteration 2 - 15:09:56
+2025-06-11 15:09:56,282 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 15:09:56,387 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 15:14:56,394 - config_manager - INFO - 🔄 Iteration 3 - 15:14:56
+2025-06-11 15:14:56,396 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 15:14:56,497 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 15:15:57,442 - config_manager - INFO - ============================================================
+2025-06-11 15:15:57,442 - config_manager - INFO - 🚀 KI-Kontaktassistent Startup
+2025-06-11 15:15:57,442 - config_manager - INFO - 📅 2025-06-11 15:15:57
+2025-06-11 15:15:57,442 - config_manager - INFO - ============================================================
+2025-06-11 15:15:57,442 - config_manager - INFO - 🔍 Odoo-Verbindungstest:
+2025-06-11 15:15:57,442 - config_manager - INFO -    URL: https://andreas-gross.odoo.com
+2025-06-11 15:15:57,442 - config_manager - INFO -    Database: andreas-gross
+2025-06-11 15:15:57,442 - config_manager - INFO -    Username: ki-odoo-assistent@swiss-ecommerce.ch
+2025-06-11 15:15:57,591 - config_manager - INFO - ✅ Odoo-Server erreichbar: {'server_version': '18.0+e', 'server_version_info': [18, 0, 0, 'final', 0, 'e'], 'server_serie': '18.0', 'protocol_version': 1}
+2025-06-11 15:15:57,591 - config_manager - INFO - 🔐 Versuche Authentifizierung...
+2025-06-11 15:15:57,870 - config_manager - INFO - ✅ APIs erfolgreich verbunden
+2025-06-11 15:15:57,870 - config_manager - INFO - 🔐 Odoo User ID: 11
+2025-06-11 15:15:57,871 - config_manager - INFO - ✅ ConfigManager initialisiert
+2025-06-11 15:15:57,989 - config_manager - INFO - 📋 252 Kategorien aus Odoo geladen
+2025-06-11 15:15:57,989 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-11 15:15:57,993 - config_manager - INFO - 🤖 KI-Kontaktassistent gestartet
+2025-06-11 15:15:57,993 - config_manager - INFO - 📊 347 Kategorien verfügbar
+2025-06-11 15:15:57,993 - config_manager - INFO - 🚀 KI-Kontaktassistent läuft...
+2025-06-11 15:15:57,993 - config_manager - INFO - ⏱️ Check-Intervall: 300 Sekunden
+2025-06-11 15:15:57,993 - config_manager - INFO - 🔄 Iteration 1 - 15:15:57
+2025-06-11 15:15:57,993 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 15:15:58,094 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 15:20:58,103 - config_manager - INFO - 🔄 Iteration 2 - 15:20:58
+2025-06-11 15:20:58,106 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 15:20:58,215 - config_manager - INFO - 📬 1 neue E-Mail(s) gefunden
+2025-06-11 15:20:58,215 - config_manager - INFO - 📧 Verarbeite E-Mail 1/1
+2025-06-11 15:20:58,234 - config_manager - INFO - 🔍 E-Mail-Body für Extraktion (erste 500 Zeichen): #kunde,#5gfrei.#Selbständige,#Buchkäufer
+
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff: 	AW: Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+Datum: 	Wed, 28 May 2025 22:35:43 +0200
+Von: 	iwan.iten@bluewin.ch
+An: 	andreas@5gfrei.ch
+
+
+
+Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+
+Lieber Andreas
+
+Danke Dir für die INFO betr. Antenne im Schützen.
+
+Gibt es dazu handfeste Beweise? – Läuft die Antenne als 5G «adaptiv» mit 
+Anwendung des Korrekturfaktors?
+
+Wir w...
+2025-06-11 15:20:58,236 - config_manager - INFO - 🎯 Primäre E-Mail gefunden: iwan.iten@bluewin.ch
+2025-06-11 15:20:58,237 - config_manager - INFO - 📧 Verarbeite: iwan.iten@bluewin.ch (von: andreas@5gfrei.ch) 
+2025-06-11 15:20:58,237 - config_manager - INFO - 🔧 Smart-Strategy Input: 1308 Zeichen
+2025-06-11 15:20:58,237 - config_manager - INFO - 📧 Kurze E-Mail (1308 Zeichen) - vollständig verarbeitet
+2025-06-11 15:21:03,411 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 15:21:03,427 - config_manager - INFO - 🤖 GPT Antwort (Smart-Strategy): {
+    "first_name": "Iwan",
+    "last_name": "Iten",
+    "full_name": "Iwan Iten",
+    "emails": ["iwan.iten@bluewin.ch"],
+    "phones": ["041 750 85 24"],
+    "address": {
+        "street": "Alte Landstrasse 144",
+        "street2": null,
+        "city": "Unterägeri",
+        "zip": "6314",
+        "state": null,
+        "country": "Schweiz"
+    },
+    "website": null,
+    "company": null,
+    "position": null,
+    "is_company": false,
+    "language": "deutsch",
+    "categories": ["kunde", "5gfrei", "Selbständige", "Buchkäufer"],
+    "biography": "",
+    "confidence": "high"
+}
+2025-06-11 15:21:03,427 - config_manager - INFO - ✅ JSON erfolgreich geparst - verwende GPT-Daten!
+2025-06-11 15:21:03,427 - config_manager - INFO - ✅ Kontaktdaten extrahiert (Confidence: high)
+2025-06-11 15:21:03,427 - config_manager - INFO - 🎯 Name: Iwan Iten
+2025-06-11 15:21:03,427 - config_manager - INFO - 📧 E-Mails: iwan.iten@bluewin.ch
+2025-06-11 15:21:03,427 - config_manager - INFO - 📞 Telefon: 041 750 85 24
+2025-06-11 15:21:03,427 - config_manager - INFO - 🏠 Adresse: Alte Landstrasse 144 Unterägeri 6314 Schweiz
+2025-06-11 15:21:03,427 - config_manager - INFO - 🌍 Sprache: deutsch
+2025-06-11 15:21:03,427 - config_manager - INFO - 🏷️ Kategorien: kunde, 5gfrei, selbständige, buchkäufer
+2025-06-11 15:21:03,428 - config_manager - INFO - 🎲 Confidence: high
+2025-06-11 15:21:03,579 - config_manager - INFO - 🔍 Existierender Kontakt gefunden: iwan.iten@bluewin.ch
+2025-06-11 15:21:03,580 - config_manager - INFO - 📋 Finale Kommentar-Struktur für iwan.iten@bluewin.ch:
+2025-06-11 15:21:03,580 - config_manager - INFO -    Kommentar: '[KI-Import 2025-06-11 15:21 - Confidence: high]'
+2025-06-11 15:21:03,580 - config_manager - INFO -    Timeline-Biographie: '...' (0 Zeichen)
+2025-06-11 15:21:03,580 - config_manager - INFO - 🎯 NAMEN-ZUORDNUNG für iwan.iten@bluewin.ch:
+2025-06-11 15:21:03,580 - config_manager - INFO -    is_company: 
+2025-06-11 15:21:03,580 - config_manager - INFO -    company (aus KI): ''
+2025-06-11 15:21:03,580 - config_manager - INFO -    full_name (aus KI): 'Iwan Iten'
+2025-06-11 15:21:03,580 - config_manager - INFO -    → name (für Odoo): 'Iwan Iten'
+2025-06-11 15:21:03,620 - config_manager - INFO - 🌍 Land erkannt: Schweiz → CH (ID: 43)
+2025-06-11 15:21:03,620 - config_manager - INFO - 📋 Odoo-Felder für iwan.iten@bluewin.ch:
+2025-06-11 15:21:03,620 - config_manager - INFO -    name: Iwan Iten
+2025-06-11 15:21:03,620 - config_manager - INFO -    email: iwan.iten@bluewin.ch
+2025-06-11 15:21:03,620 - config_manager - INFO -    lang: de_DE
+2025-06-11 15:21:03,620 - config_manager - INFO -    is_company: 
+2025-06-11 15:21:03,620 - config_manager - INFO -    street: Alte Landstrasse 144
+2025-06-11 15:21:03,620 - config_manager - INFO -    city: Unterägeri
+2025-06-11 15:21:03,620 - config_manager - INFO -    zip: 6314
+2025-06-11 15:21:03,620 - config_manager - INFO -    country_id: 43
+2025-06-11 15:21:03,620 - config_manager - INFO -    phone: 041 750 85 24
+2025-06-11 15:21:03,620 - config_manager - INFO -    category_id: [(6, 0, [1341, 1843, 1461, 1398, 1840])]
+2025-06-11 15:21:03,620 - config_manager - INFO - 📝 phone ergänzt: 041 750 85 24
+2025-06-11 15:21:03,620 - config_manager - INFO - 📝 street ergänzt: Alte Landstrasse 144
+2025-06-11 15:21:03,621 - config_manager - INFO - 📝 city ergänzt: Unterägeri
+2025-06-11 15:21:03,621 - config_manager - INFO - 📝 zip ergänzt: 6314
+2025-06-11 15:21:03,621 - config_manager - INFO - 📝 Sprache ergänzt: de_DE
+2025-06-11 15:21:03,621 - config_manager - INFO - 📝 Land ergänzt: 43
+2025-06-11 15:21:03,621 - config_manager - ERROR - ❌ Fehler beim Speichern des Kontakts: 'bool' object has no attribute 'strip'
+2025-06-11 15:21:03,621 - config_manager - ERROR - ❌ E-Mail-Verarbeitung fehlgeschlagen
+2025-06-11 15:21:03,621 - config_manager - INFO - 📊 Ergebnis: ✅ 0 erfolgreich, ❌ 1 Fehler
+2025-06-11 15:26:03,630 - config_manager - INFO - 🔄 Iteration 3 - 15:26:03
+2025-06-11 15:26:03,631 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 15:26:03,739 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 15:31:03,748 - config_manager - INFO - 🔄 Iteration 4 - 15:31:03
+2025-06-11 15:31:03,750 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 15:31:03,863 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 15:36:03,872 - config_manager - INFO - 🔄 Iteration 5 - 15:36:03
+2025-06-11 15:36:03,874 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 15:36:03,982 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 15:41:03,991 - config_manager - INFO - 🔄 Iteration 6 - 15:41:03
+2025-06-11 15:41:03,993 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 15:41:04,097 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 15:46:04,105 - config_manager - INFO - 🔄 Iteration 7 - 15:46:04
+2025-06-11 15:46:04,108 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 15:46:04,217 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 15:51:04,226 - config_manager - INFO - 🔄 Iteration 8 - 15:51:04
+2025-06-11 15:51:04,228 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 15:51:04,332 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 15:54:00,900 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)
+2025-06-11 15:54:05,905 - config_manager - INFO - ============================================================
+2025-06-11 15:54:05,905 - config_manager - INFO - 🚀 KI-Kontaktassistent Startup
+2025-06-11 15:54:05,905 - config_manager - INFO - 📅 2025-06-11 15:54:05
+2025-06-11 15:54:05,905 - config_manager - INFO - ============================================================
+2025-06-11 15:54:05,905 - config_manager - INFO - 🔍 Odoo-Verbindungstest:
+2025-06-11 15:54:05,905 - config_manager - INFO -    URL: https://andreas-gross.odoo.com
+2025-06-11 15:54:05,905 - config_manager - INFO -    Database: andreas-gross
+2025-06-11 15:54:05,905 - config_manager - INFO -    Username: ki-odoo-assistent@swiss-ecommerce.ch
+2025-06-11 15:54:06,054 - config_manager - INFO - ✅ Odoo-Server erreichbar: {'server_version': '18.0+e', 'server_version_info': [18, 0, 0, 'final', 0, 'e'], 'server_serie': '18.0', 'protocol_version': 1}
+2025-06-11 15:54:06,054 - config_manager - INFO - 🔐 Versuche Authentifizierung...
+2025-06-11 15:54:06,433 - config_manager - INFO - ✅ APIs erfolgreich verbunden
+2025-06-11 15:54:06,433 - config_manager - INFO - 🔐 Odoo User ID: 11
+2025-06-11 15:54:06,433 - config_manager - INFO - ✅ ConfigManager initialisiert
+2025-06-11 15:54:06,862 - config_manager - INFO - 📋 252 Kategorien aus Odoo geladen
+2025-06-11 15:54:06,862 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-11 15:54:06,865 - config_manager - INFO - 🤖 KI-Kontaktassistent gestartet
+2025-06-11 15:54:06,865 - config_manager - INFO - 📊 347 Kategorien verfügbar
+2025-06-11 15:54:06,865 - config_manager - INFO - 🚀 KI-Kontaktassistent läuft...
+2025-06-11 15:54:06,865 - config_manager - INFO - ⏱️ Check-Intervall: 300 Sekunden
+2025-06-11 15:54:06,865 - config_manager - INFO - 🔄 Iteration 1 - 15:54:06
+2025-06-11 15:54:06,865 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 15:54:06,959 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 15:59:06,967 - config_manager - INFO - 🔄 Iteration 2 - 15:59:06
+2025-06-11 15:59:06,968 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 15:59:07,072 - config_manager - INFO - 📬 1 neue E-Mail(s) gefunden
+2025-06-11 15:59:07,073 - config_manager - INFO - 📧 Verarbeite E-Mail 1/1
+2025-06-11 15:59:07,096 - config_manager - INFO - 🔍 E-Mail-Body für Extraktion (erste 500 Zeichen): #kunde,#5gfrei.#Selbständige,#Buchkäufer
+
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff: 	AW: Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+Datum: 	Wed, 28 May 2025 22:35:43 +0200
+Von: 	iwan.iten@bluewin.ch
+An: 	andreas@5gfrei.ch
+
+
+
+Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+
+Lieber Andreas
+
+Danke Dir für die INFO betr. Antenne im Schützen.
+
+Gibt es dazu handfeste Beweise? – Läuft die Antenne als 5G «adaptiv» mit 
+Anwendung des Korrekturfaktors?
+
+Wir w...
+2025-06-11 15:59:07,098 - config_manager - INFO - 🎯 Primäre E-Mail gefunden: iwan.iten@bluewin.ch
+2025-06-11 15:59:07,098 - config_manager - INFO - 📧 Verarbeite: iwan.iten@bluewin.ch (von: andreas@5gfrei.ch) 
+2025-06-11 15:59:07,098 - config_manager - INFO - 🔧 Smart-Strategy Input: 1308 Zeichen
+2025-06-11 15:59:07,098 - config_manager - INFO - 📧 Kurze E-Mail (1308 Zeichen) - vollständig verarbeitet
+2025-06-11 15:59:11,448 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 15:59:11,453 - config_manager - INFO - 🤖 GPT Antwort (Smart-Strategy): {
+    "first_name": "Iwan",
+    "last_name": "Iten",
+    "full_name": "Iwan Iten",
+    "emails": ["iwan.iten@bluewin.ch"],
+    "phones": ["041 750 85 24"],
+    "address": {
+        "street": "Alte Landstrasse 144",
+        "street2": null,
+        "city": "Unterägeri",
+        "zip": "6314",
+        "state": null,
+        "country": "Schweiz"
+    },
+    "website": null,
+    "company": null,
+    "position": null,
+    "is_company": false,
+    "language": "deutsch",
+    "categories": ["kunde", "5gfrei", "Selbständige", "Buchkäufer"],
+    "biography": "",
+    "confidence": "high"
+}
+2025-06-11 15:59:11,453 - config_manager - INFO - ✅ JSON erfolgreich geparst - verwende GPT-Daten!
+2025-06-11 15:59:11,453 - config_manager - INFO - ✅ Kontaktdaten extrahiert (Confidence: high)
+2025-06-11 15:59:11,453 - config_manager - INFO - 🎯 Name: Iwan Iten
+2025-06-11 15:59:11,453 - config_manager - INFO - 📧 E-Mails: iwan.iten@bluewin.ch
+2025-06-11 15:59:11,453 - config_manager - INFO - 📞 Telefon: 041 750 85 24
+2025-06-11 15:59:11,453 - config_manager - INFO - 🏠 Adresse: Alte Landstrasse 144 Unterägeri 6314 Schweiz
+2025-06-11 15:59:11,453 - config_manager - INFO - 🌍 Sprache: deutsch
+2025-06-11 15:59:11,453 - config_manager - INFO - 🏷️ Kategorien: kunde, 5gfrei, selbständige, buchkäufer
+2025-06-11 15:59:11,453 - config_manager - INFO - 🎲 Confidence: high
+2025-06-11 15:59:11,929 - config_manager - INFO - 🔍 Existierender Kontakt gefunden: iwan.iten@bluewin.ch
+2025-06-11 15:59:11,929 - config_manager - INFO - 📋 Finale Kommentar-Struktur für iwan.iten@bluewin.ch:
+2025-06-11 15:59:11,929 - config_manager - INFO -    Kommentar: '[KI-Import 2025-06-11 15:59 - Confidence: high]'
+2025-06-11 15:59:11,929 - config_manager - INFO -    Timeline-Biographie: '...' (0 Zeichen)
+2025-06-11 15:59:11,929 - config_manager - INFO - 🎯 NAMEN-ZUORDNUNG für iwan.iten@bluewin.ch:
+2025-06-11 15:59:11,930 - config_manager - INFO -    is_company: 
+2025-06-11 15:59:11,930 - config_manager - INFO -    company (aus KI): ''
+2025-06-11 15:59:11,930 - config_manager - INFO -    full_name (aus KI): 'Iwan Iten'
+2025-06-11 15:59:11,930 - config_manager - INFO -    → name (für Odoo): 'Iwan Iten'
+2025-06-11 15:59:11,964 - config_manager - INFO - 🌍 Land erkannt: Schweiz → CH (ID: 43)
+2025-06-11 15:59:11,964 - config_manager - INFO - 📋 Odoo-Felder für iwan.iten@bluewin.ch:
+2025-06-11 15:59:11,964 - config_manager - INFO -    name: Iwan Iten
+2025-06-11 15:59:11,964 - config_manager - INFO -    email: iwan.iten@bluewin.ch
+2025-06-11 15:59:11,964 - config_manager - INFO -    lang: de_DE
+2025-06-11 15:59:11,964 - config_manager - INFO -    is_company: 
+2025-06-11 15:59:11,964 - config_manager - INFO -    street: Alte Landstrasse 144
+2025-06-11 15:59:11,964 - config_manager - INFO -    city: Unterägeri
+2025-06-11 15:59:11,964 - config_manager - INFO -    zip: 6314
+2025-06-11 15:59:11,964 - config_manager - INFO -    country_id: 43
+2025-06-11 15:59:11,964 - config_manager - INFO -    phone: 041 750 85 24
+2025-06-11 15:59:11,964 - config_manager - INFO -    category_id: [(6, 0, [1341, 1843, 1461, 1398, 1840])]
+2025-06-11 15:59:11,964 - config_manager - INFO - 📝 phone ergänzt: 041 750 85 24
+2025-06-11 15:59:11,964 - config_manager - INFO - 📝 street ergänzt: Alte Landstrasse 144
+2025-06-11 15:59:11,964 - config_manager - INFO - 📝 city ergänzt: Unterägeri
+2025-06-11 15:59:11,964 - config_manager - INFO - 📝 zip ergänzt: 6314
+2025-06-11 15:59:11,964 - config_manager - INFO - 📝 Sprache ergänzt: de_DE
+2025-06-11 15:59:11,964 - config_manager - INFO - 📝 Land ergänzt: 43
+2025-06-11 15:59:11,964 - config_manager - ERROR - ❌ Fehler beim Speichern des Kontakts: 'bool' object has no attribute 'strip'
+2025-06-11 15:59:11,965 - config_manager - ERROR - ❌ E-Mail-Verarbeitung fehlgeschlagen
+2025-06-11 15:59:11,965 - config_manager - INFO - 📊 Ergebnis: ✅ 0 erfolgreich, ❌ 1 Fehler
+2025-06-11 16:04:11,975 - config_manager - INFO - 🔄 Iteration 3 - 16:04:11
+2025-06-11 16:04:11,977 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 16:04:12,088 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 16:09:12,097 - config_manager - INFO - 🔄 Iteration 4 - 16:09:12
+2025-06-11 16:09:12,099 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 16:09:12,210 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 16:14:12,219 - config_manager - INFO - 🔄 Iteration 5 - 16:14:12
+2025-06-11 16:14:12,221 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 16:14:12,337 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 16:19:12,348 - config_manager - INFO - 🔄 Iteration 6 - 16:19:12
+2025-06-11 16:19:12,349 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 16:19:12,474 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 16:24:12,484 - config_manager - INFO - 🔄 Iteration 7 - 16:24:12
+2025-06-11 16:24:12,486 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 16:24:12,614 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 16:27:31,722 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)
+2025-06-11 16:27:40,203 - config_manager - INFO - ============================================================
+2025-06-11 16:27:40,204 - config_manager - INFO - 🚀 KI-Kontaktassistent Startup
+2025-06-11 16:27:40,204 - config_manager - INFO - 📅 2025-06-11 16:27:40
+2025-06-11 16:27:40,204 - config_manager - INFO - ============================================================
+2025-06-11 16:27:40,204 - config_manager - INFO - 🔍 Odoo-Verbindungstest:
+2025-06-11 16:27:40,204 - config_manager - INFO -    URL: https://andreas-gross.odoo.com
+2025-06-11 16:27:40,204 - config_manager - INFO -    Database: andreas-gross
+2025-06-11 16:27:40,204 - config_manager - INFO -    Username: ki-odoo-assistent@swiss-ecommerce.ch
+2025-06-11 16:27:40,448 - config_manager - INFO - ✅ Odoo-Server erreichbar: {'server_version': '18.0+e', 'server_version_info': [18, 0, 0, 'final', 0, 'e'], 'server_serie': '18.0', 'protocol_version': 1}
+2025-06-11 16:27:40,448 - config_manager - INFO - 🔐 Versuche Authentifizierung...
+2025-06-11 16:27:40,733 - config_manager - INFO - ✅ APIs erfolgreich verbunden
+2025-06-11 16:27:40,733 - config_manager - INFO - 🔐 Odoo User ID: 11
+2025-06-11 16:27:40,733 - config_manager - INFO - ✅ ConfigManager initialisiert
+2025-06-11 16:27:56,547 - config_manager - INFO - ============================================================
+2025-06-11 16:27:56,547 - config_manager - INFO - 🚀 KI-Kontaktassistent Startup
+2025-06-11 16:27:56,548 - config_manager - INFO - 📅 2025-06-11 16:27:56
+2025-06-11 16:27:56,548 - config_manager - INFO - ============================================================
+2025-06-11 16:27:56,548 - config_manager - INFO - 🔍 Odoo-Verbindungstest:
+2025-06-11 16:27:56,548 - config_manager - INFO -    URL: https://andreas-gross.odoo.com
+2025-06-11 16:27:56,548 - config_manager - INFO -    Database: andreas-gross
+2025-06-11 16:27:56,548 - config_manager - INFO -    Username: ki-odoo-assistent@swiss-ecommerce.ch
+2025-06-11 16:27:56,696 - config_manager - INFO - ✅ Odoo-Server erreichbar: {'server_version': '18.0+e', 'server_version_info': [18, 0, 0, 'final', 0, 'e'], 'server_serie': '18.0', 'protocol_version': 1}
+2025-06-11 16:27:56,696 - config_manager - INFO - 🔐 Versuche Authentifizierung...
+2025-06-11 16:27:56,983 - config_manager - INFO - ✅ APIs erfolgreich verbunden
+2025-06-11 16:27:56,983 - config_manager - INFO - 🔐 Odoo User ID: 11
+2025-06-11 16:27:56,983 - config_manager - INFO - ✅ ConfigManager initialisiert
+2025-06-11 16:27:57,430 - config_manager - INFO - 📋 252 Kategorien aus Odoo geladen
+2025-06-11 16:27:57,430 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-11 16:27:57,434 - config_manager - INFO - 🤖 KI-Kontaktassistent gestartet
+2025-06-11 16:27:57,434 - config_manager - INFO - 📊 347 Kategorien verfügbar
+2025-06-11 16:27:57,434 - config_manager - INFO - 🚀 KI-Kontaktassistent läuft...
+2025-06-11 16:27:57,435 - config_manager - INFO - ⏱️ Check-Intervall: 300 Sekunden
+2025-06-11 16:27:57,435 - config_manager - INFO - 🔄 Iteration 1 - 16:27:57
+2025-06-11 16:27:57,435 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 16:27:57,541 - config_manager - INFO - 📬 1 neue E-Mail(s) gefunden
+2025-06-11 16:27:57,541 - config_manager - INFO - 📧 Verarbeite E-Mail 1/1
+2025-06-11 16:27:57,562 - config_manager - INFO - 🔍 E-Mail-Body für Extraktion (erste 500 Zeichen): #kunde,#5gfrei.#Selbständige,#Buchkäufer
+
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff: 	AW: Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+Datum: 	Wed, 28 May 2025 22:35:43 +0200
+Von: 	iwan.iten@bluewin.ch
+An: 	andreas@5gfrei.ch
+
+
+
+Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+
+Lieber Andreas
+
+Danke Dir für die INFO betr. Antenne im Schützen.
+
+Gibt es dazu handfeste Beweise? – Läuft die Antenne als 5G «adaptiv» mit 
+Anwendung des Korrekturfaktors?
+
+Wir w...
+2025-06-11 16:27:57,564 - config_manager - INFO - 🎯 Primäre E-Mail gefunden: iwan.iten@bluewin.ch
+2025-06-11 16:27:57,565 - config_manager - INFO - 📧 Verarbeite: iwan.iten@bluewin.ch (von: andreas@5gfrei.ch) 
+2025-06-11 16:27:57,565 - config_manager - INFO - 🔧 Smart-Strategy Input: 1308 Zeichen
+2025-06-11 16:27:57,565 - config_manager - INFO - 📧 Kurze E-Mail (1308 Zeichen) - vollständig verarbeitet
+2025-06-11 16:28:02,896 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:28:02,903 - config_manager - INFO - 🤖 GPT Antwort (Smart-Strategy): {
+    "first_name": "Iwan",
+    "last_name": "Iten",
+    "full_name": "Iwan Iten",
+    "emails": ["iwan.iten@bluewin.ch"],
+    "phones": ["041 750 85 24"],
+    "address": {
+        "street": "Alte Landstrasse 144",
+        "street2": null,
+        "city": "Unterägeri",
+        "zip": "6314",
+        "state": null,
+        "country": "Schweiz"
+    },
+    "website": null,
+    "company": "",
+    "position": null,
+    "is_company": false,
+    "language": "deutsch",
+    "categories": ["kunde", "5gfrei", "Selbständige", "Buchkäufer"],
+    "biography": "",
+    "confidence": "high"
+}
+2025-06-11 16:28:02,903 - config_manager - INFO - ✅ JSON erfolgreich geparst - verwende GPT-Daten!
+2025-06-11 16:28:02,903 - config_manager - INFO - ✅ Kontaktdaten extrahiert (Confidence: high)
+2025-06-11 16:28:02,903 - config_manager - INFO - 🎯 Name: Iwan Iten
+2025-06-11 16:28:02,903 - config_manager - INFO - 📧 E-Mails: iwan.iten@bluewin.ch
+2025-06-11 16:28:02,903 - config_manager - INFO - 📞 Telefon: 041 750 85 24
+2025-06-11 16:28:02,903 - config_manager - INFO - 🏠 Adresse: Alte Landstrasse 144 Unterägeri 6314 Schweiz
+2025-06-11 16:28:02,903 - config_manager - INFO - 🌍 Sprache: deutsch
+2025-06-11 16:28:02,903 - config_manager - INFO - 🏷️ Kategorien: kunde, 5gfrei, selbständige, buchkäufer
+2025-06-11 16:28:02,903 - config_manager - INFO - 🎲 Confidence: high
+2025-06-11 16:28:03,303 - config_manager - INFO - 🔍 Existierender Kontakt gefunden: iwan.iten@bluewin.ch
+2025-06-11 16:28:03,303 - config_manager - INFO - 📋 Finale Kommentar-Struktur für iwan.iten@bluewin.ch:
+2025-06-11 16:28:03,303 - config_manager - INFO -    Kommentar: '[KI-Import 2025-06-11 16:28 - Confidence: high]'
+2025-06-11 16:28:03,303 - config_manager - INFO -    Timeline-Biographie: '...' (0 Zeichen)
+2025-06-11 16:28:03,303 - config_manager - INFO - 🎯 NAMEN-ZUORDNUNG für iwan.iten@bluewin.ch:
+2025-06-11 16:28:03,303 - config_manager - INFO -    is_company: 
+2025-06-11 16:28:03,303 - config_manager - INFO -    company (aus KI): ''
+2025-06-11 16:28:03,303 - config_manager - INFO -    full_name (aus KI): 'Iwan Iten'
+2025-06-11 16:28:03,303 - config_manager - INFO -    → name (für Odoo): 'Iwan Iten'
+2025-06-11 16:28:03,342 - config_manager - INFO - 🌍 Land erkannt: Schweiz → CH (ID: 43)
+2025-06-11 16:28:03,343 - config_manager - INFO - 📋 Odoo-Felder für iwan.iten@bluewin.ch:
+2025-06-11 16:28:03,343 - config_manager - INFO -    name: Iwan Iten
+2025-06-11 16:28:03,343 - config_manager - INFO -    email: iwan.iten@bluewin.ch
+2025-06-11 16:28:03,343 - config_manager - INFO -    lang: de_DE
+2025-06-11 16:28:03,343 - config_manager - INFO -    is_company: 
+2025-06-11 16:28:03,343 - config_manager - INFO -    street: Alte Landstrasse 144
+2025-06-11 16:28:03,343 - config_manager - INFO -    city: Unterägeri
+2025-06-11 16:28:03,343 - config_manager - INFO -    zip: 6314
+2025-06-11 16:28:03,343 - config_manager - INFO -    country_id: 43
+2025-06-11 16:28:03,343 - config_manager - INFO -    phone: 041 750 85 24
+2025-06-11 16:28:03,343 - config_manager - INFO -    category_id: [(6, 0, [1341, 1843, 1461, 1398, 1840])]
+2025-06-11 16:28:03,343 - config_manager - INFO - 📝 phone ergänzt: 041 750 85 24
+2025-06-11 16:28:03,343 - config_manager - INFO - 📝 street ergänzt: Alte Landstrasse 144
+2025-06-11 16:28:03,343 - config_manager - INFO - 📝 city ergänzt: Unterägeri
+2025-06-11 16:28:03,343 - config_manager - INFO - 📝 zip ergänzt: 6314
+2025-06-11 16:28:03,343 - config_manager - INFO - 📝 Sprache ergänzt: de_DE
+2025-06-11 16:28:03,343 - config_manager - INFO - 📝 Land ergänzt: 43
+2025-06-11 16:28:03,343 - config_manager - ERROR - ❌ Fehler beim Speichern des Kontakts: 'bool' object has no attribute 'strip'
+2025-06-11 16:28:03,343 - config_manager - ERROR - ❌ E-Mail-Verarbeitung fehlgeschlagen
+2025-06-11 16:28:03,343 - config_manager - INFO - 📊 Ergebnis: ✅ 0 erfolgreich, ❌ 1 Fehler
+2025-06-11 16:28:48,033 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)

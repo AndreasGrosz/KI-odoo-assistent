@@ -607,9 +607,9 @@ Ihr KI-Assistent'''
 
         # Sicherheitscheck: Konvertiere zu String falls nötig
         if not isinstance(existing_name, str):
-            existing_name = str(existing_name) if existing_name else ''
+            existing_name = str(existing_name).strip() if existing_name else ''
         if not isinstance(new_name, str):
-            new_name = str(new_name) if new_name else ''
+            new_name = str(new_name).strip() if new_name else ''
 
         # Firmen-Name-Update-Logik
         if new_is_company and new_name:
@@ -669,9 +669,9 @@ Ihr KI-Assistent'''
 
             # Sicherheitscheck: Konvertiere zu String falls nötig
             if not isinstance(existing_comment, str):
-                existing_comment = str(existing_comment) if existing_comment else ''
+                existing_comment = str(existing_comment).strip() if existing_comment else ''
             if not isinstance(new_comment, str):
-                new_comment = str(new_comment) if new_comment else ''
+                new_comment = str(new_comment).strip() if new_comment else ''
 
             # INTELLIGENTE KOMMENTAR-BEHANDLUNG (Timeline-Notizen machen die Biographie)
             if existing_comment:

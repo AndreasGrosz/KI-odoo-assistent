@@ -207,8 +207,11 @@ Extrahiere alle verfügbaren Kontaktdaten als JSON.
         """Validiert und bereinigt extrahierte Kontaktdaten"""
 
         # Null-Werte zu leeren Strings konvertieren
+        # Null-Werte zu leeren Strings konvertieren
         for key, value in contact_data.items():
             if value is None:
+                contact_data[key] = ''
+            elif isinstance(value, bool):  # Boolean-Werte zu leeren Strings
                 contact_data[key] = ''
 
         # E-Mail-Behandlung
@@ -302,8 +305,11 @@ Extrahiere alle verfügbaren Kontaktdaten als JSON.
         """Validiert und bereinigt extrahierte Kontaktdaten aus manuellem Input"""
 
         # Null-Werte konvertieren
+        # Null-Werte zu leeren Strings konvertieren
         for key, value in contact_data.items():
             if value is None:
+                contact_data[key] = ''
+            elif isinstance(value, bool):  # Boolean-Werte zu leeren Strings
                 contact_data[key] = ''
 
         # E-Mail-Behandlung für manuellen Input
