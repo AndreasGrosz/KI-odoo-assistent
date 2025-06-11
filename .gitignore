@@ -1,5 +1,24 @@
-venv/
+# PyInstaller
+build/
+dist/
 __pycache__/
+*.spec
+
+# Optional:
+*.log
+*.tmp
+*.bak
 *.pyc
+*.pyo
+*.pyd
+
+# VSCode / PyCharm
+.vscode/
+.idea/
+
+# Virtualenv
+venv/
+.env/
+
 backups/
 config-sys.yml
