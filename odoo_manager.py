@@ -193,6 +193,9 @@ class OdooManager:
                 # Kontakt aktualisieren
                 update_values = self.get_update_values(existing_contact, contact_values)
                 if update_values:
+                    for key, value in update_values.items():
+                        self.logger.debug(f"🔍 Update-Debug: {key} = {value} (Typ: {type(value)})")
+
                     self.odoo_models.execute_kw(
                         self.config['odoo']['database'],
                         self.odoo_uid,
@@ -597,6 +600,17 @@ Ihr KI-Assistent'''
 
     def get_update_values(self, existing_contact: Dict, new_values: Dict) -> Dict:
         """Ermittelt Update-Werte (FIXED für Firmen-Namen-Updates + Biographie-Erhaltung)"""
+
+        # NOTFALL-DEBUG: Alle existing_contact Werte prüfen
+        self.logger.debug("🔍 DEBUG existing_contact Typen:")
+        for key, value in existing_contact.items():
+            self.logger.debug(f"   {key}: {value} (Typ: {type(value)})")
+
+        # NOTFALL-DEBUG: Alle new_values Werte prüfen
+        self.logger.debug("🔍 DEBUG new_values Typen:")
+        for key, value in new_values.items():
+            self.logger.debug(f"   {key}: {value} (Typ: {type(value)})")
+
         update_values = {}
 
         # FIXED: Firmen-Namen-Updates intelligenter handhaben
@@ -607,9 +621,9 @@ Ihr KI-Assistent'''
 
         # Sicherheitscheck: Konvertiere zu String falls nötig
         if not isinstance(existing_name, str):
-            existing_name = str(existing_name).strip() if existing_name else ''
+            existing_name = str(existing_name) if existing_name else ''
         if not isinstance(new_name, str):
-            new_name = str(new_name).strip() if new_name else ''
+            new_name = str(new_name) if new_name else ''
 
         # Firmen-Name-Update-Logik
         if new_is_company and new_name:
@@ -644,7 +658,7 @@ Ihr KI-Assistent'''
         for field in complement_fields:
             if field in new_values and new_values[field]:
                 existing_value = existing_contact.get(field)
-                if not existing_value or (isinstance(existing_value, str) and existing_value.strip() == ''):
+                if not existing_value or existing_value is False or (isinstance(existing_value, str) and len(existing_value.strip()) == 0):
                     update_values[field] = new_values[field]
                     self.logger.info(f"📝 {field} ergänzt: {new_values[field]}")
 
@@ -664,14 +678,15 @@ Ihr KI-Assistent'''
 
         # FIXED: Kommentar intelligent erweitern (aber NICHT Biographie - das macht Timeline-Notiz)
         if 'comment' in new_values:
-            existing_comment = existing_contact.get('comment', '').strip()
+            existing_comment = existing_contact.get('comment', '')
+            existing_comment = str(existing_comment).strip() if existing_comment and existing_comment is not False else ''
             new_comment = new_values['comment'].strip()
 
             # Sicherheitscheck: Konvertiere zu String falls nötig
             if not isinstance(existing_comment, str):
-                existing_comment = str(existing_comment).strip() if existing_comment else ''
+                existing_comment = str(existing_comment) if existing_comment else ''
             if not isinstance(new_comment, str):
-                new_comment = str(new_comment).strip() if new_comment else ''
+                new_comment = str(new_comment) if new_comment else ''
 
             # INTELLIGENTE KOMMENTAR-BEHANDLUNG (Timeline-Notizen machen die Biographie)
             if existing_comment:

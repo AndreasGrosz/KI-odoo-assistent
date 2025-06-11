@@ -15462,3 +15462,1165 @@ Wir w...
 2025-06-11 16:28:03,343 - config_manager - ERROR - ❌ E-Mail-Verarbeitung fehlgeschlagen
 2025-06-11 16:28:03,343 - config_manager - INFO - 📊 Ergebnis: ✅ 0 erfolgreich, ❌ 1 Fehler
 2025-06-11 16:28:48,033 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)
+2025-06-11 16:34:13,911 - config_manager - INFO - ============================================================
+2025-06-11 16:34:13,911 - config_manager - INFO - 🚀 KI-Kontaktassistent Startup
+2025-06-11 16:34:13,912 - config_manager - INFO - 📅 2025-06-11 16:34:13
+2025-06-11 16:34:13,912 - config_manager - INFO - ============================================================
+2025-06-11 16:34:13,912 - config_manager - INFO - 🔍 Odoo-Verbindungstest:
+2025-06-11 16:34:13,912 - config_manager - INFO -    URL: https://andreas-gross.odoo.com
+2025-06-11 16:34:13,912 - config_manager - INFO -    Database: andreas-gross
+2025-06-11 16:34:13,912 - config_manager - INFO -    Username: ki-odoo-assistent@swiss-ecommerce.ch
+2025-06-11 16:34:14,041 - config_manager - INFO - ✅ Odoo-Server erreichbar: {'server_version': '18.0+e', 'server_version_info': [18, 0, 0, 'final', 0, 'e'], 'server_serie': '18.0', 'protocol_version': 1}
+2025-06-11 16:34:14,041 - config_manager - INFO - 🔐 Versuche Authentifizierung...
+2025-06-11 16:34:14,319 - config_manager - INFO - ✅ APIs erfolgreich verbunden
+2025-06-11 16:34:14,320 - config_manager - INFO - 🔐 Odoo User ID: 11
+2025-06-11 16:34:14,320 - config_manager - INFO - ✅ ConfigManager initialisiert
+2025-06-11 16:34:14,438 - config_manager - INFO - 📋 252 Kategorien aus Odoo geladen
+2025-06-11 16:34:14,438 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-11 16:34:14,442 - config_manager - INFO - 🤖 KI-Kontaktassistent gestartet
+2025-06-11 16:34:14,442 - config_manager - INFO - 📊 347 Kategorien verfügbar
+2025-06-11 16:34:14,442 - config_manager - INFO - 🚀 KI-Kontaktassistent läuft...
+2025-06-11 16:34:14,442 - config_manager - INFO - ⏱️ Check-Intervall: 300 Sekunden
+2025-06-11 16:34:14,442 - config_manager - INFO - 🔄 Iteration 1 - 16:34:14
+2025-06-11 16:34:14,442 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 16:34:14,549 - config_manager - INFO - 📬 1 neue E-Mail(s) gefunden
+2025-06-11 16:34:14,549 - config_manager - INFO - 📧 Verarbeite E-Mail 1/1
+2025-06-11 16:34:14,568 - config_manager - INFO - 🔍 E-Mail-Body für Extraktion (erste 500 Zeichen): #kunde,#5gfrei.#Selbständige,#Buchkäufer
+
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff: 	AW: Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+Datum: 	Wed, 28 May 2025 22:35:43 +0200
+Von: 	iwan.iten@bluewin.ch
+An: 	andreas@5gfrei.ch
+
+
+
+Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+
+Lieber Andreas
+
+Danke Dir für die INFO betr. Antenne im Schützen.
+
+Gibt es dazu handfeste Beweise? – Läuft die Antenne als 5G «adaptiv» mit 
+Anwendung des Korrekturfaktors?
+
+Wir w...
+2025-06-11 16:34:14,571 - config_manager - INFO - 🎯 Primäre E-Mail gefunden: iwan.iten@bluewin.ch
+2025-06-11 16:34:14,571 - config_manager - INFO - 📧 Verarbeite: iwan.iten@bluewin.ch (von: andreas@5gfrei.ch) 
+2025-06-11 16:34:14,571 - config_manager - INFO - 🔧 Smart-Strategy Input: 1308 Zeichen
+2025-06-11 16:34:14,571 - config_manager - INFO - 📧 Kurze E-Mail (1308 Zeichen) - vollständig verarbeitet
+2025-06-11 16:34:18,592 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:34:18,597 - config_manager - INFO - 🤖 GPT Antwort (Smart-Strategy): {
+    "first_name": "Iwan",
+    "last_name": "Iten",
+    "full_name": "Iwan Iten",
+    "emails": ["iwan.iten@bluewin.ch"],
+    "phones": ["041 750 85 24"],
+    "address": {
+        "street": "Alte Landstrasse 144",
+        "street2": null,
+        "city": "Unterägeri",
+        "zip": "6314",
+        "state": null,
+        "country": "Schweiz"
+    },
+    "website": null,
+    "company": null,
+    "position": null,
+    "is_company": false,
+    "language": "deutsch",
+    "categories": ["kunde", "5gfrei", "Selbständige", "Buchkäufer"],
+    "biography": "",
+    "confidence": "high"
+}
+2025-06-11 16:34:18,597 - config_manager - INFO - ✅ JSON erfolgreich geparst - verwende GPT-Daten!
+2025-06-11 16:34:18,597 - config_manager - INFO - ✅ Kontaktdaten extrahiert (Confidence: high)
+2025-06-11 16:34:18,597 - config_manager - INFO - 🎯 Name: Iwan Iten
+2025-06-11 16:34:18,597 - config_manager - INFO - 📧 E-Mails: iwan.iten@bluewin.ch
+2025-06-11 16:34:18,597 - config_manager - INFO - 📞 Telefon: 041 750 85 24
+2025-06-11 16:34:18,597 - config_manager - INFO - 🏠 Adresse: Alte Landstrasse 144 Unterägeri 6314 Schweiz
+2025-06-11 16:34:18,597 - config_manager - INFO - 🌍 Sprache: deutsch
+2025-06-11 16:34:18,597 - config_manager - INFO - 🏷️ Kategorien: kunde, 5gfrei, selbständige, buchkäufer
+2025-06-11 16:34:18,597 - config_manager - INFO - 🎲 Confidence: high
+2025-06-11 16:34:18,995 - config_manager - INFO - 🔍 Existierender Kontakt gefunden: iwan.iten@bluewin.ch
+2025-06-11 16:34:18,995 - config_manager - INFO - 📋 Finale Kommentar-Struktur für iwan.iten@bluewin.ch:
+2025-06-11 16:34:18,995 - config_manager - INFO -    Kommentar: '[KI-Import 2025-06-11 16:34 - Confidence: high]'
+2025-06-11 16:34:18,995 - config_manager - INFO -    Timeline-Biographie: '...' (0 Zeichen)
+2025-06-11 16:34:18,996 - config_manager - INFO - 🎯 NAMEN-ZUORDNUNG für iwan.iten@bluewin.ch:
+2025-06-11 16:34:18,996 - config_manager - INFO -    is_company: 
+2025-06-11 16:34:18,996 - config_manager - INFO -    company (aus KI): ''
+2025-06-11 16:34:18,996 - config_manager - INFO -    full_name (aus KI): 'Iwan Iten'
+2025-06-11 16:34:18,996 - config_manager - INFO -    → name (für Odoo): 'Iwan Iten'
+2025-06-11 16:34:19,357 - config_manager - INFO - 🌍 Land erkannt: Schweiz → CH (ID: 43)
+2025-06-11 16:34:19,357 - config_manager - INFO - 📋 Odoo-Felder für iwan.iten@bluewin.ch:
+2025-06-11 16:34:19,357 - config_manager - INFO -    name: Iwan Iten
+2025-06-11 16:34:19,358 - config_manager - INFO -    email: iwan.iten@bluewin.ch
+2025-06-11 16:34:19,358 - config_manager - INFO -    lang: de_DE
+2025-06-11 16:34:19,358 - config_manager - INFO -    is_company: 
+2025-06-11 16:34:19,358 - config_manager - INFO -    street: Alte Landstrasse 144
+2025-06-11 16:34:19,358 - config_manager - INFO -    city: Unterägeri
+2025-06-11 16:34:19,358 - config_manager - INFO -    zip: 6314
+2025-06-11 16:34:19,358 - config_manager - INFO -    country_id: 43
+2025-06-11 16:34:19,358 - config_manager - INFO -    phone: 041 750 85 24
+2025-06-11 16:34:19,358 - config_manager - INFO -    category_id: [(6, 0, [1341, 1843, 1461, 1398, 1840])]
+2025-06-11 16:34:19,358 - config_manager - INFO - 📝 phone ergänzt: 041 750 85 24
+2025-06-11 16:34:19,358 - config_manager - INFO - 📝 street ergänzt: Alte Landstrasse 144
+2025-06-11 16:34:19,358 - config_manager - INFO - 📝 city ergänzt: Unterägeri
+2025-06-11 16:34:19,359 - config_manager - INFO - 📝 zip ergänzt: 6314
+2025-06-11 16:34:19,359 - config_manager - INFO - 📝 Sprache ergänzt: de_DE
+2025-06-11 16:34:19,359 - config_manager - INFO - 📝 Land ergänzt: 43
+2025-06-11 16:34:19,359 - config_manager - ERROR - ❌ Fehler beim Speichern des Kontakts: 'bool' object has no attribute 'strip'
+2025-06-11 16:34:19,359 - config_manager - ERROR - ❌ E-Mail-Verarbeitung fehlgeschlagen
+2025-06-11 16:34:19,359 - config_manager - INFO - 📊 Ergebnis: ✅ 0 erfolgreich, ❌ 1 Fehler
+2025-06-11 16:34:35,418 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)
+2025-06-11 16:37:56,728 - config_manager - INFO - ============================================================
+2025-06-11 16:37:56,728 - config_manager - INFO - 🚀 KI-Kontaktassistent Startup
+2025-06-11 16:37:56,728 - config_manager - INFO - 📅 2025-06-11 16:37:56
+2025-06-11 16:37:56,728 - config_manager - INFO - ============================================================
+2025-06-11 16:37:56,728 - config_manager - INFO - 🔍 Odoo-Verbindungstest:
+2025-06-11 16:37:56,728 - config_manager - INFO -    URL: https://andreas-gross.odoo.com
+2025-06-11 16:37:56,728 - config_manager - INFO -    Database: andreas-gross
+2025-06-11 16:37:56,728 - config_manager - INFO -    Username: ki-odoo-assistent@swiss-ecommerce.ch
+2025-06-11 16:37:56,876 - config_manager - INFO - ✅ Odoo-Server erreichbar: {'server_version': '18.0+e', 'server_version_info': [18, 0, 0, 'final', 0, 'e'], 'server_serie': '18.0', 'protocol_version': 1}
+2025-06-11 16:37:56,876 - config_manager - INFO - 🔐 Versuche Authentifizierung...
+2025-06-11 16:37:57,242 - config_manager - INFO - ✅ APIs erfolgreich verbunden
+2025-06-11 16:37:57,242 - config_manager - INFO - 🔐 Odoo User ID: 11
+2025-06-11 16:37:57,242 - config_manager - INFO - ✅ ConfigManager initialisiert
+2025-06-11 16:37:57,377 - config_manager - INFO - 📋 252 Kategorien aus Odoo geladen
+2025-06-11 16:37:57,377 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-11 16:37:57,381 - config_manager - INFO - 🤖 KI-Kontaktassistent gestartet
+2025-06-11 16:37:57,381 - config_manager - INFO - 📊 347 Kategorien verfügbar
+2025-06-11 16:37:57,381 - config_manager - INFO - 🚀 KI-Kontaktassistent läuft...
+2025-06-11 16:37:57,381 - config_manager - INFO - ⏱️ Check-Intervall: 300 Sekunden
+2025-06-11 16:37:57,381 - config_manager - INFO - 🔄 Iteration 1 - 16:37:57
+2025-06-11 16:37:57,381 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 16:37:57,467 - config_manager - INFO - 📬 1 neue E-Mail(s) gefunden
+2025-06-11 16:37:57,467 - config_manager - INFO - 📧 Verarbeite E-Mail 1/1
+2025-06-11 16:37:57,482 - config_manager - INFO - 🔍 E-Mail-Body für Extraktion (erste 500 Zeichen): #kunde,#5gfrei.#Selbständige,#Buchkäufer
+
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff: 	AW: Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+Datum: 	Wed, 28 May 2025 22:35:43 +0200
+Von: 	iwan.iten@bluewin.ch
+An: 	andreas@5gfrei.ch
+
+
+
+Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+
+Lieber Andreas
+
+Danke Dir für die INFO betr. Antenne im Schützen.
+
+Gibt es dazu handfeste Beweise? – Läuft die Antenne als 5G «adaptiv» mit 
+Anwendung des Korrekturfaktors?
+
+Wir w...
+2025-06-11 16:37:57,485 - config_manager - INFO - 🎯 Primäre E-Mail gefunden: iwan.iten@bluewin.ch
+2025-06-11 16:37:57,485 - config_manager - INFO - 📧 Verarbeite: iwan.iten@bluewin.ch (von: andreas@5gfrei.ch) 
+2025-06-11 16:37:57,485 - config_manager - INFO - 🔧 Smart-Strategy Input: 1308 Zeichen
+2025-06-11 16:37:57,485 - config_manager - INFO - 📧 Kurze E-Mail (1308 Zeichen) - vollständig verarbeitet
+2025-06-11 16:38:02,024 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:38:02,030 - config_manager - INFO - 🤖 GPT Antwort (Smart-Strategy): {
+    "first_name": "Iwan",
+    "last_name": "Iten",
+    "full_name": "Iwan Iten",
+    "emails": ["iwan.iten@bluewin.ch"],
+    "phones": ["041 750 85 24"],
+    "address": {
+        "street": "Alte Landstrasse 144",
+        "street2": null,
+        "city": "Unterägeri",
+        "zip": "6314",
+        "state": null,
+        "country": "Schweiz"
+    },
+    "website": null,
+    "company": null,
+    "position": null,
+    "is_company": false,
+    "language": "deutsch",
+    "categories": ["kunde", "5gfrei", "Selbständige", "Buchkäufer"],
+    "biography": "",
+    "confidence": "high"
+}
+2025-06-11 16:38:02,031 - config_manager - INFO - ✅ JSON erfolgreich geparst - verwende GPT-Daten!
+2025-06-11 16:38:02,031 - config_manager - INFO - ✅ Kontaktdaten extrahiert (Confidence: high)
+2025-06-11 16:38:02,031 - config_manager - INFO - 🎯 Name: Iwan Iten
+2025-06-11 16:38:02,031 - config_manager - INFO - 📧 E-Mails: iwan.iten@bluewin.ch
+2025-06-11 16:38:02,031 - config_manager - INFO - 📞 Telefon: 041 750 85 24
+2025-06-11 16:38:02,031 - config_manager - INFO - 🏠 Adresse: Alte Landstrasse 144 Unterägeri 6314 Schweiz
+2025-06-11 16:38:02,031 - config_manager - INFO - 🌍 Sprache: deutsch
+2025-06-11 16:38:02,031 - config_manager - INFO - 🏷️ Kategorien: kunde, 5gfrei, selbständige, buchkäufer
+2025-06-11 16:38:02,031 - config_manager - INFO - 🎲 Confidence: high
+2025-06-11 16:38:02,761 - config_manager - INFO - 🔍 Existierender Kontakt gefunden: iwan.iten@bluewin.ch
+2025-06-11 16:38:02,761 - config_manager - INFO - 📋 Finale Kommentar-Struktur für iwan.iten@bluewin.ch:
+2025-06-11 16:38:02,761 - config_manager - INFO -    Kommentar: '[KI-Import 2025-06-11 16:38 - Confidence: high]'
+2025-06-11 16:38:02,762 - config_manager - INFO -    Timeline-Biographie: '...' (0 Zeichen)
+2025-06-11 16:38:02,762 - config_manager - INFO - 🎯 NAMEN-ZUORDNUNG für iwan.iten@bluewin.ch:
+2025-06-11 16:38:02,762 - config_manager - INFO -    is_company: 
+2025-06-11 16:38:02,762 - config_manager - INFO -    company (aus KI): ''
+2025-06-11 16:38:02,762 - config_manager - INFO -    full_name (aus KI): 'Iwan Iten'
+2025-06-11 16:38:02,762 - config_manager - INFO -    → name (für Odoo): 'Iwan Iten'
+2025-06-11 16:38:02,795 - config_manager - INFO - 🌍 Land erkannt: Schweiz → CH (ID: 43)
+2025-06-11 16:38:02,796 - config_manager - INFO - 📋 Odoo-Felder für iwan.iten@bluewin.ch:
+2025-06-11 16:38:02,796 - config_manager - INFO -    name: Iwan Iten
+2025-06-11 16:38:02,796 - config_manager - INFO -    email: iwan.iten@bluewin.ch
+2025-06-11 16:38:02,796 - config_manager - INFO -    lang: de_DE
+2025-06-11 16:38:02,796 - config_manager - INFO -    is_company: 
+2025-06-11 16:38:02,796 - config_manager - INFO -    street: Alte Landstrasse 144
+2025-06-11 16:38:02,796 - config_manager - INFO -    city: Unterägeri
+2025-06-11 16:38:02,796 - config_manager - INFO -    zip: 6314
+2025-06-11 16:38:02,796 - config_manager - INFO -    country_id: 43
+2025-06-11 16:38:02,796 - config_manager - INFO -    phone: 041 750 85 24
+2025-06-11 16:38:02,796 - config_manager - INFO -    category_id: [(6, 0, [1341, 1843, 1461, 1398, 1840])]
+2025-06-11 16:38:02,796 - config_manager - INFO - 📝 phone ergänzt: 041 750 85 24
+2025-06-11 16:38:02,796 - config_manager - INFO - 📝 street ergänzt: Alte Landstrasse 144
+2025-06-11 16:38:02,796 - config_manager - INFO - 📝 city ergänzt: Unterägeri
+2025-06-11 16:38:02,796 - config_manager - INFO - 📝 zip ergänzt: 6314
+2025-06-11 16:38:02,796 - config_manager - INFO - 📝 Sprache ergänzt: de_DE
+2025-06-11 16:38:02,796 - config_manager - INFO - 📝 Land ergänzt: 43
+2025-06-11 16:38:02,796 - config_manager - ERROR - ❌ Fehler beim Speichern des Kontakts: 'bool' object has no attribute 'strip'
+2025-06-11 16:38:02,796 - config_manager - ERROR - ❌ E-Mail-Verarbeitung fehlgeschlagen
+2025-06-11 16:38:02,796 - config_manager - INFO - 📊 Ergebnis: ✅ 0 erfolgreich, ❌ 1 Fehler
+2025-06-11 16:38:31,089 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)
+2025-06-11 16:39:28,262 - config_manager - INFO - ============================================================
+2025-06-11 16:39:28,262 - config_manager - INFO - 🚀 KI-Kontaktassistent Startup
+2025-06-11 16:39:28,262 - config_manager - INFO - 📅 2025-06-11 16:39:28
+2025-06-11 16:39:28,262 - config_manager - INFO - ============================================================
+2025-06-11 16:39:28,262 - config_manager - INFO - 🔍 Odoo-Verbindungstest:
+2025-06-11 16:39:28,262 - config_manager - INFO -    URL: https://andreas-gross.odoo.com
+2025-06-11 16:39:28,262 - config_manager - INFO -    Database: andreas-gross
+2025-06-11 16:39:28,262 - config_manager - INFO -    Username: ki-odoo-assistent@swiss-ecommerce.ch
+2025-06-11 16:39:28,383 - config_manager - INFO - ✅ Odoo-Server erreichbar: {'server_version': '18.0+e', 'server_version_info': [18, 0, 0, 'final', 0, 'e'], 'server_serie': '18.0', 'protocol_version': 1}
+2025-06-11 16:39:28,383 - config_manager - INFO - 🔐 Versuche Authentifizierung...
+2025-06-11 16:39:28,670 - config_manager - INFO - ✅ APIs erfolgreich verbunden
+2025-06-11 16:39:28,670 - config_manager - INFO - 🔐 Odoo User ID: 11
+2025-06-11 16:39:28,670 - config_manager - INFO - ✅ ConfigManager initialisiert
+2025-06-11 16:39:29,030 - config_manager - INFO - 📋 252 Kategorien aus Odoo geladen
+2025-06-11 16:39:29,031 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-11 16:39:29,032 - config_manager - INFO - 🤖 KI-Kontaktassistent gestartet
+2025-06-11 16:39:29,032 - config_manager - INFO - 📊 347 Kategorien verfügbar
+2025-06-11 16:39:29,032 - config_manager - INFO - 🚀 KI-Kontaktassistent läuft...
+2025-06-11 16:39:29,032 - config_manager - INFO - ⏱️ Check-Intervall: 300 Sekunden
+2025-06-11 16:39:29,032 - config_manager - INFO - 🔄 Iteration 1 - 16:39:29
+2025-06-11 16:39:29,032 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 16:39:29,142 - config_manager - INFO - 📬 1 neue E-Mail(s) gefunden
+2025-06-11 16:39:29,142 - config_manager - INFO - 📧 Verarbeite E-Mail 1/1
+2025-06-11 16:39:29,161 - config_manager - DEBUG - 📧 E-Mail-Body bereinigt (Länge: 1308 Zeichen)
+2025-06-11 16:39:29,161 - config_manager - DEBUG - 📬 E-Mail-ID von Message-ID: 3c6fa74bccccddba7bcf7cce21b097b4
+2025-06-11 16:39:29,161 - config_manager - DEBUG - 📧 E-Mail-Body bereinigt (Länge: 1308 Zeichen)
+2025-06-11 16:39:29,161 - config_manager - INFO - 🔍 E-Mail-Body für Extraktion (erste 500 Zeichen): #kunde,#5gfrei.#Selbständige,#Buchkäufer
+
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff: 	AW: Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+Datum: 	Wed, 28 May 2025 22:35:43 +0200
+Von: 	iwan.iten@bluewin.ch
+An: 	andreas@5gfrei.ch
+
+
+
+Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+
+Lieber Andreas
+
+Danke Dir für die INFO betr. Antenne im Schützen.
+
+Gibt es dazu handfeste Beweise? – Läuft die Antenne als 5G «adaptiv» mit 
+Anwendung des Korrekturfaktors?
+
+Wir w...
+2025-06-11 16:39:29,162 - config_manager - DEBUG - 🔍 Pattern 1: Matches: []
+2025-06-11 16:39:29,162 - config_manager - DEBUG - 🔍 Pattern 2: Matches: []
+2025-06-11 16:39:29,162 - config_manager - DEBUG - 🔍 Pattern 3: Matches: ['iwan.iten@bluewin.ch']
+2025-06-11 16:39:29,162 - config_manager - DEBUG - 🔍 Pattern 4: Matches: []
+2025-06-11 16:39:29,163 - config_manager - DEBUG - 🔍 Pattern 5: Matches: ['mailto:iwan.iten@bluewin.ch']
+2025-06-11 16:39:29,163 - config_manager - DEBUG - 🔍 Pattern 6: Matches: []
+2025-06-11 16:39:29,163 - config_manager - DEBUG - 🔍 Pattern 7: Matches: []
+2025-06-11 16:39:29,163 - config_manager - DEBUG - 🔍 Pattern 8: Matches: []
+2025-06-11 16:39:29,163 - config_manager - DEBUG - 🔍 Pattern 9: Matches: []
+2025-06-11 16:39:29,164 - config_manager - DEBUG - 🔍 Pattern 10: Matches: []
+2025-06-11 16:39:29,164 - config_manager - DEBUG - 🔍 Pattern 11: Matches: ['iwan.iten@bluewin.ch', 'andreas@5gfrei.ch', 'iwan.iten@bluewin.ch', 'iwan.iten@bluewin.ch']
+2025-06-11 16:39:29,164 - config_manager - INFO - 🎯 Primäre E-Mail gefunden: iwan.iten@bluewin.ch
+2025-06-11 16:39:29,165 - config_manager - DEBUG - 📧 E-Mail-Body bereinigt (Länge: 1308 Zeichen)
+2025-06-11 16:39:29,165 - config_manager - INFO - 📧 Verarbeite: iwan.iten@bluewin.ch (von: andreas@5gfrei.ch) 
+2025-06-11 16:39:29,165 - config_manager - INFO - 🔧 Smart-Strategy Input: 1308 Zeichen
+2025-06-11 16:39:29,165 - config_manager - INFO - 📧 Kurze E-Mail (1308 Zeichen) - vollständig verarbeitet
+2025-06-11 16:39:29,713 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-74b4643e-951e-4f1c-b80d-2d15315649e5', 'json_data': {'messages': [{'role': 'system', 'content': 'Du bist ein Experte für Kontaktdaten-Extraktion. Antworte immer nur mit validem JSON. Achte BESONDERS auf Firmen-Erkennung und Footer-Bereiche mit strukturierten Adressen.'}, {'role': 'user', 'content': 'Du bist ein Experte für die Extraktion von Kontaktdaten aus E-Mails. Analysiere sorgfältig und extrahiere NUR verfügbare Informationen.\n\nABSENDER-EMAIL: iwan.iten@bluewin.ch\nBIOGRAPHIE (vom Benutzer hinzugefügt): #kunde,#5gfrei.#Selbständige,#Buchkäufer\n\nE-MAIL-INHALT:\n#kunde,#5gfrei.#Selbständige,#Buchkäufer\r\n\r\n\r\n\r\n-------- Weitergeleitete Nachricht --------\r\nBetreff: \tAW: Doppelerfolg: «Bagatellverfahren» sind abgeschafft!\r\nDatum: \tWed, 28 May 2025 22:35:43 +0200\r\nVon: \tiwan.iten@bluewin.ch\r\nAn: \tandreas@5gfrei.ch\r\n\r\n\r\n\r\nDoppelerfolg: «Bagatellverfahren» sind abgeschafft!\r\n\r\nLieber Andreas\r\n\r\nDanke Dir für die INFO betr. Antenne im Schützen.\r\n\r\nGibt es dazu handfeste Beweise? – Läuft die Antenne als 5G «adaptiv» mit \r\nAnwendung des Korrekturfaktors?\r\n\r\nWir werden am Di. 17. Juni eine Veranstaltung machen mit allen rund 25 \r\nEinsprechern der drei Antennen von Unterägeri\r\n\r\nUm das «Wie weiter…» zu besprechen. (Boden, Zugerstr. 88 + 33). In einer \r\nzweiten Runde schwebt mir eine zweite Veranstaltung im Herbst vor, wo \r\nwir auch die Unterzeichner einladen. – Schliesslich geht es darum, \r\ngenügend finanzielle Zusagen zu haben, um die Verfahren allenfalls bis \r\nvor Bundesgericht zu bringen. – Mal schauen wie die Stimmung ist.\r\n\r\nDie Antenne Zugerstrasse 88 und 33 haben wir mit Hilfe von Daniel \r\nLaubscher bereits an den Regierungsrat weitergezogen.\r\n\r\nSoll ich Dir das Beschwerdeschreiben zukommen lassen?\r\n\r\nHerzliche Grüsse\r\n\r\nIwan Iten\r\n\r\nAlte Landstrasse 144\r\n\r\n6314 Unterägeri\r\n\r\nTel 041 750 85 24\r\n\r\niwan.iten@bluewin.ch <mailto:iwan.iten@bluewin.ch>\r\n\r\n\n\nKRITISCHE EXTRAKTIONSREGELN (PRIORITÄT 1 - FIRMEN):\n\n1. FIRMEN-ERKENNUNG (HÖCHSTE PRIORITÄT):\n   - Erkenne Firmen-Indikatoren: GmbH, AG, Ltd, Inc, Corp, LLC, Verein, Verlag, Stiftung, KG, OHG, eG, SE\n   - WENN Firma erkannt → setze "is_company": true\n   - Bei Firmen: "company" UND "full_name" bekommen BEIDE den Firmennamen\n   - Bei Firmen: "first_name" und "last_name" bleiben leer!\n\n2. FIRMEN-NAME-ZUORDNUNG:\n   - Beispiel: "Jungeuropa Verlag GmbH"\n     → "full_name": "Jungeuropa Verlag GmbH"\n     → "company": "Jungeuropa Verlag GmbH"\n     → "is_company": true\n     → "first_name": ""\n     → "last_name": ""\n\n3. PERSONEN BEI FIRMEN:\n   - Beispiel: "Philip Stein von Jungeuropa Verlag"\n     → "full_name": "Philip Stein"\n     → "first_name": "Philip"\n     → "last_name": "Stein"\n     → "company": "Jungeuropa Verlag"\n     → "is_company": false\n\nWEITERE EXTRAKTIONSREGELN:\n\n4. FOOTER-PRIORITÄT: Achte besonders auf den FOOTER-Bereich am Ende der E-Mail!\n5. STRUKTURIERTE ADRESSEN: Erkenne Formate wie "Firma · Straße Nr · Stadt PLZ · Land"\n6. NAMEN: Suche nach vollständigen Namen in der Signatur (Regards, Best regards, etc.)\n7. Telefonnummern: Alle Formate (+49, 0049, national, international)\n8. Adressen: Vollständige Postanschriften bevorzugt, auch aus Footer-Bereichen\n9. Sprache: Erkenne aus dem E-Mail-Text (deutsch/english/russisch)\n10. Kategorien: Erkenne ALLE Hashtags (#Kunde, #English, #Scientology, #Lieferant, etc.)\n11. E-MAILS: NUR die Absender-E-Mail verwenden: iwan.iten@bluewin.ch - KEINE anderen E-Mails erfinden!\n\nWICHTIGE HINWEISE:\n- Nutze die BIOGRAPHIE des Benutzers als zusätzliche Information\n- Hashtags (#) sind IMMER Kategorien - extrahiere sie alle!\n- BIOGRAPHIE: Verwende NUR den Text VOR den Hashtags, NICHT die Hashtags selbst!\n- Bei Namen: Suche nach Signaturen wie "Regards, [Vollständiger Name]"\n- Sprache: Analysiere den Haupttext der E-Mail\n- E-MAILS: Verwende NUR die bekannte Absender-E-Mail, erfinde KEINE zusätzlichen!\n- FOOTER-PRIORITÄT: Kontaktdaten aus Footer haben höhere Priorität als Text-Erwähnungen\n- Leere Felder mit null füllen\n\nWICHTIG - VERWECHSLUNGSGEFAHR:\nAndreas/Telse Groß (Althusweg 12, CH 6315 Morgarten, +41-41-512-00-22, 5gfrei.ch) sind NICHT der Kontakt!\nDas sind die EMPFÄNGER der E-Mail. Extrahiere NUR Daten des ursprünglichen ABSENDERS: iwan.iten@bluewin.ch\nIgnoriere alle Firmendaten von Andreas Groß, 5gfrei.ch, inggross.de, standortdatenblatt.ch!\n\nABSENDER-FOKUS:\n- NUR Daten extrahieren die zum Absender iwan.iten@bluewin.ch gehören\n- NICHT die Daten der weitergeleiteten E-Mail-Empfänger verwenden\n- Bei Unsicherheit: Feld leer lassen statt falsche Daten zu verwenden\n\nFIRMEN-BEISPIELE:\n\nBeispiel 1 - Firma:\nInput: "Jungeuropa Verlag GmbH, Enderstr. 94, 01277 Dresden"\nOutput: {\n    "first_name": "",\n    "last_name": "",\n    "full_name": "Jungeuropa Verlag GmbH",\n    "company": "Jungeuropa Verlag GmbH",\n    "is_company": true,\n    "address": {"street": "Enderstr. 94", "city": "Dresden", "zip": "01277"}\n}\n\nBeispiel 2 - Person bei Firma:\nInput: "Philip Stein, Jungeuropa Verlag"\nOutput: {\n    "first_name": "Philip",\n    "last_name": "Stein",\n    "full_name": "Philip Stein",\n    "company": "Jungeuropa Verlag",\n    "is_company": false\n}\n\nANTWORTFORMAT (nur JSON, keine Kommentare):\n{\n    "first_name": "",\n    "last_name": "",\n    "full_name": "Jungeuropa Verlag GmbH",\n    "emails": ["iwan.iten@bluewin.ch"],\n    "phones": [],\n    "address": {\n        "street": "Enderstr. 94",\n        "street2": null,\n        "city": "Dresden",\n        "zip": "01277",              // ← WICHTIG: "zip" nicht "postal_code"\n        "state": null,\n        "country": "Germany"\n    },\n    "website": null,\n    "company": "Jungeuropa Verlag GmbH",\n    "position": null,\n    "is_company": true,\n    "language": "deutsch",\n    "categories": ["verlag"],\n    "biography": "...",\n    "confidence": "high"\n}\n'}], 'model': 'gpt-4o-mini', 'max_tokens': 1500, 'temperature': 0.1}}
+2025-06-11 16:39:29,719 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-06-11 16:39:29,719 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-11 16:39:29,743 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x73b1619950a0>
+2025-06-11 16:39:29,743 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x73b161f5c7d0> server_hostname='api.openai.com' timeout=5.0
+2025-06-11 16:39:29,760 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x73b161994ce0>
+2025-06-11 16:39:29,760 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-11 16:39:29,760 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-11 16:39:29,760 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-11 16:39:29,760 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-11 16:39:29,761 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-11 16:39:34,381 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 11 Jun 2025 14:39:34 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'ing-b-ro-andreas-gross-gmbh'), (b'openai-processing-ms', b'4482'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'4485'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'4000000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'3998574'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'21ms'), (b'x-request-id', b'req_53d79054d398a97f93dade47adca9049'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=.IzYcijPiLFyKKqCTE4DBY7.J.6M.SjfdxxuhKdVtbw-1749652774-1.0.1.1-JD.1G91MfXcyaSl5zvw2qpF9RezFeefVBOrNvMGOLX9.MxdndU_S2mTShAlwPXTcvheaQEHymjJFA4ED5s_C1NizOG8j67vq1se4zYzRsH4; path=/; expires=Wed, 11-Jun-25 15:09:34 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=qMfAuFPm6MaKH_WIMxoILQjoMM98kpbNEgDVT5iYLVc-1749652774375-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94e1dbb30caebc50-ZRH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-11 16:39:34,383 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:39:34,383 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-11 16:39:34,384 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-11 16:39:34,384 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-11 16:39:34,384 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-11 16:39:34,384 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers([('date', 'Wed, 11 Jun 2025 14:39:34 GMT'), ('content-type', 'application/json'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'ing-b-ro-andreas-gross-gmbh'), ('openai-processing-ms', '4482'), ('openai-version', '2020-10-01'), ('x-envoy-upstream-service-time', '4485'), ('x-ratelimit-limit-requests', '5000'), ('x-ratelimit-limit-tokens', '4000000'), ('x-ratelimit-remaining-requests', '4999'), ('x-ratelimit-remaining-tokens', '3998574'), ('x-ratelimit-reset-requests', '12ms'), ('x-ratelimit-reset-tokens', '21ms'), ('x-request-id', 'req_53d79054d398a97f93dade47adca9049'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=.IzYcijPiLFyKKqCTE4DBY7.J.6M.SjfdxxuhKdVtbw-1749652774-1.0.1.1-JD.1G91MfXcyaSl5zvw2qpF9RezFeefVBOrNvMGOLX9.MxdndU_S2mTShAlwPXTcvheaQEHymjJFA4ED5s_C1NizOG8j67vq1se4zYzRsH4; path=/; expires=Wed, 11-Jun-25 15:09:34 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=qMfAuFPm6MaKH_WIMxoILQjoMM98kpbNEgDVT5iYLVc-1749652774375-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '94e1dbb30caebc50-ZRH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-06-11 16:39:34,385 - openai._base_client - DEBUG - request_id: req_53d79054d398a97f93dade47adca9049
+2025-06-11 16:39:34,388 - config_manager - INFO - 🤖 GPT Antwort (Smart-Strategy): {
+    "first_name": "Iwan",
+    "last_name": "Iten",
+    "full_name": "Iwan Iten",
+    "emails": ["iwan.iten@bluewin.ch"],
+    "phones": ["041 750 85 24"],
+    "address": {
+        "street": "Alte Landstrasse 144",
+        "street2": null,
+        "city": "Unterägeri",
+        "zip": "6314",
+        "state": null,
+        "country": "Schweiz"
+    },
+    "website": null,
+    "company": "",
+    "position": null,
+    "is_company": false,
+    "language": "deutsch",
+    "categories": ["kunde", "5gfrei", "Selbständige", "Buchkäufer"],
+    "biography": "",
+    "confidence": "high"
+}
+2025-06-11 16:39:34,388 - config_manager - INFO - ✅ JSON erfolgreich geparst - verwende GPT-Daten!
+2025-06-11 16:39:34,388 - config_manager - INFO - ✅ Kontaktdaten extrahiert (Confidence: high)
+2025-06-11 16:39:34,388 - config_manager - INFO - 🎯 Name: Iwan Iten
+2025-06-11 16:39:34,388 - config_manager - INFO - 📧 E-Mails: iwan.iten@bluewin.ch
+2025-06-11 16:39:34,388 - config_manager - INFO - 📞 Telefon: 041 750 85 24
+2025-06-11 16:39:34,388 - config_manager - INFO - 🏠 Adresse: Alte Landstrasse 144 Unterägeri 6314 Schweiz
+2025-06-11 16:39:34,388 - config_manager - INFO - 🌍 Sprache: deutsch
+2025-06-11 16:39:34,388 - config_manager - INFO - 🏷️ Kategorien: kunde, 5gfrei, selbständige, buchkäufer
+2025-06-11 16:39:34,388 - config_manager - INFO - 🎲 Confidence: high
+2025-06-11 16:39:34,468 - config_manager - INFO - 🔍 Existierender Kontakt gefunden: iwan.iten@bluewin.ch
+2025-06-11 16:39:34,469 - config_manager - INFO - 📋 Finale Kommentar-Struktur für iwan.iten@bluewin.ch:
+2025-06-11 16:39:34,469 - config_manager - INFO -    Kommentar: '[KI-Import 2025-06-11 16:39 - Confidence: high]'
+2025-06-11 16:39:34,469 - config_manager - INFO -    Timeline-Biographie: '...' (0 Zeichen)
+2025-06-11 16:39:34,469 - config_manager - INFO - 🎯 NAMEN-ZUORDNUNG für iwan.iten@bluewin.ch:
+2025-06-11 16:39:34,469 - config_manager - INFO -    is_company: 
+2025-06-11 16:39:34,469 - config_manager - INFO -    company (aus KI): ''
+2025-06-11 16:39:34,469 - config_manager - INFO -    full_name (aus KI): 'Iwan Iten'
+2025-06-11 16:39:34,469 - config_manager - INFO -    → name (für Odoo): 'Iwan Iten'
+2025-06-11 16:39:34,470 - config_manager - DEBUG - 🏠 Straße gesetzt: Alte Landstrasse 144
+2025-06-11 16:39:34,470 - config_manager - DEBUG - 🏙️ Stadt gesetzt: Unterägeri
+2025-06-11 16:39:34,470 - config_manager - DEBUG - 📮 PLZ gesetzt: 6314
+2025-06-11 16:39:34,505 - config_manager - INFO - 🌍 Land erkannt: Schweiz → CH (ID: 43)
+2025-06-11 16:39:34,505 - config_manager - DEBUG - 🌍 Land gesetzt: Schweiz (ID: 43)
+2025-06-11 16:39:34,505 - config_manager - DEBUG - 📞 Telefon gesetzt: 041 750 85 24
+2025-06-11 16:39:34,505 - config_manager - DEBUG - 🏷️ Kategorien gesetzt: 5 Kategorien
+2025-06-11 16:39:34,505 - config_manager - INFO - 📋 Odoo-Felder für iwan.iten@bluewin.ch:
+2025-06-11 16:39:34,505 - config_manager - INFO -    name: Iwan Iten
+2025-06-11 16:39:34,505 - config_manager - INFO -    email: iwan.iten@bluewin.ch
+2025-06-11 16:39:34,505 - config_manager - INFO -    lang: de_DE
+2025-06-11 16:39:34,505 - config_manager - INFO -    is_company: 
+2025-06-11 16:39:34,505 - config_manager - INFO -    street: Alte Landstrasse 144
+2025-06-11 16:39:34,505 - config_manager - INFO -    city: Unterägeri
+2025-06-11 16:39:34,505 - config_manager - INFO -    zip: 6314
+2025-06-11 16:39:34,505 - config_manager - INFO -    country_id: 43
+2025-06-11 16:39:34,505 - config_manager - INFO -    phone: 041 750 85 24
+2025-06-11 16:39:34,505 - config_manager - INFO -    category_id: [(6, 0, [1341, 1843, 1461, 1398, 1840])]
+2025-06-11 16:39:34,506 - config_manager - DEBUG - 🔍 DEBUG existing_contact Typen:
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    id: 143507 (Typ: <class 'int'>)
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    name: Iwan Iten (Typ: <class 'str'>)
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    email: iwan.iten@bluewin.ch (Typ: <class 'str'>)
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    phone: False (Typ: <class 'bool'>)
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    street: False (Typ: <class 'bool'>)
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    website: False (Typ: <class 'bool'>)
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    comment: False (Typ: <class 'bool'>)
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    category_id: [] (Typ: <class 'list'>)
+2025-06-11 16:39:34,506 - config_manager - DEBUG - 🔍 DEBUG new_values Typen:
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    name: Iwan Iten (Typ: <class 'str'>)
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    email: iwan.iten@bluewin.ch (Typ: <class 'str'>)
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    lang: de_DE (Typ: <class 'str'>)
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    is_company:  (Typ: <class 'str'>)
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    comment: [KI-Import 2025-06-11 16:39 - Confidence: high] (Typ: <class 'str'>)
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    street: Alte Landstrasse 144 (Typ: <class 'str'>)
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    city: Unterägeri (Typ: <class 'str'>)
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    zip: 6314 (Typ: <class 'str'>)
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    country_id: 43 (Typ: <class 'int'>)
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    phone: 041 750 85 24 (Typ: <class 'str'>)
+2025-06-11 16:39:34,506 - config_manager - DEBUG -    category_id: [(6, 0, [1341, 1843, 1461, 1398, 1840])] (Typ: <class 'list'>)
+2025-06-11 16:39:34,506 - config_manager - INFO - 📝 phone ergänzt: 041 750 85 24
+2025-06-11 16:39:34,506 - config_manager - INFO - 📝 street ergänzt: Alte Landstrasse 144
+2025-06-11 16:39:34,506 - config_manager - INFO - 📝 city ergänzt: Unterägeri
+2025-06-11 16:39:34,506 - config_manager - INFO - 📝 zip ergänzt: 6314
+2025-06-11 16:39:34,506 - config_manager - INFO - 📝 Sprache ergänzt: de_DE
+2025-06-11 16:39:34,506 - config_manager - INFO - 📝 Land ergänzt: 43
+2025-06-11 16:39:34,506 - config_manager - ERROR - ❌ Fehler beim Speichern des Kontakts: 'bool' object has no attribute 'strip'
+2025-06-11 16:39:34,506 - config_manager - ERROR - ❌ E-Mail-Verarbeitung fehlgeschlagen
+2025-06-11 16:39:34,507 - config_manager - INFO - 📊 Ergebnis: ✅ 0 erfolgreich, ❌ 1 Fehler
+2025-06-11 16:39:39,881 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)
+2025-06-11 16:39:39,938 - httpcore.connection - DEBUG - close.started
+2025-06-11 16:39:39,939 - httpcore.connection - DEBUG - close.complete
+2025-06-11 16:41:56,905 - config_manager - INFO - ============================================================
+2025-06-11 16:41:56,905 - config_manager - INFO - 🚀 KI-Kontaktassistent Startup
+2025-06-11 16:41:56,906 - config_manager - INFO - 📅 2025-06-11 16:41:56
+2025-06-11 16:41:56,906 - config_manager - INFO - ============================================================
+2025-06-11 16:41:56,906 - config_manager - INFO - 🔍 Odoo-Verbindungstest:
+2025-06-11 16:41:56,906 - config_manager - INFO -    URL: https://andreas-gross.odoo.com
+2025-06-11 16:41:56,906 - config_manager - INFO -    Database: andreas-gross
+2025-06-11 16:41:56,906 - config_manager - INFO -    Username: ki-odoo-assistent@swiss-ecommerce.ch
+2025-06-11 16:41:57,031 - config_manager - INFO - ✅ Odoo-Server erreichbar: {'server_version': '18.0+e', 'server_version_info': [18, 0, 0, 'final', 0, 'e'], 'server_serie': '18.0', 'protocol_version': 1}
+2025-06-11 16:41:57,031 - config_manager - INFO - 🔐 Versuche Authentifizierung...
+2025-06-11 16:41:57,306 - config_manager - INFO - ✅ APIs erfolgreich verbunden
+2025-06-11 16:41:57,306 - config_manager - INFO - 🔐 Odoo User ID: 11
+2025-06-11 16:41:57,306 - config_manager - INFO - ✅ ConfigManager initialisiert
+2025-06-11 16:41:57,436 - config_manager - INFO - 📋 252 Kategorien aus Odoo geladen
+2025-06-11 16:41:57,436 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-11 16:41:57,439 - config_manager - INFO - 🤖 KI-Kontaktassistent gestartet
+2025-06-11 16:41:57,439 - config_manager - INFO - 📊 347 Kategorien verfügbar
+2025-06-11 16:41:57,439 - config_manager - INFO - 🚀 KI-Kontaktassistent läuft...
+2025-06-11 16:41:57,439 - config_manager - INFO - ⏱️ Check-Intervall: 300 Sekunden
+2025-06-11 16:41:57,439 - config_manager - INFO - 🔄 Iteration 1 - 16:41:57
+2025-06-11 16:41:57,439 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 16:41:57,530 - config_manager - INFO - 📬 1 neue E-Mail(s) gefunden
+2025-06-11 16:41:57,530 - config_manager - INFO - 📧 Verarbeite E-Mail 1/1
+2025-06-11 16:41:57,547 - config_manager - DEBUG - 📧 E-Mail-Body bereinigt (Länge: 1308 Zeichen)
+2025-06-11 16:41:57,547 - config_manager - DEBUG - 📬 E-Mail-ID von Message-ID: 92b8d439a60ebbaaacff28b2eb65557c
+2025-06-11 16:41:57,547 - config_manager - DEBUG - 📧 E-Mail-Body bereinigt (Länge: 1308 Zeichen)
+2025-06-11 16:41:57,547 - config_manager - INFO - 🔍 E-Mail-Body für Extraktion (erste 500 Zeichen): #kunde,#5gfrei.#Selbständige,#Buchkäufer
+
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff: 	AW: Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+Datum: 	Wed, 28 May 2025 22:35:43 +0200
+Von: 	iwan.iten@bluewin.ch
+An: 	andreas@5gfrei.ch
+
+
+
+Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+
+Lieber Andreas
+
+Danke Dir für die INFO betr. Antenne im Schützen.
+
+Gibt es dazu handfeste Beweise? – Läuft die Antenne als 5G «adaptiv» mit 
+Anwendung des Korrekturfaktors?
+
+Wir w...
+2025-06-11 16:41:57,547 - config_manager - DEBUG - 🔍 Pattern 1: Matches: []
+2025-06-11 16:41:57,547 - config_manager - DEBUG - 🔍 Pattern 2: Matches: []
+2025-06-11 16:41:57,547 - config_manager - DEBUG - 🔍 Pattern 3: Matches: ['iwan.iten@bluewin.ch']
+2025-06-11 16:41:57,548 - config_manager - DEBUG - 🔍 Pattern 4: Matches: []
+2025-06-11 16:41:57,548 - config_manager - DEBUG - 🔍 Pattern 5: Matches: ['mailto:iwan.iten@bluewin.ch']
+2025-06-11 16:41:57,548 - config_manager - DEBUG - 🔍 Pattern 6: Matches: []
+2025-06-11 16:41:57,548 - config_manager - DEBUG - 🔍 Pattern 7: Matches: []
+2025-06-11 16:41:57,548 - config_manager - DEBUG - 🔍 Pattern 8: Matches: []
+2025-06-11 16:41:57,548 - config_manager - DEBUG - 🔍 Pattern 9: Matches: []
+2025-06-11 16:41:57,548 - config_manager - DEBUG - 🔍 Pattern 10: Matches: []
+2025-06-11 16:41:57,548 - config_manager - DEBUG - 🔍 Pattern 11: Matches: ['iwan.iten@bluewin.ch', 'andreas@5gfrei.ch', 'iwan.iten@bluewin.ch', 'iwan.iten@bluewin.ch']
+2025-06-11 16:41:57,548 - config_manager - INFO - 🎯 Primäre E-Mail gefunden: iwan.iten@bluewin.ch
+2025-06-11 16:41:57,549 - config_manager - DEBUG - 📧 E-Mail-Body bereinigt (Länge: 1308 Zeichen)
+2025-06-11 16:41:57,549 - config_manager - INFO - 📧 Verarbeite: iwan.iten@bluewin.ch (von: andreas@5gfrei.ch) 
+2025-06-11 16:41:57,549 - config_manager - INFO - 🔧 Smart-Strategy Input: 1308 Zeichen
+2025-06-11 16:41:57,549 - config_manager - INFO - 📧 Kurze E-Mail (1308 Zeichen) - vollständig verarbeitet
+2025-06-11 16:41:58,170 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-fc10dcf6-bc22-402c-a261-a968510af4a0', 'json_data': {'messages': [{'role': 'system', 'content': 'Du bist ein Experte für Kontaktdaten-Extraktion. Antworte immer nur mit validem JSON. Achte BESONDERS auf Firmen-Erkennung und Footer-Bereiche mit strukturierten Adressen.'}, {'role': 'user', 'content': 'Du bist ein Experte für die Extraktion von Kontaktdaten aus E-Mails. Analysiere sorgfältig und extrahiere NUR verfügbare Informationen.\n\nABSENDER-EMAIL: iwan.iten@bluewin.ch\nBIOGRAPHIE (vom Benutzer hinzugefügt): #kunde,#5gfrei.#Selbständige,#Buchkäufer\n\nE-MAIL-INHALT:\n#kunde,#5gfrei.#Selbständige,#Buchkäufer\r\n\r\n\r\n\r\n-------- Weitergeleitete Nachricht --------\r\nBetreff: \tAW: Doppelerfolg: «Bagatellverfahren» sind abgeschafft!\r\nDatum: \tWed, 28 May 2025 22:35:43 +0200\r\nVon: \tiwan.iten@bluewin.ch\r\nAn: \tandreas@5gfrei.ch\r\n\r\n\r\n\r\nDoppelerfolg: «Bagatellverfahren» sind abgeschafft!\r\n\r\nLieber Andreas\r\n\r\nDanke Dir für die INFO betr. Antenne im Schützen.\r\n\r\nGibt es dazu handfeste Beweise? – Läuft die Antenne als 5G «adaptiv» mit \r\nAnwendung des Korrekturfaktors?\r\n\r\nWir werden am Di. 17. Juni eine Veranstaltung machen mit allen rund 25 \r\nEinsprechern der drei Antennen von Unterägeri\r\n\r\nUm das «Wie weiter…» zu besprechen. (Boden, Zugerstr. 88 + 33). In einer \r\nzweiten Runde schwebt mir eine zweite Veranstaltung im Herbst vor, wo \r\nwir auch die Unterzeichner einladen. – Schliesslich geht es darum, \r\ngenügend finanzielle Zusagen zu haben, um die Verfahren allenfalls bis \r\nvor Bundesgericht zu bringen. – Mal schauen wie die Stimmung ist.\r\n\r\nDie Antenne Zugerstrasse 88 und 33 haben wir mit Hilfe von Daniel \r\nLaubscher bereits an den Regierungsrat weitergezogen.\r\n\r\nSoll ich Dir das Beschwerdeschreiben zukommen lassen?\r\n\r\nHerzliche Grüsse\r\n\r\nIwan Iten\r\n\r\nAlte Landstrasse 144\r\n\r\n6314 Unterägeri\r\n\r\nTel 041 750 85 24\r\n\r\niwan.iten@bluewin.ch <mailto:iwan.iten@bluewin.ch>\r\n\r\n\n\nKRITISCHE EXTRAKTIONSREGELN (PRIORITÄT 1 - FIRMEN):\n\n1. FIRMEN-ERKENNUNG (HÖCHSTE PRIORITÄT):\n   - Erkenne Firmen-Indikatoren: GmbH, AG, Ltd, Inc, Corp, LLC, Verein, Verlag, Stiftung, KG, OHG, eG, SE\n   - WENN Firma erkannt → setze "is_company": true\n   - Bei Firmen: "company" UND "full_name" bekommen BEIDE den Firmennamen\n   - Bei Firmen: "first_name" und "last_name" bleiben leer!\n\n2. FIRMEN-NAME-ZUORDNUNG:\n   - Beispiel: "Jungeuropa Verlag GmbH"\n     → "full_name": "Jungeuropa Verlag GmbH"\n     → "company": "Jungeuropa Verlag GmbH"\n     → "is_company": true\n     → "first_name": ""\n     → "last_name": ""\n\n3. PERSONEN BEI FIRMEN:\n   - Beispiel: "Philip Stein von Jungeuropa Verlag"\n     → "full_name": "Philip Stein"\n     → "first_name": "Philip"\n     → "last_name": "Stein"\n     → "company": "Jungeuropa Verlag"\n     → "is_company": false\n\nWEITERE EXTRAKTIONSREGELN:\n\n4. FOOTER-PRIORITÄT: Achte besonders auf den FOOTER-Bereich am Ende der E-Mail!\n5. STRUKTURIERTE ADRESSEN: Erkenne Formate wie "Firma · Straße Nr · Stadt PLZ · Land"\n6. NAMEN: Suche nach vollständigen Namen in der Signatur (Regards, Best regards, etc.)\n7. Telefonnummern: Alle Formate (+49, 0049, national, international)\n8. Adressen: Vollständige Postanschriften bevorzugt, auch aus Footer-Bereichen\n9. Sprache: Erkenne aus dem E-Mail-Text (deutsch/english/russisch)\n10. Kategorien: Erkenne ALLE Hashtags (#Kunde, #English, #Scientology, #Lieferant, etc.)\n11. E-MAILS: NUR die Absender-E-Mail verwenden: iwan.iten@bluewin.ch - KEINE anderen E-Mails erfinden!\n\nWICHTIGE HINWEISE:\n- Nutze die BIOGRAPHIE des Benutzers als zusätzliche Information\n- Hashtags (#) sind IMMER Kategorien - extrahiere sie alle!\n- BIOGRAPHIE: Verwende NUR den Text VOR den Hashtags, NICHT die Hashtags selbst!\n- Bei Namen: Suche nach Signaturen wie "Regards, [Vollständiger Name]"\n- Sprache: Analysiere den Haupttext der E-Mail\n- E-MAILS: Verwende NUR die bekannte Absender-E-Mail, erfinde KEINE zusätzlichen!\n- FOOTER-PRIORITÄT: Kontaktdaten aus Footer haben höhere Priorität als Text-Erwähnungen\n- Leere Felder mit null füllen\n\nWICHTIG - VERWECHSLUNGSGEFAHR:\nAndreas/Telse Groß (Althusweg 12, CH 6315 Morgarten, +41-41-512-00-22, 5gfrei.ch) sind NICHT der Kontakt!\nDas sind die EMPFÄNGER der E-Mail. Extrahiere NUR Daten des ursprünglichen ABSENDERS: iwan.iten@bluewin.ch\nIgnoriere alle Firmendaten von Andreas Groß, 5gfrei.ch, inggross.de, standortdatenblatt.ch!\n\nABSENDER-FOKUS:\n- NUR Daten extrahieren die zum Absender iwan.iten@bluewin.ch gehören\n- NICHT die Daten der weitergeleiteten E-Mail-Empfänger verwenden\n- Bei Unsicherheit: Feld leer lassen statt falsche Daten zu verwenden\n\nFIRMEN-BEISPIELE:\n\nBeispiel 1 - Firma:\nInput: "Jungeuropa Verlag GmbH, Enderstr. 94, 01277 Dresden"\nOutput: {\n    "first_name": "",\n    "last_name": "",\n    "full_name": "Jungeuropa Verlag GmbH",\n    "company": "Jungeuropa Verlag GmbH",\n    "is_company": true,\n    "address": {"street": "Enderstr. 94", "city": "Dresden", "zip": "01277"}\n}\n\nBeispiel 2 - Person bei Firma:\nInput: "Philip Stein, Jungeuropa Verlag"\nOutput: {\n    "first_name": "Philip",\n    "last_name": "Stein",\n    "full_name": "Philip Stein",\n    "company": "Jungeuropa Verlag",\n    "is_company": false\n}\n\nANTWORTFORMAT (nur JSON, keine Kommentare):\n{\n    "first_name": "",\n    "last_name": "",\n    "full_name": "Jungeuropa Verlag GmbH",\n    "emails": ["iwan.iten@bluewin.ch"],\n    "phones": [],\n    "address": {\n        "street": "Enderstr. 94",\n        "street2": null,\n        "city": "Dresden",\n        "zip": "01277",              // ← WICHTIG: "zip" nicht "postal_code"\n        "state": null,\n        "country": "Germany"\n    },\n    "website": null,\n    "company": "Jungeuropa Verlag GmbH",\n    "position": null,\n    "is_company": true,\n    "language": "deutsch",\n    "categories": ["verlag"],\n    "biography": "...",\n    "confidence": "high"\n}\n'}], 'model': 'gpt-4o-mini', 'max_tokens': 1500, 'temperature': 0.1}}
+2025-06-11 16:41:58,176 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-06-11 16:41:58,176 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-11 16:41:58,199 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x728d31e88d40>
+2025-06-11 16:41:58,199 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x728d3244c7d0> server_hostname='api.openai.com' timeout=5.0
+2025-06-11 16:41:58,216 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x728d31e88710>
+2025-06-11 16:41:58,217 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-11 16:41:58,217 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-11 16:41:58,217 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-11 16:41:58,217 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-11 16:41:58,217 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-11 16:42:01,649 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 11 Jun 2025 14:42:01 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'ing-b-ro-andreas-gross-gmbh'), (b'openai-processing-ms', b'3249'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'3266'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'4000000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'3998574'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'21ms'), (b'x-request-id', b'req_4f9a5d1f01e83377be86d603ce0ffb04'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=ruwL3KcILLBhZVFDoQ034fjdtmS8hGDc7mdrWawkirI-1749652921-1.0.1.1-bCd1TYb7ytkajNRC9T7PZhc7Yx6uS7wVydka2EXG.1vRn0MPYxfKy48U0rV.agPeTr5Z5.ByeSSejaFinVF3qlM6rc.1g.UO0llTvfANJZ8; path=/; expires=Wed, 11-Jun-25 15:12:01 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=cK8yGh5vGRkVRA6ApOU1eq6vrq3Svlo800jIOs01shM-1749652921642-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94e1df52eede23f7-ZRH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-11 16:42:01,651 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:42:01,651 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-11 16:42:01,653 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-11 16:42:01,653 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-11 16:42:01,653 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-11 16:42:01,653 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers([('date', 'Wed, 11 Jun 2025 14:42:01 GMT'), ('content-type', 'application/json'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'ing-b-ro-andreas-gross-gmbh'), ('openai-processing-ms', '3249'), ('openai-version', '2020-10-01'), ('x-envoy-upstream-service-time', '3266'), ('x-ratelimit-limit-requests', '5000'), ('x-ratelimit-limit-tokens', '4000000'), ('x-ratelimit-remaining-requests', '4999'), ('x-ratelimit-remaining-tokens', '3998574'), ('x-ratelimit-reset-requests', '12ms'), ('x-ratelimit-reset-tokens', '21ms'), ('x-request-id', 'req_4f9a5d1f01e83377be86d603ce0ffb04'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=ruwL3KcILLBhZVFDoQ034fjdtmS8hGDc7mdrWawkirI-1749652921-1.0.1.1-bCd1TYb7ytkajNRC9T7PZhc7Yx6uS7wVydka2EXG.1vRn0MPYxfKy48U0rV.agPeTr5Z5.ByeSSejaFinVF3qlM6rc.1g.UO0llTvfANJZ8; path=/; expires=Wed, 11-Jun-25 15:12:01 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=cK8yGh5vGRkVRA6ApOU1eq6vrq3Svlo800jIOs01shM-1749652921642-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '94e1df52eede23f7-ZRH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-06-11 16:42:01,653 - openai._base_client - DEBUG - request_id: req_4f9a5d1f01e83377be86d603ce0ffb04
+2025-06-11 16:42:01,655 - config_manager - INFO - 🤖 GPT Antwort (Smart-Strategy): {
+    "first_name": "Iwan",
+    "last_name": "Iten",
+    "full_name": "Iwan Iten",
+    "emails": ["iwan.iten@bluewin.ch"],
+    "phones": ["041 750 85 24"],
+    "address": {
+        "street": "Alte Landstrasse 144",
+        "street2": null,
+        "city": "Unterägeri",
+        "zip": "6314",
+        "state": null,
+        "country": "Schweiz"
+    },
+    "website": null,
+    "company": null,
+    "position": null,
+    "is_company": false,
+    "language": "deutsch",
+    "categories": ["kunde", "5gfrei", "Selbständige", "Buchkäufer"],
+    "biography": "",
+    "confidence": "high"
+}
+2025-06-11 16:42:01,655 - config_manager - INFO - ✅ JSON erfolgreich geparst - verwende GPT-Daten!
+2025-06-11 16:42:01,655 - config_manager - INFO - ✅ Kontaktdaten extrahiert (Confidence: high)
+2025-06-11 16:42:01,656 - config_manager - INFO - 🎯 Name: Iwan Iten
+2025-06-11 16:42:01,656 - config_manager - INFO - 📧 E-Mails: iwan.iten@bluewin.ch
+2025-06-11 16:42:01,656 - config_manager - INFO - 📞 Telefon: 041 750 85 24
+2025-06-11 16:42:01,656 - config_manager - INFO - 🏠 Adresse: Alte Landstrasse 144 Unterägeri 6314 Schweiz
+2025-06-11 16:42:01,656 - config_manager - INFO - 🌍 Sprache: deutsch
+2025-06-11 16:42:01,656 - config_manager - INFO - 🏷️ Kategorien: kunde, 5gfrei, selbständige, buchkäufer
+2025-06-11 16:42:01,656 - config_manager - INFO - 🎲 Confidence: high
+2025-06-11 16:42:01,732 - config_manager - INFO - 🔍 Existierender Kontakt gefunden: iwan.iten@bluewin.ch
+2025-06-11 16:42:01,732 - config_manager - INFO - 📋 Finale Kommentar-Struktur für iwan.iten@bluewin.ch:
+2025-06-11 16:42:01,732 - config_manager - INFO -    Kommentar: '[KI-Import 2025-06-11 16:42 - Confidence: high]'
+2025-06-11 16:42:01,732 - config_manager - INFO -    Timeline-Biographie: '...' (0 Zeichen)
+2025-06-11 16:42:01,732 - config_manager - INFO - 🎯 NAMEN-ZUORDNUNG für iwan.iten@bluewin.ch:
+2025-06-11 16:42:01,732 - config_manager - INFO -    is_company: 
+2025-06-11 16:42:01,732 - config_manager - INFO -    company (aus KI): ''
+2025-06-11 16:42:01,732 - config_manager - INFO -    full_name (aus KI): 'Iwan Iten'
+2025-06-11 16:42:01,732 - config_manager - INFO -    → name (für Odoo): 'Iwan Iten'
+2025-06-11 16:42:01,733 - config_manager - DEBUG - 🏠 Straße gesetzt: Alte Landstrasse 144
+2025-06-11 16:42:01,733 - config_manager - DEBUG - 🏙️ Stadt gesetzt: Unterägeri
+2025-06-11 16:42:01,733 - config_manager - DEBUG - 📮 PLZ gesetzt: 6314
+2025-06-11 16:42:01,768 - config_manager - INFO - 🌍 Land erkannt: Schweiz → CH (ID: 43)
+2025-06-11 16:42:01,768 - config_manager - DEBUG - 🌍 Land gesetzt: Schweiz (ID: 43)
+2025-06-11 16:42:01,768 - config_manager - DEBUG - 📞 Telefon gesetzt: 041 750 85 24
+2025-06-11 16:42:01,768 - config_manager - DEBUG - 🏷️ Kategorien gesetzt: 5 Kategorien
+2025-06-11 16:42:01,768 - config_manager - INFO - 📋 Odoo-Felder für iwan.iten@bluewin.ch:
+2025-06-11 16:42:01,768 - config_manager - INFO -    name: Iwan Iten
+2025-06-11 16:42:01,768 - config_manager - INFO -    email: iwan.iten@bluewin.ch
+2025-06-11 16:42:01,768 - config_manager - INFO -    lang: de_DE
+2025-06-11 16:42:01,768 - config_manager - INFO -    is_company: 
+2025-06-11 16:42:01,768 - config_manager - INFO -    street: Alte Landstrasse 144
+2025-06-11 16:42:01,768 - config_manager - INFO -    city: Unterägeri
+2025-06-11 16:42:01,768 - config_manager - INFO -    zip: 6314
+2025-06-11 16:42:01,768 - config_manager - INFO -    country_id: 43
+2025-06-11 16:42:01,768 - config_manager - INFO -    phone: 041 750 85 24
+2025-06-11 16:42:01,768 - config_manager - INFO -    category_id: [(6, 0, [1341, 1843, 1461, 1398, 1840])]
+2025-06-11 16:42:01,768 - config_manager - DEBUG - 🔍 DEBUG existing_contact Typen:
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    id: 143507 (Typ: <class 'int'>)
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    name: Iwan Iten (Typ: <class 'str'>)
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    email: iwan.iten@bluewin.ch (Typ: <class 'str'>)
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    phone: False (Typ: <class 'bool'>)
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    street: False (Typ: <class 'bool'>)
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    website: False (Typ: <class 'bool'>)
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    comment: False (Typ: <class 'bool'>)
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    category_id: [] (Typ: <class 'list'>)
+2025-06-11 16:42:01,769 - config_manager - DEBUG - 🔍 DEBUG new_values Typen:
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    name: Iwan Iten (Typ: <class 'str'>)
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    email: iwan.iten@bluewin.ch (Typ: <class 'str'>)
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    lang: de_DE (Typ: <class 'str'>)
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    is_company:  (Typ: <class 'str'>)
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    comment: [KI-Import 2025-06-11 16:42 - Confidence: high] (Typ: <class 'str'>)
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    street: Alte Landstrasse 144 (Typ: <class 'str'>)
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    city: Unterägeri (Typ: <class 'str'>)
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    zip: 6314 (Typ: <class 'str'>)
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    country_id: 43 (Typ: <class 'int'>)
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    phone: 041 750 85 24 (Typ: <class 'str'>)
+2025-06-11 16:42:01,769 - config_manager - DEBUG -    category_id: [(6, 0, [1341, 1843, 1461, 1398, 1840])] (Typ: <class 'list'>)
+2025-06-11 16:42:01,769 - config_manager - INFO - 📝 phone ergänzt: 041 750 85 24
+2025-06-11 16:42:01,769 - config_manager - INFO - 📝 street ergänzt: Alte Landstrasse 144
+2025-06-11 16:42:01,769 - config_manager - INFO - 📝 city ergänzt: Unterägeri
+2025-06-11 16:42:01,769 - config_manager - INFO - 📝 zip ergänzt: 6314
+2025-06-11 16:42:01,769 - config_manager - INFO - 📝 Sprache ergänzt: de_DE
+2025-06-11 16:42:01,769 - config_manager - INFO - 📝 Land ergänzt: 43
+2025-06-11 16:42:01,770 - config_manager - ERROR - ❌ Fehler beim Speichern des Kontakts: 'bool' object has no attribute 'strip'
+2025-06-11 16:42:01,770 - config_manager - ERROR - ❌ E-Mail-Verarbeitung fehlgeschlagen
+2025-06-11 16:42:01,770 - config_manager - INFO - 📊 Ergebnis: ✅ 0 erfolgreich, ❌ 1 Fehler
+2025-06-11 16:42:07,278 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)
+2025-06-11 16:42:07,345 - httpcore.connection - DEBUG - close.started
+2025-06-11 16:42:07,346 - httpcore.connection - DEBUG - close.complete
+2025-06-11 16:45:57,575 - config_manager - INFO - ============================================================
+2025-06-11 16:45:57,575 - config_manager - INFO - 🚀 KI-Kontaktassistent Startup
+2025-06-11 16:45:57,575 - config_manager - INFO - 📅 2025-06-11 16:45:57
+2025-06-11 16:45:57,575 - config_manager - INFO - ============================================================
+2025-06-11 16:45:57,575 - config_manager - INFO - 🔍 Odoo-Verbindungstest:
+2025-06-11 16:45:57,576 - config_manager - INFO -    URL: https://andreas-gross.odoo.com
+2025-06-11 16:45:57,576 - config_manager - INFO -    Database: andreas-gross
+2025-06-11 16:45:57,576 - config_manager - INFO -    Username: ki-odoo-assistent@swiss-ecommerce.ch
+2025-06-11 16:45:57,792 - config_manager - INFO - ✅ Odoo-Server erreichbar: {'server_version': '18.0+e', 'server_version_info': [18, 0, 0, 'final', 0, 'e'], 'server_serie': '18.0', 'protocol_version': 1}
+2025-06-11 16:45:57,793 - config_manager - INFO - 🔐 Versuche Authentifizierung...
+2025-06-11 16:45:58,072 - config_manager - INFO - ✅ APIs erfolgreich verbunden
+2025-06-11 16:45:58,072 - config_manager - INFO - 🔐 Odoo User ID: 11
+2025-06-11 16:45:58,072 - config_manager - INFO - ✅ ConfigManager initialisiert
+2025-06-11 16:45:58,426 - config_manager - INFO - 📋 252 Kategorien aus Odoo geladen
+2025-06-11 16:45:58,427 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-11 16:45:58,431 - config_manager - INFO - 🤖 KI-Kontaktassistent gestartet
+2025-06-11 16:45:58,431 - config_manager - INFO - 📊 347 Kategorien verfügbar
+2025-06-11 16:45:58,431 - config_manager - INFO - 🚀 KI-Kontaktassistent läuft...
+2025-06-11 16:45:58,431 - config_manager - INFO - ⏱️ Check-Intervall: 300 Sekunden
+2025-06-11 16:45:58,431 - config_manager - INFO - 🔄 Iteration 1 - 16:45:58
+2025-06-11 16:45:58,431 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 16:45:58,556 - config_manager - INFO - 📬 1 neue E-Mail(s) gefunden
+2025-06-11 16:45:58,556 - config_manager - INFO - 📧 Verarbeite E-Mail 1/1
+2025-06-11 16:45:58,574 - config_manager - DEBUG - 📧 E-Mail-Body bereinigt (Länge: 1308 Zeichen)
+2025-06-11 16:45:58,574 - config_manager - DEBUG - 📬 E-Mail-ID von Message-ID: 1754d8aaf5830701e6ccc7fa21720111
+2025-06-11 16:45:58,575 - config_manager - DEBUG - 📧 E-Mail-Body bereinigt (Länge: 1308 Zeichen)
+2025-06-11 16:45:58,575 - config_manager - INFO - 🔍 E-Mail-Body für Extraktion (erste 500 Zeichen): #kunde,#5gfrei.#Selbständige,#Buchkäufer
+
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff: 	AW: Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+Datum: 	Wed, 28 May 2025 22:35:43 +0200
+Von: 	iwan.iten@bluewin.ch
+An: 	andreas@5gfrei.ch
+
+
+
+Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+
+Lieber Andreas
+
+Danke Dir für die INFO betr. Antenne im Schützen.
+
+Gibt es dazu handfeste Beweise? – Läuft die Antenne als 5G «adaptiv» mit 
+Anwendung des Korrekturfaktors?
+
+Wir w...
+2025-06-11 16:45:58,575 - config_manager - DEBUG - 🔍 Pattern 1: Matches: []
+2025-06-11 16:45:58,576 - config_manager - DEBUG - 🔍 Pattern 2: Matches: []
+2025-06-11 16:45:58,576 - config_manager - DEBUG - 🔍 Pattern 3: Matches: ['iwan.iten@bluewin.ch']
+2025-06-11 16:45:58,576 - config_manager - DEBUG - 🔍 Pattern 4: Matches: []
+2025-06-11 16:45:58,576 - config_manager - DEBUG - 🔍 Pattern 5: Matches: ['mailto:iwan.iten@bluewin.ch']
+2025-06-11 16:45:58,576 - config_manager - DEBUG - 🔍 Pattern 6: Matches: []
+2025-06-11 16:45:58,577 - config_manager - DEBUG - 🔍 Pattern 7: Matches: []
+2025-06-11 16:45:58,577 - config_manager - DEBUG - 🔍 Pattern 8: Matches: []
+2025-06-11 16:45:58,577 - config_manager - DEBUG - 🔍 Pattern 9: Matches: []
+2025-06-11 16:45:58,577 - config_manager - DEBUG - 🔍 Pattern 10: Matches: []
+2025-06-11 16:45:58,579 - config_manager - DEBUG - 🔍 Pattern 11: Matches: ['iwan.iten@bluewin.ch', 'andreas@5gfrei.ch', 'iwan.iten@bluewin.ch', 'iwan.iten@bluewin.ch']
+2025-06-11 16:45:58,579 - config_manager - INFO - 🎯 Primäre E-Mail gefunden: iwan.iten@bluewin.ch
+2025-06-11 16:45:58,579 - config_manager - DEBUG - 📧 E-Mail-Body bereinigt (Länge: 1308 Zeichen)
+2025-06-11 16:45:58,579 - config_manager - INFO - 📧 Verarbeite: iwan.iten@bluewin.ch (von: andreas@5gfrei.ch) 
+2025-06-11 16:45:58,579 - config_manager - INFO - 🔧 Smart-Strategy Input: 1308 Zeichen
+2025-06-11 16:45:58,579 - config_manager - INFO - 📧 Kurze E-Mail (1308 Zeichen) - vollständig verarbeitet
+2025-06-11 16:45:59,306 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-4cab0d19-d615-4fa0-9783-622f1ac00861', 'json_data': {'messages': [{'role': 'system', 'content': 'Du bist ein Experte für Kontaktdaten-Extraktion. Antworte immer nur mit validem JSON. Achte BESONDERS auf Firmen-Erkennung und Footer-Bereiche mit strukturierten Adressen.'}, {'role': 'user', 'content': 'Du bist ein Experte für die Extraktion von Kontaktdaten aus E-Mails. Analysiere sorgfältig und extrahiere NUR verfügbare Informationen.\n\nABSENDER-EMAIL: iwan.iten@bluewin.ch\nBIOGRAPHIE (vom Benutzer hinzugefügt): #kunde,#5gfrei.#Selbständige,#Buchkäufer\n\nE-MAIL-INHALT:\n#kunde,#5gfrei.#Selbständige,#Buchkäufer\r\n\r\n\r\n\r\n-------- Weitergeleitete Nachricht --------\r\nBetreff: \tAW: Doppelerfolg: «Bagatellverfahren» sind abgeschafft!\r\nDatum: \tWed, 28 May 2025 22:35:43 +0200\r\nVon: \tiwan.iten@bluewin.ch\r\nAn: \tandreas@5gfrei.ch\r\n\r\n\r\n\r\nDoppelerfolg: «Bagatellverfahren» sind abgeschafft!\r\n\r\nLieber Andreas\r\n\r\nDanke Dir für die INFO betr. Antenne im Schützen.\r\n\r\nGibt es dazu handfeste Beweise? – Läuft die Antenne als 5G «adaptiv» mit \r\nAnwendung des Korrekturfaktors?\r\n\r\nWir werden am Di. 17. Juni eine Veranstaltung machen mit allen rund 25 \r\nEinsprechern der drei Antennen von Unterägeri\r\n\r\nUm das «Wie weiter…» zu besprechen. (Boden, Zugerstr. 88 + 33). In einer \r\nzweiten Runde schwebt mir eine zweite Veranstaltung im Herbst vor, wo \r\nwir auch die Unterzeichner einladen. – Schliesslich geht es darum, \r\ngenügend finanzielle Zusagen zu haben, um die Verfahren allenfalls bis \r\nvor Bundesgericht zu bringen. – Mal schauen wie die Stimmung ist.\r\n\r\nDie Antenne Zugerstrasse 88 und 33 haben wir mit Hilfe von Daniel \r\nLaubscher bereits an den Regierungsrat weitergezogen.\r\n\r\nSoll ich Dir das Beschwerdeschreiben zukommen lassen?\r\n\r\nHerzliche Grüsse\r\n\r\nIwan Iten\r\n\r\nAlte Landstrasse 144\r\n\r\n6314 Unterägeri\r\n\r\nTel 041 750 85 24\r\n\r\niwan.iten@bluewin.ch <mailto:iwan.iten@bluewin.ch>\r\n\r\n\n\nKRITISCHE EXTRAKTIONSREGELN (PRIORITÄT 1 - FIRMEN):\n\n1. FIRMEN-ERKENNUNG (HÖCHSTE PRIORITÄT):\n   - Erkenne Firmen-Indikatoren: GmbH, AG, Ltd, Inc, Corp, LLC, Verein, Verlag, Stiftung, KG, OHG, eG, SE\n   - WENN Firma erkannt → setze "is_company": true\n   - Bei Firmen: "company" UND "full_name" bekommen BEIDE den Firmennamen\n   - Bei Firmen: "first_name" und "last_name" bleiben leer!\n\n2. FIRMEN-NAME-ZUORDNUNG:\n   - Beispiel: "Jungeuropa Verlag GmbH"\n     → "full_name": "Jungeuropa Verlag GmbH"\n     → "company": "Jungeuropa Verlag GmbH"\n     → "is_company": true\n     → "first_name": ""\n     → "last_name": ""\n\n3. PERSONEN BEI FIRMEN:\n   - Beispiel: "Philip Stein von Jungeuropa Verlag"\n     → "full_name": "Philip Stein"\n     → "first_name": "Philip"\n     → "last_name": "Stein"\n     → "company": "Jungeuropa Verlag"\n     → "is_company": false\n\nWEITERE EXTRAKTIONSREGELN:\n\n4. FOOTER-PRIORITÄT: Achte besonders auf den FOOTER-Bereich am Ende der E-Mail!\n5. STRUKTURIERTE ADRESSEN: Erkenne Formate wie "Firma · Straße Nr · Stadt PLZ · Land"\n6. NAMEN: Suche nach vollständigen Namen in der Signatur (Regards, Best regards, etc.)\n7. Telefonnummern: Alle Formate (+49, 0049, national, international)\n8. Adressen: Vollständige Postanschriften bevorzugt, auch aus Footer-Bereichen\n9. Sprache: Erkenne aus dem E-Mail-Text (deutsch/english/russisch)\n10. Kategorien: Erkenne ALLE Hashtags (#Kunde, #English, #Scientology, #Lieferant, etc.)\n11. E-MAILS: NUR die Absender-E-Mail verwenden: iwan.iten@bluewin.ch - KEINE anderen E-Mails erfinden!\n\nWICHTIGE HINWEISE:\n- Nutze die BIOGRAPHIE des Benutzers als zusätzliche Information\n- Hashtags (#) sind IMMER Kategorien - extrahiere sie alle!\n- BIOGRAPHIE: Verwende NUR den Text VOR den Hashtags, NICHT die Hashtags selbst!\n- Bei Namen: Suche nach Signaturen wie "Regards, [Vollständiger Name]"\n- Sprache: Analysiere den Haupttext der E-Mail\n- E-MAILS: Verwende NUR die bekannte Absender-E-Mail, erfinde KEINE zusätzlichen!\n- FOOTER-PRIORITÄT: Kontaktdaten aus Footer haben höhere Priorität als Text-Erwähnungen\n- Leere Felder mit null füllen\n\nWICHTIG - VERWECHSLUNGSGEFAHR:\nAndreas/Telse Groß (Althusweg 12, CH 6315 Morgarten, +41-41-512-00-22, 5gfrei.ch) sind NICHT der Kontakt!\nDas sind die EMPFÄNGER der E-Mail. Extrahiere NUR Daten des ursprünglichen ABSENDERS: iwan.iten@bluewin.ch\nIgnoriere alle Firmendaten von Andreas Groß, 5gfrei.ch, inggross.de, standortdatenblatt.ch!\n\nABSENDER-FOKUS:\n- NUR Daten extrahieren die zum Absender iwan.iten@bluewin.ch gehören\n- NICHT die Daten der weitergeleiteten E-Mail-Empfänger verwenden\n- Bei Unsicherheit: Feld leer lassen statt falsche Daten zu verwenden\n\nFIRMEN-BEISPIELE:\n\nBeispiel 1 - Firma:\nInput: "Jungeuropa Verlag GmbH, Enderstr. 94, 01277 Dresden"\nOutput: {\n    "first_name": "",\n    "last_name": "",\n    "full_name": "Jungeuropa Verlag GmbH",\n    "company": "Jungeuropa Verlag GmbH",\n    "is_company": true,\n    "address": {"street": "Enderstr. 94", "city": "Dresden", "zip": "01277"}\n}\n\nBeispiel 2 - Person bei Firma:\nInput: "Philip Stein, Jungeuropa Verlag"\nOutput: {\n    "first_name": "Philip",\n    "last_name": "Stein",\n    "full_name": "Philip Stein",\n    "company": "Jungeuropa Verlag",\n    "is_company": false\n}\n\nANTWORTFORMAT (nur JSON, keine Kommentare):\n{\n    "first_name": "",\n    "last_name": "",\n    "full_name": "Jungeuropa Verlag GmbH",\n    "emails": ["iwan.iten@bluewin.ch"],\n    "phones": [],\n    "address": {\n        "street": "Enderstr. 94",\n        "street2": null,\n        "city": "Dresden",\n        "zip": "01277",              // ← WICHTIG: "zip" nicht "postal_code"\n        "state": null,\n        "country": "Germany"\n    },\n    "website": null,\n    "company": "Jungeuropa Verlag GmbH",\n    "position": null,\n    "is_company": true,\n    "language": "deutsch",\n    "categories": ["verlag"],\n    "biography": "...",\n    "confidence": "high"\n}\n'}], 'model': 'gpt-4o-mini', 'max_tokens': 1500, 'temperature': 0.1}}
+2025-06-11 16:45:59,312 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-06-11 16:45:59,312 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-11 16:45:59,340 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x77547ee69070>
+2025-06-11 16:45:59,340 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x77547f2347d0> server_hostname='api.openai.com' timeout=5.0
+2025-06-11 16:45:59,365 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x77547f2df0b0>
+2025-06-11 16:45:59,365 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-11 16:45:59,366 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-11 16:45:59,366 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-11 16:45:59,366 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-11 16:45:59,366 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-11 16:46:02,821 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 11 Jun 2025 14:46:02 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'ing-b-ro-andreas-gross-gmbh'), (b'openai-processing-ms', b'3305'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'3313'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'4000000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'3998573'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'21ms'), (b'x-request-id', b'req_f033dd66ea13f7f753df95a678864efc'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=LunNEjH5GkJlQ4J9oVWG2p9QDmjt2hAny1_70bnAf_g-1749653162-1.0.1.1-5XKRELR6V_3lS6C_oVTShJhu_pYa4PEtvPndSc3DfYzfFdN7XbV2pnvFazKtNQ._Tk.poHSTGWMEWrAOaaMrdldcKUf15TSKyngTBhbNjuQ; path=/; expires=Wed, 11-Jun-25 15:16:02 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=jnC3DA5x.j_JT2fNPDTG.q1L6NG897nCr2fvYtbKCbA-1749653162814-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94e1e5361bb5fbd6-ZRH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-11 16:46:02,823 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:46:02,824 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-11 16:46:02,824 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-11 16:46:02,825 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-11 16:46:02,825 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-11 16:46:02,825 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers([('date', 'Wed, 11 Jun 2025 14:46:02 GMT'), ('content-type', 'application/json'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'ing-b-ro-andreas-gross-gmbh'), ('openai-processing-ms', '3305'), ('openai-version', '2020-10-01'), ('x-envoy-upstream-service-time', '3313'), ('x-ratelimit-limit-requests', '5000'), ('x-ratelimit-limit-tokens', '4000000'), ('x-ratelimit-remaining-requests', '4999'), ('x-ratelimit-remaining-tokens', '3998573'), ('x-ratelimit-reset-requests', '12ms'), ('x-ratelimit-reset-tokens', '21ms'), ('x-request-id', 'req_f033dd66ea13f7f753df95a678864efc'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=LunNEjH5GkJlQ4J9oVWG2p9QDmjt2hAny1_70bnAf_g-1749653162-1.0.1.1-5XKRELR6V_3lS6C_oVTShJhu_pYa4PEtvPndSc3DfYzfFdN7XbV2pnvFazKtNQ._Tk.poHSTGWMEWrAOaaMrdldcKUf15TSKyngTBhbNjuQ; path=/; expires=Wed, 11-Jun-25 15:16:02 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=jnC3DA5x.j_JT2fNPDTG.q1L6NG897nCr2fvYtbKCbA-1749653162814-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '94e1e5361bb5fbd6-ZRH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-06-11 16:46:02,825 - openai._base_client - DEBUG - request_id: req_f033dd66ea13f7f753df95a678864efc
+2025-06-11 16:46:02,828 - config_manager - INFO - 🤖 GPT Antwort (Smart-Strategy): {
+    "first_name": "Iwan",
+    "last_name": "Iten",
+    "full_name": "Iwan Iten",
+    "emails": ["iwan.iten@bluewin.ch"],
+    "phones": ["041 750 85 24"],
+    "address": {
+        "street": "Alte Landstrasse 144",
+        "street2": null,
+        "city": "Unterägeri",
+        "zip": "6314",
+        "state": null,
+        "country": "Schweiz"
+    },
+    "website": null,
+    "company": null,
+    "position": null,
+    "is_company": false,
+    "language": "deutsch",
+    "categories": ["kunde", "5gfrei", "Selbständige", "Buchkäufer"],
+    "biography": "",
+    "confidence": "high"
+}
+2025-06-11 16:46:02,828 - config_manager - INFO - ✅ JSON erfolgreich geparst - verwende GPT-Daten!
+2025-06-11 16:46:02,828 - config_manager - INFO - ✅ Kontaktdaten extrahiert (Confidence: high)
+2025-06-11 16:46:02,828 - config_manager - INFO - 🎯 Name: Iwan Iten
+2025-06-11 16:46:02,828 - config_manager - INFO - 📧 E-Mails: iwan.iten@bluewin.ch
+2025-06-11 16:46:02,828 - config_manager - INFO - 📞 Telefon: 041 750 85 24
+2025-06-11 16:46:02,828 - config_manager - INFO - 🏠 Adresse: Alte Landstrasse 144 Unterägeri 6314 Schweiz
+2025-06-11 16:46:02,828 - config_manager - INFO - 🌍 Sprache: deutsch
+2025-06-11 16:46:02,828 - config_manager - INFO - 🏷️ Kategorien: kunde, 5gfrei, selbständige, buchkäufer
+2025-06-11 16:46:02,828 - config_manager - INFO - 🎲 Confidence: high
+2025-06-11 16:46:02,914 - config_manager - INFO - 🔍 Existierender Kontakt gefunden: iwan.iten@bluewin.ch
+2025-06-11 16:46:02,914 - config_manager - INFO - 📋 Finale Kommentar-Struktur für iwan.iten@bluewin.ch:
+2025-06-11 16:46:02,915 - config_manager - INFO -    Kommentar: '[KI-Import 2025-06-11 16:46 - Confidence: high]'
+2025-06-11 16:46:02,915 - config_manager - INFO -    Timeline-Biographie: '...' (0 Zeichen)
+2025-06-11 16:46:02,915 - config_manager - INFO - 🎯 NAMEN-ZUORDNUNG für iwan.iten@bluewin.ch:
+2025-06-11 16:46:02,915 - config_manager - INFO -    is_company: 
+2025-06-11 16:46:02,915 - config_manager - INFO -    company (aus KI): ''
+2025-06-11 16:46:02,915 - config_manager - INFO -    full_name (aus KI): 'Iwan Iten'
+2025-06-11 16:46:02,915 - config_manager - INFO -    → name (für Odoo): 'Iwan Iten'
+2025-06-11 16:46:02,915 - config_manager - DEBUG - 🏠 Straße gesetzt: Alte Landstrasse 144
+2025-06-11 16:46:02,915 - config_manager - DEBUG - 🏙️ Stadt gesetzt: Unterägeri
+2025-06-11 16:46:02,915 - config_manager - DEBUG - 📮 PLZ gesetzt: 6314
+2025-06-11 16:46:02,956 - config_manager - INFO - 🌍 Land erkannt: Schweiz → CH (ID: 43)
+2025-06-11 16:46:02,956 - config_manager - DEBUG - 🌍 Land gesetzt: Schweiz (ID: 43)
+2025-06-11 16:46:02,956 - config_manager - DEBUG - 📞 Telefon gesetzt: 041 750 85 24
+2025-06-11 16:46:02,956 - config_manager - DEBUG - 🏷️ Kategorien gesetzt: 5 Kategorien
+2025-06-11 16:46:02,956 - config_manager - INFO - 📋 Odoo-Felder für iwan.iten@bluewin.ch:
+2025-06-11 16:46:02,956 - config_manager - INFO -    name: Iwan Iten
+2025-06-11 16:46:02,956 - config_manager - INFO -    email: iwan.iten@bluewin.ch
+2025-06-11 16:46:02,956 - config_manager - INFO -    lang: de_DE
+2025-06-11 16:46:02,956 - config_manager - INFO -    is_company: 
+2025-06-11 16:46:02,956 - config_manager - INFO -    street: Alte Landstrasse 144
+2025-06-11 16:46:02,956 - config_manager - INFO -    city: Unterägeri
+2025-06-11 16:46:02,956 - config_manager - INFO -    zip: 6314
+2025-06-11 16:46:02,957 - config_manager - INFO -    country_id: 43
+2025-06-11 16:46:02,957 - config_manager - INFO -    phone: 041 750 85 24
+2025-06-11 16:46:02,957 - config_manager - INFO -    category_id: [(6, 0, [1341, 1843, 1461, 1398, 1840])]
+2025-06-11 16:46:02,957 - config_manager - DEBUG - 🔍 DEBUG existing_contact Typen:
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    id: 143507 (Typ: <class 'int'>)
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    name: Iwan Iten (Typ: <class 'str'>)
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    email: iwan.iten@bluewin.ch (Typ: <class 'str'>)
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    phone: False (Typ: <class 'bool'>)
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    street: False (Typ: <class 'bool'>)
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    website: False (Typ: <class 'bool'>)
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    comment: False (Typ: <class 'bool'>)
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    category_id: [] (Typ: <class 'list'>)
+2025-06-11 16:46:02,957 - config_manager - DEBUG - 🔍 DEBUG new_values Typen:
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    name: Iwan Iten (Typ: <class 'str'>)
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    email: iwan.iten@bluewin.ch (Typ: <class 'str'>)
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    lang: de_DE (Typ: <class 'str'>)
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    is_company:  (Typ: <class 'str'>)
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    comment: [KI-Import 2025-06-11 16:46 - Confidence: high] (Typ: <class 'str'>)
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    street: Alte Landstrasse 144 (Typ: <class 'str'>)
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    city: Unterägeri (Typ: <class 'str'>)
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    zip: 6314 (Typ: <class 'str'>)
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    country_id: 43 (Typ: <class 'int'>)
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    phone: 041 750 85 24 (Typ: <class 'str'>)
+2025-06-11 16:46:02,957 - config_manager - DEBUG -    category_id: [(6, 0, [1341, 1843, 1461, 1398, 1840])] (Typ: <class 'list'>)
+2025-06-11 16:46:02,957 - config_manager - INFO - 📝 phone ergänzt: 041 750 85 24
+2025-06-11 16:46:02,958 - config_manager - INFO - 📝 street ergänzt: Alte Landstrasse 144
+2025-06-11 16:46:02,958 - config_manager - INFO - 📝 city ergänzt: Unterägeri
+2025-06-11 16:46:02,958 - config_manager - INFO - 📝 zip ergänzt: 6314
+2025-06-11 16:46:02,958 - config_manager - INFO - 📝 Sprache ergänzt: de_DE
+2025-06-11 16:46:02,958 - config_manager - INFO - 📝 Land ergänzt: 43
+2025-06-11 16:46:02,958 - config_manager - ERROR - ❌ Fehler beim Speichern des Kontakts: 'bool' object has no attribute 'strip'
+2025-06-11 16:46:02,958 - config_manager - ERROR - ❌ E-Mail-Verarbeitung fehlgeschlagen
+2025-06-11 16:46:02,958 - config_manager - INFO - 📊 Ergebnis: ✅ 0 erfolgreich, ❌ 1 Fehler
+2025-06-11 16:46:10,831 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)
+2025-06-11 16:46:10,903 - httpcore.connection - DEBUG - close.started
+2025-06-11 16:46:10,906 - httpcore.connection - DEBUG - close.complete
+2025-06-11 16:51:35,358 - config_manager - INFO - ============================================================
+2025-06-11 16:51:35,358 - config_manager - INFO - 🚀 KI-Kontaktassistent Startup
+2025-06-11 16:51:35,358 - config_manager - INFO - 📅 2025-06-11 16:51:35
+2025-06-11 16:51:35,358 - config_manager - INFO - ============================================================
+2025-06-11 16:51:35,358 - config_manager - INFO - 🔍 Odoo-Verbindungstest:
+2025-06-11 16:51:35,358 - config_manager - INFO -    URL: https://andreas-gross.odoo.com
+2025-06-11 16:51:35,358 - config_manager - INFO -    Database: andreas-gross
+2025-06-11 16:51:35,358 - config_manager - INFO -    Username: ki-odoo-assistent@swiss-ecommerce.ch
+2025-06-11 16:51:35,506 - config_manager - INFO - ✅ Odoo-Server erreichbar: {'server_version': '18.0+e', 'server_version_info': [18, 0, 0, 'final', 0, 'e'], 'server_serie': '18.0', 'protocol_version': 1}
+2025-06-11 16:51:35,506 - config_manager - INFO - 🔐 Versuche Authentifizierung...
+2025-06-11 16:51:35,784 - config_manager - INFO - ✅ APIs erfolgreich verbunden
+2025-06-11 16:51:35,784 - config_manager - INFO - 🔐 Odoo User ID: 11
+2025-06-11 16:51:35,784 - config_manager - INFO - ✅ ConfigManager initialisiert
+2025-06-11 16:51:36,214 - config_manager - INFO - 📋 252 Kategorien aus Odoo geladen
+2025-06-11 16:51:36,214 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-11 16:51:36,218 - config_manager - INFO - 🤖 KI-Kontaktassistent gestartet
+2025-06-11 16:51:36,219 - config_manager - INFO - 📊 347 Kategorien verfügbar
+2025-06-11 16:51:36,219 - config_manager - INFO - 🚀 KI-Kontaktassistent läuft...
+2025-06-11 16:51:36,219 - config_manager - INFO - ⏱️ Check-Intervall: 300 Sekunden
+2025-06-11 16:51:36,219 - config_manager - INFO - 🔄 Iteration 1 - 16:51:36
+2025-06-11 16:51:36,219 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 16:51:36,324 - config_manager - INFO - 📭 Keine neuen E-Mails
+2025-06-11 16:51:42,515 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)
+2025-06-11 16:51:58,666 - config_manager - INFO - ============================================================
+2025-06-11 16:51:58,666 - config_manager - INFO - 🚀 KI-Kontaktassistent Startup
+2025-06-11 16:51:58,666 - config_manager - INFO - 📅 2025-06-11 16:51:58
+2025-06-11 16:51:58,666 - config_manager - INFO - ============================================================
+2025-06-11 16:51:58,666 - config_manager - INFO - 🔍 Odoo-Verbindungstest:
+2025-06-11 16:51:58,666 - config_manager - INFO -    URL: https://andreas-gross.odoo.com
+2025-06-11 16:51:58,666 - config_manager - INFO -    Database: andreas-gross
+2025-06-11 16:51:58,666 - config_manager - INFO -    Username: ki-odoo-assistent@swiss-ecommerce.ch
+2025-06-11 16:51:58,788 - config_manager - INFO - ✅ Odoo-Server erreichbar: {'server_version': '18.0+e', 'server_version_info': [18, 0, 0, 'final', 0, 'e'], 'server_serie': '18.0', 'protocol_version': 1}
+2025-06-11 16:51:58,788 - config_manager - INFO - 🔐 Versuche Authentifizierung...
+2025-06-11 16:51:59,145 - config_manager - INFO - ✅ APIs erfolgreich verbunden
+2025-06-11 16:51:59,146 - config_manager - INFO - 🔐 Odoo User ID: 11
+2025-06-11 16:51:59,146 - config_manager - INFO - ✅ ConfigManager initialisiert
+2025-06-11 16:51:59,280 - config_manager - INFO - 📋 252 Kategorien aus Odoo geladen
+2025-06-11 16:51:59,280 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-11 16:51:59,281 - config_manager - INFO - 🤖 KI-Kontaktassistent gestartet
+2025-06-11 16:51:59,281 - config_manager - INFO - 📊 347 Kategorien verfügbar
+2025-06-11 16:51:59,281 - config_manager - INFO - 🚀 KI-Kontaktassistent läuft...
+2025-06-11 16:51:59,281 - config_manager - INFO - ⏱️ Check-Intervall: 300 Sekunden
+2025-06-11 16:51:59,282 - config_manager - INFO - 🔄 Iteration 1 - 16:51:59
+2025-06-11 16:51:59,282 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 16:51:59,375 - config_manager - INFO - 📬 1 neue E-Mail(s) gefunden
+2025-06-11 16:51:59,375 - config_manager - INFO - 📧 Verarbeite E-Mail 1/1
+2025-06-11 16:51:59,394 - config_manager - DEBUG - 📧 E-Mail-Body bereinigt (Länge: 1308 Zeichen)
+2025-06-11 16:51:59,395 - config_manager - DEBUG - 📬 E-Mail-ID von Message-ID: ba4935dcdbb6a7d145f0c0d7b43ed4fa
+2025-06-11 16:51:59,395 - config_manager - DEBUG - 📧 E-Mail-Body bereinigt (Länge: 1308 Zeichen)
+2025-06-11 16:51:59,395 - config_manager - INFO - 🔍 E-Mail-Body für Extraktion (erste 500 Zeichen): #kunde,#5gfrei.#Selbständige,#Buchkäufer
+
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff: 	AW: Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+Datum: 	Wed, 28 May 2025 22:35:43 +0200
+Von: 	iwan.iten@bluewin.ch
+An: 	andreas@5gfrei.ch
+
+
+
+Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+
+Lieber Andreas
+
+Danke Dir für die INFO betr. Antenne im Schützen.
+
+Gibt es dazu handfeste Beweise? – Läuft die Antenne als 5G «adaptiv» mit 
+Anwendung des Korrekturfaktors?
+
+Wir w...
+2025-06-11 16:51:59,395 - config_manager - DEBUG - 🔍 Pattern 1: Matches: []
+2025-06-11 16:51:59,396 - config_manager - DEBUG - 🔍 Pattern 2: Matches: []
+2025-06-11 16:51:59,396 - config_manager - DEBUG - 🔍 Pattern 3: Matches: ['iwan.iten@bluewin.ch']
+2025-06-11 16:51:59,396 - config_manager - DEBUG - 🔍 Pattern 4: Matches: []
+2025-06-11 16:51:59,396 - config_manager - DEBUG - 🔍 Pattern 5: Matches: ['mailto:iwan.iten@bluewin.ch']
+2025-06-11 16:51:59,396 - config_manager - DEBUG - 🔍 Pattern 6: Matches: []
+2025-06-11 16:51:59,397 - config_manager - DEBUG - 🔍 Pattern 7: Matches: []
+2025-06-11 16:51:59,397 - config_manager - DEBUG - 🔍 Pattern 8: Matches: []
+2025-06-11 16:51:59,397 - config_manager - DEBUG - 🔍 Pattern 9: Matches: []
+2025-06-11 16:51:59,397 - config_manager - DEBUG - 🔍 Pattern 10: Matches: []
+2025-06-11 16:51:59,398 - config_manager - DEBUG - 🔍 Pattern 11: Matches: ['iwan.iten@bluewin.ch', 'andreas@5gfrei.ch', 'iwan.iten@bluewin.ch', 'iwan.iten@bluewin.ch']
+2025-06-11 16:51:59,398 - config_manager - INFO - 🎯 Primäre E-Mail gefunden: iwan.iten@bluewin.ch
+2025-06-11 16:51:59,399 - config_manager - DEBUG - 📧 E-Mail-Body bereinigt (Länge: 1308 Zeichen)
+2025-06-11 16:51:59,399 - config_manager - INFO - 📧 Verarbeite: iwan.iten@bluewin.ch (von: andreas@5gfrei.ch) 
+2025-06-11 16:51:59,399 - config_manager - INFO - 🔧 Smart-Strategy Input: 1308 Zeichen
+2025-06-11 16:51:59,399 - config_manager - INFO - 📧 Kurze E-Mail (1308 Zeichen) - vollständig verarbeitet
+2025-06-11 16:52:00,105 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-f96e2356-c6ef-4a3d-8dc3-086b576550ca', 'json_data': {'messages': [{'role': 'system', 'content': 'Du bist ein Experte für Kontaktdaten-Extraktion. Antworte immer nur mit validem JSON. Achte BESONDERS auf Firmen-Erkennung und Footer-Bereiche mit strukturierten Adressen.'}, {'role': 'user', 'content': 'Du bist ein Experte für die Extraktion von Kontaktdaten aus E-Mails. Analysiere sorgfältig und extrahiere NUR verfügbare Informationen.\n\nABSENDER-EMAIL: iwan.iten@bluewin.ch\nBIOGRAPHIE (vom Benutzer hinzugefügt): #kunde,#5gfrei.#Selbständige,#Buchkäufer\n\nE-MAIL-INHALT:\n#kunde,#5gfrei.#Selbständige,#Buchkäufer\r\n\r\n\r\n\r\n-------- Weitergeleitete Nachricht --------\r\nBetreff: \tAW: Doppelerfolg: «Bagatellverfahren» sind abgeschafft!\r\nDatum: \tWed, 28 May 2025 22:35:43 +0200\r\nVon: \tiwan.iten@bluewin.ch\r\nAn: \tandreas@5gfrei.ch\r\n\r\n\r\n\r\nDoppelerfolg: «Bagatellverfahren» sind abgeschafft!\r\n\r\nLieber Andreas\r\n\r\nDanke Dir für die INFO betr. Antenne im Schützen.\r\n\r\nGibt es dazu handfeste Beweise? – Läuft die Antenne als 5G «adaptiv» mit \r\nAnwendung des Korrekturfaktors?\r\n\r\nWir werden am Di. 17. Juni eine Veranstaltung machen mit allen rund 25 \r\nEinsprechern der drei Antennen von Unterägeri\r\n\r\nUm das «Wie weiter…» zu besprechen. (Boden, Zugerstr. 88 + 33). In einer \r\nzweiten Runde schwebt mir eine zweite Veranstaltung im Herbst vor, wo \r\nwir auch die Unterzeichner einladen. – Schliesslich geht es darum, \r\ngenügend finanzielle Zusagen zu haben, um die Verfahren allenfalls bis \r\nvor Bundesgericht zu bringen. – Mal schauen wie die Stimmung ist.\r\n\r\nDie Antenne Zugerstrasse 88 und 33 haben wir mit Hilfe von Daniel \r\nLaubscher bereits an den Regierungsrat weitergezogen.\r\n\r\nSoll ich Dir das Beschwerdeschreiben zukommen lassen?\r\n\r\nHerzliche Grüsse\r\n\r\nIwan Iten\r\n\r\nAlte Landstrasse 144\r\n\r\n6314 Unterägeri\r\n\r\nTel 041 750 85 24\r\n\r\niwan.iten@bluewin.ch <mailto:iwan.iten@bluewin.ch>\r\n\r\n\n\nKRITISCHE EXTRAKTIONSREGELN (PRIORITÄT 1 - FIRMEN):\n\n1. FIRMEN-ERKENNUNG (HÖCHSTE PRIORITÄT):\n   - Erkenne Firmen-Indikatoren: GmbH, AG, Ltd, Inc, Corp, LLC, Verein, Verlag, Stiftung, KG, OHG, eG, SE\n   - WENN Firma erkannt → setze "is_company": true\n   - Bei Firmen: "company" UND "full_name" bekommen BEIDE den Firmennamen\n   - Bei Firmen: "first_name" und "last_name" bleiben leer!\n\n2. FIRMEN-NAME-ZUORDNUNG:\n   - Beispiel: "Jungeuropa Verlag GmbH"\n     → "full_name": "Jungeuropa Verlag GmbH"\n     → "company": "Jungeuropa Verlag GmbH"\n     → "is_company": true\n     → "first_name": ""\n     → "last_name": ""\n\n3. PERSONEN BEI FIRMEN:\n   - Beispiel: "Philip Stein von Jungeuropa Verlag"\n     → "full_name": "Philip Stein"\n     → "first_name": "Philip"\n     → "last_name": "Stein"\n     → "company": "Jungeuropa Verlag"\n     → "is_company": false\n\nWEITERE EXTRAKTIONSREGELN:\n\n4. FOOTER-PRIORITÄT: Achte besonders auf den FOOTER-Bereich am Ende der E-Mail!\n5. STRUKTURIERTE ADRESSEN: Erkenne Formate wie "Firma · Straße Nr · Stadt PLZ · Land"\n6. NAMEN: Suche nach vollständigen Namen in der Signatur (Regards, Best regards, etc.)\n7. Telefonnummern: Alle Formate (+49, 0049, national, international)\n8. Adressen: Vollständige Postanschriften bevorzugt, auch aus Footer-Bereichen\n9. Sprache: Erkenne aus dem E-Mail-Text (deutsch/english/russisch)\n10. Kategorien: Erkenne ALLE Hashtags (#Kunde, #English, #Scientology, #Lieferant, etc.)\n11. E-MAILS: NUR die Absender-E-Mail verwenden: iwan.iten@bluewin.ch - KEINE anderen E-Mails erfinden!\n\nWICHTIGE HINWEISE:\n- Nutze die BIOGRAPHIE des Benutzers als zusätzliche Information\n- Hashtags (#) sind IMMER Kategorien - extrahiere sie alle!\n- BIOGRAPHIE: Verwende NUR den Text VOR den Hashtags, NICHT die Hashtags selbst!\n- Bei Namen: Suche nach Signaturen wie "Regards, [Vollständiger Name]"\n- Sprache: Analysiere den Haupttext der E-Mail\n- E-MAILS: Verwende NUR die bekannte Absender-E-Mail, erfinde KEINE zusätzlichen!\n- FOOTER-PRIORITÄT: Kontaktdaten aus Footer haben höhere Priorität als Text-Erwähnungen\n- Leere Felder mit null füllen\n\nWICHTIG - VERWECHSLUNGSGEFAHR:\nAndreas/Telse Groß (Althusweg 12, CH 6315 Morgarten, +41-41-512-00-22, 5gfrei.ch) sind NICHT der Kontakt!\nDas sind die EMPFÄNGER der E-Mail. Extrahiere NUR Daten des ursprünglichen ABSENDERS: iwan.iten@bluewin.ch\nIgnoriere alle Firmendaten von Andreas Groß, 5gfrei.ch, inggross.de, standortdatenblatt.ch!\n\nABSENDER-FOKUS:\n- NUR Daten extrahieren die zum Absender iwan.iten@bluewin.ch gehören\n- NICHT die Daten der weitergeleiteten E-Mail-Empfänger verwenden\n- Bei Unsicherheit: Feld leer lassen statt falsche Daten zu verwenden\n\nFIRMEN-BEISPIELE:\n\nBeispiel 1 - Firma:\nInput: "Jungeuropa Verlag GmbH, Enderstr. 94, 01277 Dresden"\nOutput: {\n    "first_name": "",\n    "last_name": "",\n    "full_name": "Jungeuropa Verlag GmbH",\n    "company": "Jungeuropa Verlag GmbH",\n    "is_company": true,\n    "address": {"street": "Enderstr. 94", "city": "Dresden", "zip": "01277"}\n}\n\nBeispiel 2 - Person bei Firma:\nInput: "Philip Stein, Jungeuropa Verlag"\nOutput: {\n    "first_name": "Philip",\n    "last_name": "Stein",\n    "full_name": "Philip Stein",\n    "company": "Jungeuropa Verlag",\n    "is_company": false\n}\n\nANTWORTFORMAT (nur JSON, keine Kommentare):\n{\n    "first_name": "",\n    "last_name": "",\n    "full_name": "Jungeuropa Verlag GmbH",\n    "emails": ["iwan.iten@bluewin.ch"],\n    "phones": [],\n    "address": {\n        "street": "Enderstr. 94",\n        "street2": null,\n        "city": "Dresden",\n        "zip": "01277",              // ← WICHTIG: "zip" nicht "postal_code"\n        "state": null,\n        "country": "Germany"\n    },\n    "website": null,\n    "company": "Jungeuropa Verlag GmbH",\n    "position": null,\n    "is_company": true,\n    "language": "deutsch",\n    "categories": ["verlag"],\n    "biography": "...",\n    "confidence": "high"\n}\n'}], 'model': 'gpt-4o-mini', 'max_tokens': 1500, 'temperature': 0.1}}
+2025-06-11 16:52:00,111 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-06-11 16:52:00,111 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-11 16:52:00,135 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7c83a99b8d10>
+2025-06-11 16:52:00,135 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7c83a9f707d0> server_hostname='api.openai.com' timeout=5.0
+2025-06-11 16:52:00,153 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7c83a99b8a70>
+2025-06-11 16:52:00,153 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-11 16:52:00,154 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-11 16:52:00,154 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-11 16:52:00,154 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-11 16:52:00,154 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-11 16:52:06,069 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 11 Jun 2025 14:52:06 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'ing-b-ro-andreas-gross-gmbh'), (b'openai-processing-ms', b'2877'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'2880'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'4000000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'3998573'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'21ms'), (b'x-request-id', b'req_2c937999a92107f1a295ffa2a65f9fd9'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=Bc6TAImDuC8fUKelfQCNHHoO7APC.qOxvbplF0tSnuU-1749653526-1.0.1.1-PewYPQoXAGyrkzxqtN6ePLK2UmU1HmdyQcKRyu0aWdIiYaBL6MfLZBABVslmv9PzT1OsuZNrR16wqcvN_rNzBLT5RhsxIpUs82eonNlwQUM; path=/; expires=Wed, 11-Jun-25 15:22:06 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=PxovDOJ1es039rPBV65X6Pj6O5XM3RBjtrhHYTMIENY-1749653526061-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94e1ee050cbb273b-ZRH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-11 16:52:06,071 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:52:06,071 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-11 16:52:06,072 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-11 16:52:06,072 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-11 16:52:06,072 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-11 16:52:06,073 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers([('date', 'Wed, 11 Jun 2025 14:52:06 GMT'), ('content-type', 'application/json'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'ing-b-ro-andreas-gross-gmbh'), ('openai-processing-ms', '2877'), ('openai-version', '2020-10-01'), ('x-envoy-upstream-service-time', '2880'), ('x-ratelimit-limit-requests', '5000'), ('x-ratelimit-limit-tokens', '4000000'), ('x-ratelimit-remaining-requests', '4999'), ('x-ratelimit-remaining-tokens', '3998573'), ('x-ratelimit-reset-requests', '12ms'), ('x-ratelimit-reset-tokens', '21ms'), ('x-request-id', 'req_2c937999a92107f1a295ffa2a65f9fd9'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=Bc6TAImDuC8fUKelfQCNHHoO7APC.qOxvbplF0tSnuU-1749653526-1.0.1.1-PewYPQoXAGyrkzxqtN6ePLK2UmU1HmdyQcKRyu0aWdIiYaBL6MfLZBABVslmv9PzT1OsuZNrR16wqcvN_rNzBLT5RhsxIpUs82eonNlwQUM; path=/; expires=Wed, 11-Jun-25 15:22:06 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=PxovDOJ1es039rPBV65X6Pj6O5XM3RBjtrhHYTMIENY-1749653526061-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '94e1ee050cbb273b-ZRH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-06-11 16:52:06,073 - openai._base_client - DEBUG - request_id: req_2c937999a92107f1a295ffa2a65f9fd9
+2025-06-11 16:52:06,075 - config_manager - INFO - 🤖 GPT Antwort (Smart-Strategy): {
+    "first_name": "Iwan",
+    "last_name": "Iten",
+    "full_name": "Iwan Iten",
+    "emails": ["iwan.iten@bluewin.ch"],
+    "phones": ["041 750 85 24"],
+    "address": {
+        "street": "Alte Landstrasse 144",
+        "street2": null,
+        "city": "Unterägeri",
+        "zip": "6314",
+        "state": null,
+        "country": "Schweiz"
+    },
+    "website": null,
+    "company": null,
+    "position": null,
+    "is_company": false,
+    "language": "deutsch",
+    "categories": ["kunde", "5gfrei", "Selbständige", "Buchkäufer"],
+    "biography": "",
+    "confidence": "high"
+}
+2025-06-11 16:52:06,075 - config_manager - INFO - ✅ JSON erfolgreich geparst - verwende GPT-Daten!
+2025-06-11 16:52:06,076 - config_manager - INFO - ✅ Kontaktdaten extrahiert (Confidence: high)
+2025-06-11 16:52:06,076 - config_manager - INFO - 🎯 Name: Iwan Iten
+2025-06-11 16:52:06,076 - config_manager - INFO - 📧 E-Mails: iwan.iten@bluewin.ch
+2025-06-11 16:52:06,076 - config_manager - INFO - 📞 Telefon: 041 750 85 24
+2025-06-11 16:52:06,076 - config_manager - INFO - 🏠 Adresse: Alte Landstrasse 144 Unterägeri 6314 Schweiz
+2025-06-11 16:52:06,076 - config_manager - INFO - 🌍 Sprache: deutsch
+2025-06-11 16:52:06,076 - config_manager - INFO - 🏷️ Kategorien: kunde, 5gfrei, selbständige, buchkäufer
+2025-06-11 16:52:06,076 - config_manager - INFO - 🎲 Confidence: high
+2025-06-11 16:52:06,158 - config_manager - INFO - 🔍 Existierender Kontakt gefunden: iwan.iten@bluewin.ch
+2025-06-11 16:52:06,159 - config_manager - INFO - 📋 Finale Kommentar-Struktur für iwan.iten@bluewin.ch:
+2025-06-11 16:52:06,159 - config_manager - INFO -    Kommentar: '[KI-Import 2025-06-11 16:52 - Confidence: high]'
+2025-06-11 16:52:06,159 - config_manager - INFO -    Timeline-Biographie: '...' (0 Zeichen)
+2025-06-11 16:52:06,159 - config_manager - INFO - 🎯 NAMEN-ZUORDNUNG für iwan.iten@bluewin.ch:
+2025-06-11 16:52:06,159 - config_manager - INFO -    is_company: 
+2025-06-11 16:52:06,159 - config_manager - INFO -    company (aus KI): ''
+2025-06-11 16:52:06,159 - config_manager - INFO -    full_name (aus KI): 'Iwan Iten'
+2025-06-11 16:52:06,159 - config_manager - INFO -    → name (für Odoo): 'Iwan Iten'
+2025-06-11 16:52:06,159 - config_manager - DEBUG - 🏠 Straße gesetzt: Alte Landstrasse 144
+2025-06-11 16:52:06,160 - config_manager - DEBUG - 🏙️ Stadt gesetzt: Unterägeri
+2025-06-11 16:52:06,160 - config_manager - DEBUG - 📮 PLZ gesetzt: 6314
+2025-06-11 16:52:06,195 - config_manager - INFO - 🌍 Land erkannt: Schweiz → CH (ID: 43)
+2025-06-11 16:52:06,196 - config_manager - DEBUG - 🌍 Land gesetzt: Schweiz (ID: 43)
+2025-06-11 16:52:06,196 - config_manager - DEBUG - 📞 Telefon gesetzt: 041 750 85 24
+2025-06-11 16:52:06,196 - config_manager - DEBUG - 🏷️ Kategorien gesetzt: 5 Kategorien
+2025-06-11 16:52:06,196 - config_manager - INFO - 📋 Odoo-Felder für iwan.iten@bluewin.ch:
+2025-06-11 16:52:06,196 - config_manager - INFO -    name: Iwan Iten
+2025-06-11 16:52:06,196 - config_manager - INFO -    email: iwan.iten@bluewin.ch
+2025-06-11 16:52:06,196 - config_manager - INFO -    lang: de_DE
+2025-06-11 16:52:06,196 - config_manager - INFO -    is_company: 
+2025-06-11 16:52:06,196 - config_manager - INFO -    street: Alte Landstrasse 144
+2025-06-11 16:52:06,196 - config_manager - INFO -    city: Unterägeri
+2025-06-11 16:52:06,196 - config_manager - INFO -    zip: 6314
+2025-06-11 16:52:06,196 - config_manager - INFO -    country_id: 43
+2025-06-11 16:52:06,196 - config_manager - INFO -    phone: 041 750 85 24
+2025-06-11 16:52:06,196 - config_manager - INFO -    category_id: [(6, 0, [1341, 1843, 1461, 1398, 1840])]
+2025-06-11 16:52:06,196 - config_manager - DEBUG - 🔍 DEBUG existing_contact Typen:
+2025-06-11 16:52:06,196 - config_manager - DEBUG -    id: 143507 (Typ: <class 'int'>)
+2025-06-11 16:52:06,196 - config_manager - DEBUG -    name: Iwan Iten (Typ: <class 'str'>)
+2025-06-11 16:52:06,196 - config_manager - DEBUG -    email: iwan.iten@bluewin.ch (Typ: <class 'str'>)
+2025-06-11 16:52:06,196 - config_manager - DEBUG -    phone: False (Typ: <class 'bool'>)
+2025-06-11 16:52:06,196 - config_manager - DEBUG -    street: False (Typ: <class 'bool'>)
+2025-06-11 16:52:06,196 - config_manager - DEBUG -    website: False (Typ: <class 'bool'>)
+2025-06-11 16:52:06,196 - config_manager - DEBUG -    comment: False (Typ: <class 'bool'>)
+2025-06-11 16:52:06,196 - config_manager - DEBUG -    category_id: [] (Typ: <class 'list'>)
+2025-06-11 16:52:06,196 - config_manager - DEBUG - 🔍 DEBUG new_values Typen:
+2025-06-11 16:52:06,196 - config_manager - DEBUG -    name: Iwan Iten (Typ: <class 'str'>)
+2025-06-11 16:52:06,197 - config_manager - DEBUG -    email: iwan.iten@bluewin.ch (Typ: <class 'str'>)
+2025-06-11 16:52:06,197 - config_manager - DEBUG -    lang: de_DE (Typ: <class 'str'>)
+2025-06-11 16:52:06,197 - config_manager - DEBUG -    is_company:  (Typ: <class 'str'>)
+2025-06-11 16:52:06,197 - config_manager - DEBUG -    comment: [KI-Import 2025-06-11 16:52 - Confidence: high] (Typ: <class 'str'>)
+2025-06-11 16:52:06,197 - config_manager - DEBUG -    street: Alte Landstrasse 144 (Typ: <class 'str'>)
+2025-06-11 16:52:06,197 - config_manager - DEBUG -    city: Unterägeri (Typ: <class 'str'>)
+2025-06-11 16:52:06,197 - config_manager - DEBUG -    zip: 6314 (Typ: <class 'str'>)
+2025-06-11 16:52:06,197 - config_manager - DEBUG -    country_id: 43 (Typ: <class 'int'>)
+2025-06-11 16:52:06,197 - config_manager - DEBUG -    phone: 041 750 85 24 (Typ: <class 'str'>)
+2025-06-11 16:52:06,197 - config_manager - DEBUG -    category_id: [(6, 0, [1341, 1843, 1461, 1398, 1840])] (Typ: <class 'list'>)
+2025-06-11 16:52:06,197 - config_manager - INFO - 📝 phone ergänzt: 041 750 85 24
+2025-06-11 16:52:06,197 - config_manager - INFO - 📝 street ergänzt: Alte Landstrasse 144
+2025-06-11 16:52:06,197 - config_manager - INFO - 📝 city ergänzt: Unterägeri
+2025-06-11 16:52:06,197 - config_manager - INFO - 📝 zip ergänzt: 6314
+2025-06-11 16:52:06,197 - config_manager - INFO - 📝 Sprache ergänzt: de_DE
+2025-06-11 16:52:06,197 - config_manager - INFO - 📝 Land ergänzt: 43
+2025-06-11 16:52:06,197 - config_manager - INFO - 📝 Neuer Kommentar hinzugefügt
+2025-06-11 16:52:06,197 - config_manager - INFO - 🏷️ Kategorien erweitert: {1840, 1843, 1461, 1398, 1341}
+2025-06-11 16:52:06,197 - config_manager - INFO - 🔄 Update-Felder für iwan.iten@bluewin.ch:
+2025-06-11 16:52:06,197 - config_manager - INFO -    phone: 041 750 85 24
+2025-06-11 16:52:06,197 - config_manager - INFO -    street: Alte Landstrasse 144
+2025-06-11 16:52:06,197 - config_manager - INFO -    city: Unterägeri
+2025-06-11 16:52:06,197 - config_manager - INFO -    zip: 6314
+2025-06-11 16:52:06,197 - config_manager - INFO -    lang: de_DE
+2025-06-11 16:52:06,197 - config_manager - INFO -    country_id: 43
+2025-06-11 16:52:06,198 - config_manager - INFO -    category_id: [(6, 0, [1840, 1843, 1461, 1398, 1341])]
+2025-06-11 16:52:06,198 - config_manager - DEBUG - 🔍 Update-Debug: phone = 041 750 85 24 (Typ: <class 'str'>)
+2025-06-11 16:52:06,198 - config_manager - DEBUG - 🔍 Update-Debug: street = Alte Landstrasse 144 (Typ: <class 'str'>)
+2025-06-11 16:52:06,198 - config_manager - DEBUG - 🔍 Update-Debug: city = Unterägeri (Typ: <class 'str'>)
+2025-06-11 16:52:06,198 - config_manager - DEBUG - 🔍 Update-Debug: zip = 6314 (Typ: <class 'str'>)
+2025-06-11 16:52:06,198 - config_manager - DEBUG - 🔍 Update-Debug: lang = de_DE (Typ: <class 'str'>)
+2025-06-11 16:52:06,198 - config_manager - DEBUG - 🔍 Update-Debug: country_id = 43 (Typ: <class 'int'>)
+2025-06-11 16:52:06,198 - config_manager - DEBUG - 🔍 Update-Debug: comment = [KI-Import 2025-06-11 16:52 - Confidence: high] (Typ: <class 'str'>)
+2025-06-11 16:52:06,198 - config_manager - DEBUG - 🔍 Update-Debug: category_id = [(6, 0, [1840, 1843, 1461, 1398, 1341])] (Typ: <class 'list'>)
+2025-06-11 16:52:06,268 - config_manager - INFO - ✅ Kontakt aktualisiert: iwan.iten@bluewin.ch (ID: 143507)
+2025-06-11 16:52:06,268 - config_manager - INFO - 📧 Sende Bestätigungs-E-Mail für: iwan.iten@bluewin.ch
+2025-06-11 16:52:06,832 - config_manager - INFO - ✅ Bestätigungs-E-Mail erfolgreich gesendet an: andreas@5gfrei.ch
+2025-06-11 16:52:06,880 - config_manager - INFO - ✅ E-Mail erfolgreich verarbeitet
+2025-06-11 16:52:06,880 - config_manager - INFO - 📊 Ergebnis: ✅ 1 erfolgreich, ❌ 0 Fehler
+2025-06-11 16:55:08,825 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)
+2025-06-11 16:55:08,896 - httpcore.connection - DEBUG - close.started
+2025-06-11 16:55:08,899 - httpcore.connection - DEBUG - close.complete
+2025-06-11 16:55:12,228 - config_manager - INFO - ============================================================
+2025-06-11 16:55:12,228 - config_manager - INFO - 🚀 KI-Kontaktassistent Startup
+2025-06-11 16:55:12,228 - config_manager - INFO - 📅 2025-06-11 16:55:12
+2025-06-11 16:55:12,228 - config_manager - INFO - ============================================================
+2025-06-11 16:55:12,228 - config_manager - INFO - 🔍 Odoo-Verbindungstest:
+2025-06-11 16:55:12,228 - config_manager - INFO -    URL: https://andreas-gross.odoo.com
+2025-06-11 16:55:12,228 - config_manager - INFO -    Database: andreas-gross
+2025-06-11 16:55:12,228 - config_manager - INFO -    Username: ki-odoo-assistent@swiss-ecommerce.ch
+2025-06-11 16:55:12,353 - config_manager - INFO - ✅ Odoo-Server erreichbar: {'server_version': '18.0+e', 'server_version_info': [18, 0, 0, 'final', 0, 'e'], 'server_serie': '18.0', 'protocol_version': 1}
+2025-06-11 16:55:12,353 - config_manager - INFO - 🔐 Versuche Authentifizierung...
+2025-06-11 16:55:12,625 - config_manager - INFO - ✅ APIs erfolgreich verbunden
+2025-06-11 16:55:12,626 - config_manager - INFO - 🔐 Odoo User ID: 11
+2025-06-11 16:55:12,626 - config_manager - INFO - ✅ ConfigManager initialisiert
+2025-06-11 16:55:12,785 - config_manager - INFO - 📋 252 Kategorien aus Odoo geladen
+2025-06-11 16:55:12,785 - config_manager - INFO - 📝 Beispiel-Kategorien: div 2, div 6, foxba, ra, -rb nochmal
+2025-06-11 16:55:12,789 - config_manager - INFO - 🤖 KI-Kontaktassistent gestartet
+2025-06-11 16:55:12,789 - config_manager - INFO - 📊 347 Kategorien verfügbar
+2025-06-11 16:55:12,789 - config_manager - INFO - 🚀 KI-Kontaktassistent läuft...
+2025-06-11 16:55:12,789 - config_manager - INFO - ⏱️ Check-Intervall: 300 Sekunden
+2025-06-11 16:55:12,789 - config_manager - INFO - 🔄 Iteration 1 - 16:55:12
+2025-06-11 16:55:12,789 - config_manager - INFO - 📧 Starte E-Mail-Verarbeitung...
+2025-06-11 16:55:12,880 - config_manager - INFO - 📬 1 neue E-Mail(s) gefunden
+2025-06-11 16:55:12,880 - config_manager - INFO - 📧 Verarbeite E-Mail 1/1
+2025-06-11 16:55:12,906 - config_manager - DEBUG - 📧 E-Mail-Body bereinigt (Länge: 1314 Zeichen)
+2025-06-11 16:55:12,906 - config_manager - DEBUG - 📬 E-Mail-ID von Message-ID: b467a1e72560e5cfefea82dab096b870
+2025-06-11 16:55:12,906 - config_manager - DEBUG - 📧 E-Mail-Body bereinigt (Länge: 1314 Zeichen)
+2025-06-11 16:55:12,906 - config_manager - INFO - 🔍 E-Mail-Body für Extraktion (erste 500 Zeichen): Aktivist vor allem im Ägerital,
+
+#Buchkäufer
+
+
+
+-------- Weitergeleitete Nachricht --------
+Betreff: 	AW: Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+Datum: 	Wed, 28 May 2025 22:35:43 +0200
+Von: 	iwan.iten@bluewin.ch
+An: 	andreas@5gfrei.ch
+
+
+
+Doppelerfolg: «Bagatellverfahren» sind abgeschafft!
+
+Lieber Andreas
+
+Danke Dir für die INFO betr. Antenne im Schützen.
+
+Gibt es dazu handfeste Beweise? – Läuft die Antenne als 5G «adaptiv» mit 
+Anwendung des Korrekturfaktors?
+...
+2025-06-11 16:55:12,907 - config_manager - DEBUG - 🔍 Pattern 1: Matches: []
+2025-06-11 16:55:12,907 - config_manager - DEBUG - 🔍 Pattern 2: Matches: []
+2025-06-11 16:55:12,907 - config_manager - DEBUG - 🔍 Pattern 3: Matches: ['iwan.iten@bluewin.ch']
+2025-06-11 16:55:12,908 - config_manager - DEBUG - 🔍 Pattern 4: Matches: []
+2025-06-11 16:55:12,908 - config_manager - DEBUG - 🔍 Pattern 5: Matches: ['mailto:iwan.iten@bluewin.ch']
+2025-06-11 16:55:12,908 - config_manager - DEBUG - 🔍 Pattern 6: Matches: []
+2025-06-11 16:55:12,908 - config_manager - DEBUG - 🔍 Pattern 7: Matches: []
+2025-06-11 16:55:12,909 - config_manager - DEBUG - 🔍 Pattern 8: Matches: []
+2025-06-11 16:55:12,909 - config_manager - DEBUG - 🔍 Pattern 9: Matches: []
+2025-06-11 16:55:12,909 - config_manager - DEBUG - 🔍 Pattern 10: Matches: []
+2025-06-11 16:55:12,910 - config_manager - DEBUG - 🔍 Pattern 11: Matches: ['iwan.iten@bluewin.ch', 'andreas@5gfrei.ch', 'iwan.iten@bluewin.ch', 'iwan.iten@bluewin.ch']
+2025-06-11 16:55:12,910 - config_manager - INFO - 🎯 Primäre E-Mail gefunden: iwan.iten@bluewin.ch
+2025-06-11 16:55:12,910 - config_manager - DEBUG - 📧 E-Mail-Body bereinigt (Länge: 1314 Zeichen)
+2025-06-11 16:55:12,910 - config_manager - INFO - 📧 Verarbeite: iwan.iten@bluewin.ch (von: andreas@5gfrei.ch) 
+2025-06-11 16:55:12,911 - config_manager - INFO - 🔧 Smart-Strategy Input: 1314 Zeichen
+2025-06-11 16:55:12,911 - config_manager - INFO - 📧 Kurze E-Mail (1314 Zeichen) - vollständig verarbeitet
+2025-06-11 16:55:13,636 - openai._base_client - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'idempotency_key': 'stainless-python-retry-cbc69706-d00c-47c5-8010-d41f6926e955', 'json_data': {'messages': [{'role': 'system', 'content': 'Du bist ein Experte für Kontaktdaten-Extraktion. Antworte immer nur mit validem JSON. Achte BESONDERS auf Firmen-Erkennung und Footer-Bereiche mit strukturierten Adressen.'}, {'role': 'user', 'content': 'Du bist ein Experte für die Extraktion von Kontaktdaten aus E-Mails. Analysiere sorgfältig und extrahiere NUR verfügbare Informationen.\n\nABSENDER-EMAIL: iwan.iten@bluewin.ch\nBIOGRAPHIE (vom Benutzer hinzugefügt): Aktivist vor allem im Ägerital, #Buchkäufer\n\nE-MAIL-INHALT:\nAktivist vor allem im Ägerital,\r\n\r\n#Buchkäufer\r\n\r\n\r\n\r\n-------- Weitergeleitete Nachricht --------\r\nBetreff: \tAW: Doppelerfolg: «Bagatellverfahren» sind abgeschafft!\r\nDatum: \tWed, 28 May 2025 22:35:43 +0200\r\nVon: \tiwan.iten@bluewin.ch\r\nAn: \tandreas@5gfrei.ch\r\n\r\n\r\n\r\nDoppelerfolg: «Bagatellverfahren» sind abgeschafft!\r\n\r\nLieber Andreas\r\n\r\nDanke Dir für die INFO betr. Antenne im Schützen.\r\n\r\nGibt es dazu handfeste Beweise? – Läuft die Antenne als 5G «adaptiv» mit \r\nAnwendung des Korrekturfaktors?\r\n\r\nWir werden am Di. 17. Juni eine Veranstaltung machen mit allen rund 25 \r\nEinsprechern der drei Antennen von Unterägeri\r\n\r\nUm das «Wie weiter…» zu besprechen. (Boden, Zugerstr. 88 + 33). In einer \r\nzweiten Runde schwebt mir eine zweite Veranstaltung im Herbst vor, wo \r\nwir auch die Unterzeichner einladen. – Schliesslich geht es darum, \r\ngenügend finanzielle Zusagen zu haben, um die Verfahren allenfalls bis \r\nvor Bundesgericht zu bringen. – Mal schauen wie die Stimmung ist.\r\n\r\nDie Antenne Zugerstrasse 88 und 33 haben wir mit Hilfe von Daniel \r\nLaubscher bereits an den Regierungsrat weitergezogen.\r\n\r\nSoll ich Dir das Beschwerdeschreiben zukommen lassen?\r\n\r\nHerzliche Grüsse\r\n\r\nIwan Iten\r\n\r\nAlte Landstrasse 144\r\n\r\n6314 Unterägeri\r\n\r\nTel 041 750 85 24\r\n\r\niwan.iten@bluewin.ch <mailto:iwan.iten@bluewin.ch>\r\n\r\n\n\nKRITISCHE EXTRAKTIONSREGELN (PRIORITÄT 1 - FIRMEN):\n\n1. FIRMEN-ERKENNUNG (HÖCHSTE PRIORITÄT):\n   - Erkenne Firmen-Indikatoren: GmbH, AG, Ltd, Inc, Corp, LLC, Verein, Verlag, Stiftung, KG, OHG, eG, SE\n   - WENN Firma erkannt → setze "is_company": true\n   - Bei Firmen: "company" UND "full_name" bekommen BEIDE den Firmennamen\n   - Bei Firmen: "first_name" und "last_name" bleiben leer!\n\n2. FIRMEN-NAME-ZUORDNUNG:\n   - Beispiel: "Jungeuropa Verlag GmbH"\n     → "full_name": "Jungeuropa Verlag GmbH"\n     → "company": "Jungeuropa Verlag GmbH"\n     → "is_company": true\n     → "first_name": ""\n     → "last_name": ""\n\n3. PERSONEN BEI FIRMEN:\n   - Beispiel: "Philip Stein von Jungeuropa Verlag"\n     → "full_name": "Philip Stein"\n     → "first_name": "Philip"\n     → "last_name": "Stein"\n     → "company": "Jungeuropa Verlag"\n     → "is_company": false\n\nWEITERE EXTRAKTIONSREGELN:\n\n4. FOOTER-PRIORITÄT: Achte besonders auf den FOOTER-Bereich am Ende der E-Mail!\n5. STRUKTURIERTE ADRESSEN: Erkenne Formate wie "Firma · Straße Nr · Stadt PLZ · Land"\n6. NAMEN: Suche nach vollständigen Namen in der Signatur (Regards, Best regards, etc.)\n7. Telefonnummern: Alle Formate (+49, 0049, national, international)\n8. Adressen: Vollständige Postanschriften bevorzugt, auch aus Footer-Bereichen\n9. Sprache: Erkenne aus dem E-Mail-Text (deutsch/english/russisch)\n10. Kategorien: Erkenne ALLE Hashtags (#Kunde, #English, #Scientology, #Lieferant, etc.)\n11. E-MAILS: NUR die Absender-E-Mail verwenden: iwan.iten@bluewin.ch - KEINE anderen E-Mails erfinden!\n\nWICHTIGE HINWEISE:\n- Nutze die BIOGRAPHIE des Benutzers als zusätzliche Information\n- Hashtags (#) sind IMMER Kategorien - extrahiere sie alle!\n- BIOGRAPHIE: Verwende NUR den Text VOR den Hashtags, NICHT die Hashtags selbst!\n- Bei Namen: Suche nach Signaturen wie "Regards, [Vollständiger Name]"\n- Sprache: Analysiere den Haupttext der E-Mail\n- E-MAILS: Verwende NUR die bekannte Absender-E-Mail, erfinde KEINE zusätzlichen!\n- FOOTER-PRIORITÄT: Kontaktdaten aus Footer haben höhere Priorität als Text-Erwähnungen\n- Leere Felder mit null füllen\n\nWICHTIG - VERWECHSLUNGSGEFAHR:\nAndreas/Telse Groß (Althusweg 12, CH 6315 Morgarten, +41-41-512-00-22, 5gfrei.ch) sind NICHT der Kontakt!\nDas sind die EMPFÄNGER der E-Mail. Extrahiere NUR Daten des ursprünglichen ABSENDERS: iwan.iten@bluewin.ch\nIgnoriere alle Firmendaten von Andreas Groß, 5gfrei.ch, inggross.de, standortdatenblatt.ch!\n\nABSENDER-FOKUS:\n- NUR Daten extrahieren die zum Absender iwan.iten@bluewin.ch gehören\n- NICHT die Daten der weitergeleiteten E-Mail-Empfänger verwenden\n- Bei Unsicherheit: Feld leer lassen statt falsche Daten zu verwenden\n\nFIRMEN-BEISPIELE:\n\nBeispiel 1 - Firma:\nInput: "Jungeuropa Verlag GmbH, Enderstr. 94, 01277 Dresden"\nOutput: {\n    "first_name": "",\n    "last_name": "",\n    "full_name": "Jungeuropa Verlag GmbH",\n    "company": "Jungeuropa Verlag GmbH",\n    "is_company": true,\n    "address": {"street": "Enderstr. 94", "city": "Dresden", "zip": "01277"}\n}\n\nBeispiel 2 - Person bei Firma:\nInput: "Philip Stein, Jungeuropa Verlag"\nOutput: {\n    "first_name": "Philip",\n    "last_name": "Stein",\n    "full_name": "Philip Stein",\n    "company": "Jungeuropa Verlag",\n    "is_company": false\n}\n\nANTWORTFORMAT (nur JSON, keine Kommentare):\n{\n    "first_name": "",\n    "last_name": "",\n    "full_name": "Jungeuropa Verlag GmbH",\n    "emails": ["iwan.iten@bluewin.ch"],\n    "phones": [],\n    "address": {\n        "street": "Enderstr. 94",\n        "street2": null,\n        "city": "Dresden",\n        "zip": "01277",              // ← WICHTIG: "zip" nicht "postal_code"\n        "state": null,\n        "country": "Germany"\n    },\n    "website": null,\n    "company": "Jungeuropa Verlag GmbH",\n    "position": null,\n    "is_company": true,\n    "language": "deutsch",\n    "categories": ["verlag"],\n    "biography": "...",\n    "confidence": "high"\n}\n'}], 'model': 'gpt-4o-mini', 'max_tokens': 1500, 'temperature': 0.1}}
+2025-06-11 16:55:13,641 - openai._base_client - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2025-06-11 16:55:13,642 - httpcore.connection - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2025-06-11 16:55:13,665 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7df865c44e60>
+2025-06-11 16:55:13,665 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7df8661fc7d0> server_hostname='api.openai.com' timeout=5.0
+2025-06-11 16:55:13,679 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x7df865c44b60>
+2025-06-11 16:55:13,679 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2025-06-11 16:55:13,680 - httpcore.http11 - DEBUG - send_request_headers.complete
+2025-06-11 16:55:13,680 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2025-06-11 16:55:13,680 - httpcore.http11 - DEBUG - send_request_body.complete
+2025-06-11 16:55:13,680 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2025-06-11 16:55:17,416 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 11 Jun 2025 14:55:17 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'ing-b-ro-andreas-gross-gmbh'), (b'openai-processing-ms', b'3195'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'3198'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'4000000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'3998570'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'21ms'), (b'x-request-id', b'req_b2ce721ba6cda93f70d12df9645296e8'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=6xL6jX1yY1kOHLmTOw6ISj7swLHCRI430njVh2lkWbM-1749653717-1.0.1.1-DX_HJQotKpssUi_dVJbXvDDan2F_F1S_wbDbxh_dqMwaajIAAF.ztZRC9Dppc3YLiVG85q_jEQA6JkgW7IVbdRJZYLfJ6xT92Gc9SVR.juY; path=/; expires=Wed, 11-Jun-25 15:25:17 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=hWbJTXRqMDATCcnh_Iox2sHuaPlxv58SKswXFUkFEb8-1749653717406-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'94e1f2be8a1bbab6-ZRH'), (b'Content-Encoding', b'gzip'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-06-11 16:55:17,419 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-11 16:55:17,419 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2025-06-11 16:55:17,419 - httpcore.http11 - DEBUG - receive_response_body.complete
+2025-06-11 16:55:17,420 - httpcore.http11 - DEBUG - response_closed.started
+2025-06-11 16:55:17,420 - httpcore.http11 - DEBUG - response_closed.complete
+2025-06-11 16:55:17,420 - openai._base_client - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers([('date', 'Wed, 11 Jun 2025 14:55:17 GMT'), ('content-type', 'application/json'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'ing-b-ro-andreas-gross-gmbh'), ('openai-processing-ms', '3195'), ('openai-version', '2020-10-01'), ('x-envoy-upstream-service-time', '3198'), ('x-ratelimit-limit-requests', '5000'), ('x-ratelimit-limit-tokens', '4000000'), ('x-ratelimit-remaining-requests', '4999'), ('x-ratelimit-remaining-tokens', '3998570'), ('x-ratelimit-reset-requests', '12ms'), ('x-ratelimit-reset-tokens', '21ms'), ('x-request-id', 'req_b2ce721ba6cda93f70d12df9645296e8'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=6xL6jX1yY1kOHLmTOw6ISj7swLHCRI430njVh2lkWbM-1749653717-1.0.1.1-DX_HJQotKpssUi_dVJbXvDDan2F_F1S_wbDbxh_dqMwaajIAAF.ztZRC9Dppc3YLiVG85q_jEQA6JkgW7IVbdRJZYLfJ6xT92Gc9SVR.juY; path=/; expires=Wed, 11-Jun-25 15:25:17 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=hWbJTXRqMDATCcnh_Iox2sHuaPlxv58SKswXFUkFEb8-1749653717406-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '94e1f2be8a1bbab6-ZRH'), ('content-encoding', 'gzip'), ('alt-svc', 'h3=":443"; ma=86400')])
+2025-06-11 16:55:17,420 - openai._base_client - DEBUG - request_id: req_b2ce721ba6cda93f70d12df9645296e8
+2025-06-11 16:55:17,423 - config_manager - INFO - 🤖 GPT Antwort (Smart-Strategy): {
+    "first_name": "Iwan",
+    "last_name": "Iten",
+    "full_name": "Iwan Iten",
+    "emails": ["iwan.iten@bluewin.ch"],
+    "phones": ["041 750 85 24"],
+    "address": {
+        "street": "Alte Landstrasse 144",
+        "street2": null,
+        "city": "Unterägeri",
+        "zip": "6314",
+        "state": null,
+        "country": "Schweiz"
+    },
+    "website": null,
+    "company": null,
+    "position": null,
+    "is_company": false,
+    "language": "deutsch",
+    "categories": ["Aktivist", "Buchkäufer"],
+    "biography": "Aktivist vor allem im Ägerital",
+    "confidence": "high"
+}
+2025-06-11 16:55:17,423 - config_manager - INFO - ✅ JSON erfolgreich geparst - verwende GPT-Daten!
+2025-06-11 16:55:17,424 - config_manager - INFO - ✅ Kontaktdaten extrahiert (Confidence: high)
+2025-06-11 16:55:17,424 - config_manager - INFO - 🎯 Name: Iwan Iten
+2025-06-11 16:55:17,424 - config_manager - INFO - 📧 E-Mails: iwan.iten@bluewin.ch
+2025-06-11 16:55:17,424 - config_manager - INFO - 📞 Telefon: 041 750 85 24
+2025-06-11 16:55:17,424 - config_manager - INFO - 🏠 Adresse: Alte Landstrasse 144 Unterägeri 6314 Schweiz
+2025-06-11 16:55:17,424 - config_manager - INFO - 🌍 Sprache: deutsch
+2025-06-11 16:55:17,424 - config_manager - INFO - 🏷️ Kategorien: aktivist, buchkäufer
+2025-06-11 16:55:17,424 - config_manager - INFO - 🎲 Confidence: high
+2025-06-11 16:55:17,506 - config_manager - INFO - 🔍 Existierender Kontakt gefunden: iwan.iten@bluewin.ch
+2025-06-11 16:55:17,506 - config_manager - WARNING - ⚠️ Unbekannte Kategorien: ['aktivist']
+2025-06-11 16:55:17,507 - config_manager - INFO - 📧 Sende Kategorie-Rückfrage für: iwan.iten@bluewin.ch
+2025-06-11 16:55:17,758 - config_manager - INFO - ✅ Kategorie-Rückfrage erfolgreich gesendet an: andreas@5gfrei.ch
+2025-06-11 16:55:17,758 - config_manager - INFO - 📋 Finale Kommentar-Struktur für iwan.iten@bluewin.ch:
+2025-06-11 16:55:17,758 - config_manager - INFO -    Kommentar: '[KI-Import 2025-06-11 16:55 - Confidence: high]'
+2025-06-11 16:55:17,758 - config_manager - INFO -    Timeline-Biographie: 'Aktivist vor allem im Ägerital...' (30 Zeichen)
+2025-06-11 16:55:17,758 - config_manager - INFO - 🎯 NAMEN-ZUORDNUNG für iwan.iten@bluewin.ch:
+2025-06-11 16:55:17,759 - config_manager - INFO -    is_company: 
+2025-06-11 16:55:17,759 - config_manager - INFO -    company (aus KI): ''
+2025-06-11 16:55:17,759 - config_manager - INFO -    full_name (aus KI): 'Iwan Iten'
+2025-06-11 16:55:17,759 - config_manager - INFO -    → name (für Odoo): 'Iwan Iten'
+2025-06-11 16:55:17,759 - config_manager - DEBUG - 🏠 Straße gesetzt: Alte Landstrasse 144
+2025-06-11 16:55:17,759 - config_manager - DEBUG - 🏙️ Stadt gesetzt: Unterägeri
+2025-06-11 16:55:17,759 - config_manager - DEBUG - 📮 PLZ gesetzt: 6314
+2025-06-11 16:55:17,792 - config_manager - INFO - 🌍 Land erkannt: Schweiz → CH (ID: 43)
+2025-06-11 16:55:17,792 - config_manager - DEBUG - 🌍 Land gesetzt: Schweiz (ID: 43)
+2025-06-11 16:55:17,792 - config_manager - DEBUG - 📞 Telefon gesetzt: 041 750 85 24
+2025-06-11 16:55:17,792 - config_manager - DEBUG - 🏷️ Kategorien gesetzt: 2 Kategorien
+2025-06-11 16:55:17,792 - config_manager - INFO - 📋 Odoo-Felder für iwan.iten@bluewin.ch:
+2025-06-11 16:55:17,792 - config_manager - INFO -    name: Iwan Iten
+2025-06-11 16:55:17,792 - config_manager - INFO -    email: iwan.iten@bluewin.ch
+2025-06-11 16:55:17,792 - config_manager - INFO -    lang: de_DE
+2025-06-11 16:55:17,792 - config_manager - INFO -    is_company: 
+2025-06-11 16:55:17,792 - config_manager - INFO -    street: Alte Landstrasse 144
+2025-06-11 16:55:17,792 - config_manager - INFO -    city: Unterägeri
+2025-06-11 16:55:17,792 - config_manager - INFO -    zip: 6314
+2025-06-11 16:55:17,792 - config_manager - INFO -    country_id: 43
+2025-06-11 16:55:17,792 - config_manager - INFO -    phone: 041 750 85 24
+2025-06-11 16:55:17,792 - config_manager - INFO -    category_id: [(6, 0, [1398, 1840])]
+2025-06-11 16:55:17,792 - config_manager - DEBUG - 🔍 DEBUG existing_contact Typen:
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    id: 143507 (Typ: <class 'int'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    name: Iwan Iten (Typ: <class 'str'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    email: iwan.iten@bluewin.ch (Typ: <class 'str'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    phone: 041 750 85 24 (Typ: <class 'str'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    street: Alte Landstrasse 144 (Typ: <class 'str'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    website: False (Typ: <class 'bool'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    comment: <p>[KI-Import 2025-06-11 16:52 - Confidence: high]</p> (Typ: <class 'str'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    category_id: [1843, 1398, 1341, 1840, 1461] (Typ: <class 'list'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG - 🔍 DEBUG new_values Typen:
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    name: Iwan Iten (Typ: <class 'str'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    email: iwan.iten@bluewin.ch (Typ: <class 'str'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    lang: de_DE (Typ: <class 'str'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    is_company:  (Typ: <class 'str'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    comment: [KI-Import 2025-06-11 16:55 - Confidence: high] (Typ: <class 'str'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    street: Alte Landstrasse 144 (Typ: <class 'str'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    city: Unterägeri (Typ: <class 'str'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    zip: 6314 (Typ: <class 'str'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    country_id: 43 (Typ: <class 'int'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    phone: 041 750 85 24 (Typ: <class 'str'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG -    category_id: [(6, 0, [1398, 1840])] (Typ: <class 'list'>)
+2025-06-11 16:55:17,792 - config_manager - INFO - 📝 city ergänzt: Unterägeri
+2025-06-11 16:55:17,792 - config_manager - INFO - 📝 zip ergänzt: 6314
+2025-06-11 16:55:17,792 - config_manager - INFO - 📝 Sprache ergänzt: de_DE
+2025-06-11 16:55:17,792 - config_manager - INFO - 📝 Land ergänzt: 43
+2025-06-11 16:55:17,792 - config_manager - INFO - 📝 Kommentar erweitert mit neuen Informationen
+2025-06-11 16:55:17,792 - config_manager - INFO - 🔄 Update-Felder für iwan.iten@bluewin.ch:
+2025-06-11 16:55:17,792 - config_manager - INFO -    city: Unterägeri
+2025-06-11 16:55:17,792 - config_manager - INFO -    zip: 6314
+2025-06-11 16:55:17,792 - config_manager - INFO -    lang: de_DE
+2025-06-11 16:55:17,792 - config_manager - INFO -    country_id: 43
+2025-06-11 16:55:17,792 - config_manager - DEBUG - 🔍 Update-Debug: city = Unterägeri (Typ: <class 'str'>)
+2025-06-11 16:55:17,792 - config_manager - DEBUG - 🔍 Update-Debug: zip = 6314 (Typ: <class 'str'>)
+2025-06-11 16:55:17,793 - config_manager - DEBUG - 🔍 Update-Debug: lang = de_DE (Typ: <class 'str'>)
+2025-06-11 16:55:17,793 - config_manager - DEBUG - 🔍 Update-Debug: country_id = 43 (Typ: <class 'int'>)
+2025-06-11 16:55:17,793 - config_manager - DEBUG - 🔍 Update-Debug: comment = <p>[KI-Import 2025-06-11 16:52 - Confidence: high]</p>
+--- Ergänzung ---
+[KI-Import 2025-06-11 16:55 - Confidence: high] (Typ: <class 'str'>)
+2025-06-11 16:55:17,841 - config_manager - INFO - ✅ Kontakt aktualisiert: iwan.iten@bluewin.ch (ID: 143507)
+2025-06-11 16:55:17,893 - config_manager - INFO - ✅ Timeline-Notiz erstellt für Partner 143507: 'Aktivist vor allem im Ägerital...'
+2025-06-11 16:55:17,894 - config_manager - INFO - 📧 Sende Bestätigungs-E-Mail für: iwan.iten@bluewin.ch
+2025-06-11 16:55:18,207 - config_manager - INFO - ✅ Bestätigungs-E-Mail erfolgreich gesendet an: andreas@5gfrei.ch
+2025-06-11 16:55:18,246 - config_manager - INFO - ✅ E-Mail erfolgreich verarbeitet
+2025-06-11 16:55:18,246 - config_manager - INFO - 📊 Ergebnis: ✅ 1 erfolgreich, ❌ 0 Fehler
+2025-06-11 16:56:08,280 - config_manager - INFO - 🛑 KI-Assistent gestoppt (Ctrl+C)
+2025-06-11 16:56:08,342 - httpcore.connection - DEBUG - close.started
+2025-06-11 16:56:08,344 - httpcore.connection - DEBUG - close.complete
